@@ -31,7 +31,7 @@ body,
 }
 
 /* ========== Colors ========== */
-.w3-container>div {
+.w3-container > div {
 	background-color: #282828;
 	color: White;
 }
@@ -77,12 +77,12 @@ a:not(table *) {
 	display: flex;
 }
 
-.flex>div {
+.flex > div {
 	flex: 1;
 	margin-left: 25px;
 }
 
-.flex>div:first-child {
+.flex > div:first-child {
 	margin-left: 0px;
 }
 
