@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap">
+
+<link rel="stylesheet" href="https://itrealms.github.io/site_css/realms.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- ==================== Avoid editing above here ==================== -->
+
+
+<div class="w3-container w3-padding flex">
+	<!--Left Card-->
+	<div class="w3-card-4 w3-padding">
+
+		<p class="head">Red Ribbon Week!</p>
+		<ul>
+			<li>Date: Oct 17 - Oct 21</li>
+			<li>Where: REALMS School. 325 South Down Street</li>
+		</ul>
+		<div></div>
+
+	</div>
+	
+	<!--Right Card-->
+	<div class="w3-card-4 w3-padding">
+
+		<p class="head">Latest Board Info:</p>
+		<ul>
+			<li>Latest Agenda: <a href="https://drive.google.com/file/d/1x4FVllFD_-WOrkWdLAgR4xPVUQYJbevG/view">2022.10.18</a></li>
+			<li>Next Meeting Date: Oct 18, 2022</li>
+			<li>Next Meeting Time: 4:30 pm</li>
+		</ul>
+		<div></div>
+
+	</div>
+</div>
