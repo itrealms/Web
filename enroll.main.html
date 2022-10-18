@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap">
 
-<link rel="stylesheet" href="https://itrealms.github.io/site_css/realms.css">
+<link rel="stylesheet" href="https://itrealms.github.io/website/CSS/realms.css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- ==================== Avoid editing above here ==================== -->
 
@@ -57,10 +57,10 @@
 	<div class="w3-card-4 w3-padding">
 
 		<div class="head">Frequently Asked Questions</div>
-		<p>Q: How much does REALMS Charter School cost?</br>
+		<p>Q: How much does REALMS Charter School cost?<br>
 			REALMS is a FREE public charter school. We also offer free lunches for all our students.
 		</p>
-		<p>Q: Is my student eligible for Transitional-Kinder or Kindergarten?</br>
+		<p>Q: Is my student eligible for Transitional-Kinder or Kindergarten?<br>
 			Please select your student's birthday:</p>
 
 		<div class="w3-row-padding w3-medium">
@@ -175,14 +175,14 @@
 						$("#EnrollResp").removeClass("w3-hide");
 						return;
 					}
-					const firstday = new Date(2022, 7, 8); // Months are zero indexed month 7 = August
-					const lastday = new Date(2023, 4, 24); // Months are zero indexed month 4 = May
-					const cutoff_cy_start = new Date(2022, 8, 2); // Months are zero indexed month 8 = September
-					const cutoff_cy_end = new Date(2023, 1, 2); // Months are zero indexed month 1 = February
-					const firstday2 = new Date(2023, 7, 7); // Months are zero indexed month 7 = August
-					const lastday2 = new Date(2024, 4, 22); // Months are zero indexed month 4 = May
-					const cutoff_ny_start = new Date(2023, 8, 2); // Months are zero indexed month 8 = September
-					const cutoff_ny_end = new Date(2024, 3, 2); // Months are zero indexed month 3 = April
+					const firstday = new Date(2022, 7, 8);
+					const lastday = new Date(2023, 4, 24);
+					const cutoff_cy_start = new Date(2022, 8, 2);
+					const cutoff_cy_end = new Date(2023, 1, 2);
+					const firstday2 = new Date(2023, 7, 7);
+					const lastday2 = new Date(2024, 4, 22);
+					const cutoff_ny_start = new Date(2023, 8, 2);
+					const cutoff_ny_end = new Date(2024, 3, 2);
 					const monthb = $("#month").val();
 					const dayb = $("#day").val();
 					const yearb = $("#year").val();
@@ -248,7 +248,7 @@
 		</script>
 		<div id="EnrollResp" class="w3-panel w3-padding w3-hide"></div>
 
-		<p>Q: How long are your TK and K classes?</br>
+		<p>Q: How long are your TK and K classes?<br>
 			Our TK and K classes are full day classes. Starting at 7:55 am and ending at 2:55 pm
 		</p>
 
