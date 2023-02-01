@@ -86,6 +86,22 @@ a:not(table *) {
 	margin-left: 0px;
 }
 
+.button-grid {
+		display: flex;
+}
+
+.button-grid > div {
+		display: flex;
+		flex: 1;
+		margin-left: 25px;
+		height: 150px;
+		justify-content: center;
+		align-items: center;
+}
+
+.button-grid > div:first-child {
+		margin-left: 0px;
+}
 /* ========== Tables ========== */
 tr:nth-child(odd):not(thead > tr) {
 	background-color: white;
