@@ -103,11 +103,15 @@ a:not(table *) {
 	margin-left: 0px;
 }
 
+.button-grid > div > a {
+		color: white;
+		text-decoration: none;
+}
+
 .w3-container > div.blank {
 		background-color: #cfe2f3;
 		color: #cfe2f3;
 }
-
 /* ========== Tables ========== */
 tr:nth-child(odd):not(thead > tr) {
 	background-color: white;
