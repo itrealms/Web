@@ -90,6 +90,11 @@ a:not(table *) {
 	text-decoration: none;
 }
 
+.button-grid > a:hover {
+	background-color: White;
+	color: #282828;
+}
+
 .flex > div:first-child, .button-grid > a:first-child {
 	margin-left: 0px;
 }
