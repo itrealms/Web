@@ -31,7 +31,7 @@ body,
 }
 
 /* ========== Colors ========== */
-.w3-container > div {
+.w3-container > div, .w3-container > a {
 	background-color: #282828;
 	color: White;
 }
@@ -73,44 +73,30 @@ a:not(table *) {
 	text-align: justify;
 }
 
-.flex {
+.flex, .button-grid {
 	display: flex;
 }
 
-.flex > div {
+.flex > div, .button-grid > a {
 	flex: 1;
 	margin-left: 25px;
 }
 
-.flex > div:first-child {
-	margin-left: 0px;
-}
-
-.button-grid {
+.button-grid > a {
 	display: flex;
-}
-
-.button-grid > div {
-	display: flex;
-	flex: 1;
-	margin-left: 25px;
 	height: 150px;
 	justify-content: center;
 	align-items: center;
+	text-decoration: none;
 }
 
-.button-grid > div:first-child {
+.flex > div:first-child, .button-grid > a:first-child {
 	margin-left: 0px;
 }
 
-.button-grid > div > a {
-		color: white;
-		text-decoration: none;
-}
-
 .w3-container > div.blank {
-		background-color: #cfe2f3;
-		color: #cfe2f3;
+	background-color: #cfe2f3;
+	color: #cfe2f3;
 }
 /* ========== Tables ========== */
 tr:nth-child(odd):not(thead > tr) {
