@@ -11,8 +11,8 @@
 <div class="w3-container w3-padding">
 	<div class="w3-card-4">
 
-		<div class="title w3-center">Re-Enrollment NOW OPEN for school year 2023-2024</div>
-		<div class="title w3-center">Enrollment OPEN for school year 2022-2023</div>
+		<div class="title w3-center">Enrollment NOW OPEN for school year 2023-2024</div>
+		<div class="title w3-center">Enrollment still OPEN for school year 2022-2023</div>
 
 	</div>
 </div>
@@ -192,39 +192,50 @@
 					const lastday = new Date(2023, 4, 24);
 					const cutoff_cy_start = new Date(2022, 8, 2);
 					const cutoff_cy_end = new Date(2023, 1, 2);
+
 					const firstday2 = new Date(2023, 7, 7);
 					const lastday2 = new Date(2024, 4, 22);
 					const cutoff_ny_start = new Date(2023, 8, 2);
 					const cutoff_ny_end = new Date(2024, 3, 2);
+
 					const monthb = $("#month").val();
 					const dayb = $("#day").val();
 					const yearb = $("#year").val();
 					const bday = new Date(yearb, monthb, dayb);
 					const year5 = parseInt($("#year").val(), 10) + 5;
 					const bday5 = new Date(year5, monthb, dayb);
+
 					const firstdayage = Math.floor((firstday - bday) / 31556952000);
 					const firstdayage2 = Math.floor((firstday2 - bday) / 31556952000);
+
 					let grade = "No";
 					let startdate = "No";
 					let canstarttoday = "No";
+						// Rule 1: IF 5th bday after the last day of next school year THEN too young
 					if (bday5 > lastday2) {
 						grade = "young";
+						// Rule 2: IF older than 5 before start of current school year THEN too old
 					} else if (firstdayage > 5) {
 						grade = "old";
-					} else if (bday5 >= cutoff_cy_start && bday5 <= cutoff_cy_end) {
-						grade = "Transitional-Kinder";
-						startdate = firstday;
-					} else if (bday5 >= cutoff_ny_start && bday5 <= cutoff_ny_end) {
-						grade = "Transitional-Kinder";
-						startdate = firstday2;
-					} else if ((bday5 > cutoff_cy_end && bday5 <= lastday) || (bday5 > cutoff_ny_end && bday5 <= lastday2)) {
-						grade = "Transitional-Kinder";
-						startdate = bday5;
+						// Rule 3: IF turning 5 before cutoff THEN Kinder on first day of school
 					} else if (bday5 < cutoff_cy_start) {
 						grade = "Kindergarten";
 						startdate = firstday;
+						// Rule 4: IF turning 5 between cutoff dates THEN TK first day of school current year
+					} else if (bday5 >= cutoff_cy_start && bday5 <= cutoff_cy_end) {
+						grade = "Transitional-Kinder";
+						startdate = firstday;
+						// Rule 5 & 8: IF turning 5 after cutoff and before last day THEN TK on 5th bday either year
+					} else if ((bday5 > cutoff_cy_end && bday5 <= lastday) || (bday5 > cutoff_ny_end && bday5 <= lastday2)) {
+						grade = "Transitional-Kinder";
+						startdate = bday5;
+						//Rule 6: IF turning 5 after current year and before start of next THEN K first day next year
 					} else if (bday5 > lastday && bday5 < cutoff_ny_start) {
 						grade = "Kindergarten";
+						startdate = firstday2;
+						// Rule 7: IF turning 5 between cutoff dates next year THEN TK first day of school next year
+					} else if (bday5 >= cutoff_ny_start && bday5 <= cutoff_ny_end) {
+						grade = "Transitional-Kinder";
 						startdate = firstday2;
 					}
 					if (startdate != "No") {
