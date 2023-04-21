@@ -31,11 +31,7 @@ body,
 }
 
 /* ========== Colors ========== */
-<<<<<<< HEAD
 .w3-container > div, .w3-container > a, table.dark > tr > * {
-=======
-.w3-container > div, .w3-container > a, .dark {
->>>>>>> 2562fbba704181a34b3af55015fcba7b17816e4c
 		background-color: #282828;
 		color: White;
 }
