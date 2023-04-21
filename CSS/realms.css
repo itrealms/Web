@@ -31,7 +31,7 @@ body,
 }
 
 /* ========== Colors ========== */
-.w3-container > div, .w3-container > a {
+.w3-container > div, .w3-container > a, table.dark > tr > * {
 		background-color: #282828;
 		color: White;
 }
