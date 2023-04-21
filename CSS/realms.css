@@ -32,13 +32,8 @@ body,
 
 /* ========== Colors ========== */
 .w3-container > div, .w3-container > a, table.dark > tr > * {
-<<<<<<< HEAD
 		background-color: #282828;
 		color: White;
-=======
-	background-color: #282828;
-	color: White;
->>>>>>> 8ecaf138f2e6eba16eec649be9e697f12c1a7a2c
 }
 
 .dblue {
