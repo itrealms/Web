@@ -7,84 +7,119 @@
 <link rel="stylesheet" href="https://itrealms.github.io/website/CSS/realms.css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- ==================== Avoid editing above here ==================== -->
+<script>
+  $(function() {
+    $("#en2es").click(function() {
+      $("#card-en").hide();
+      $("#card-es").show();
+    });
+
+    $("#es2en").click(function() {
+      $("#card-en").show();
+      $("#card-es").hide();
+    });
+  });
+</script>
 
 <div class="w3-container w3-padding">
-	<div class="w3-card-4">
+  <div class="w3-card-4 w3-padding">
 
-		<div class="title w3-center">REALMS Summer Camp Sign-Ups</div>
-
-	</div>
-</div>
-
-<div class="w3-container w3-padding flex">
-	<!--Left Card-->
-	<div class="w3-card-4 w3-padding">
-
-		<p class="head">Block 1 Camps:</p>
-		<div>Woodworking: click for more info</div>
-		<div>Woodworking info here blah blah blah</div>
-		<hr>
-		<div>masonry: click for more info</div>
-		<div>masonry info here blah blah blah</div>
-		<hr>
-		<div>bird watching: click for more info</div>
-		<div>bird watching info here blah blah blah</div>
-		<hr>
-		<div>caligraphy: click for more info</div>
-		<div>caligraphy info here blah blah blah</div>
-
-	</div>
-
-	<!--Right Card-->
-	<div class="w3-card-4 w3-padding">
-
-		<p class="head">Block 2 Camps:</p>
-		<div>Woodworking: click for more info</div>
-		<div>Woodworking info here blah blah blah</div>
-		<hr>
-		<div>masonry: click for more info</div>
-		<div>masonry info here blah blah blah</div>
-		<hr>
-		<div>bird watching: click for more info</div>
-		<div>bird watching info here blah blah blah</div>
+    <div class="title w3-center">REALMS Summer Camp Sign-Ups</div>
 
 	</div>
 </div>
 
-<div class="w3-container w3-padding flex">
-	<!--Left Card-->
-	<div class="w3-card-4 w3-padding">
+<div class="w3-container w3-padding">
+  <div class="w3-card-4 w3-padding">
 
-		<p class="head">Block 3 Camps:</p>
-		<div>Woodworking: click for more info</div>
-		<div>Woodworking info here blah blah blah</div>
-		<hr>
-		<div>bird watching: click for more info</div>
-		<div>bird watching info here blah blah blah</div>
-		<hr>
-		<div>caligraphy: click for more info</div>
-		<div>caligraphy info here blah blah blah</div>
+		<p class="head">Camps and Schedules:</p>
+    <p class="justify">Welcome summer camp messages here. So excited. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dolor nulla, volutpat quis nibh sit amet, semper tempus felis. Aenean aliquam convallis nibh ac cursus. Integer bibendum odio sit amet tempus rhoncus. Pellentesque faucibus tortor a faucibus gravida. Curabitur ut augue mattis, vestibulum neque eu, pharetra ligula. Nam turpis turpis, vestibulum ut imperdiet quis, lobortis eu erat. Etiam scelerisque nulla at gravida lobortis. Ut tempus ex ut diam varius, eu mollis neque consequat</p>
+    <p>Please find below the summer camp schedule for summer 2023. You will need to sign-up each child for each block you wish to attend.</p>
 
-	</div>
+    <div>
+      <p class="head">Block 1 (start time - end time) - Sign-up <a href="">HERE</a></p>
+			<table class="w3-table w3-hoverable table20" id="block1">
+        <thead class=>
+          <tr class="w3-green">
+            <td>Camp Name</td>
+            <td>Age Group</td>
+            <td>Days</td>
+            <td>Time</td>
+            <td>Camp Size</td>
+          </tr>
+        </thead>
+        <tr onclick="document.getElementById('block1-camp1').style.display='block'">
+          <td>Bio-Engineering</td>
+          <td>3+</td>
+          <td>M-F</td>
+          <td>4:00 am - 8:00 am</td>
+          <td>10</td>
+        </tr>
+        <tr onclick="document.getElementById('block1-camp2').style.display='block'">
+          <td>Genetics Research</td>
+          <td>8+</td>
+          <td>M, W, F</td>
+          <td>6:00 am - 7:30 am</td>
+          <td>10</td>
+        </tr>
+			</table>
+		</div>
+		<hr>
+    <div>
+			<p class="head">Block 2 (start time - end time) - Sign-up <a href="">HERE</a></p>
+			<table id="block2" style="display: none">
+			  <tr>
+          <td>Camp Name</td>
+          <td>Age Group</td>
+          <td>Days/Time</td>
+          <td>Camp Size</td>
+        </tr>
+			</table>
+		</div>
+		<hr>
+    <div>
+			<p class="head">Block 3 (start time - end time) - Sign-up <a href="">HERE</a></p>
+			<table id="block3" style="display: none">
+			  <tr>
+          <td>Camp Name</td>
+          <td>Age Group</td>
+          <td>Days/Time</td>
+          <td>Camp Size</td>
+        </tr>
+			</table>
+		</div>
+		<hr>
+    <div>
+			<p class="head">Block 4 (start time - end time) - Sign-up <a href="">HERE</a></p>
+			<table id="block4" style="display: none">
+			  <tr>
+          <td>Camp Name</td>
+          <td>Age Group</td>
+          <td>Days/Time</td>
+          <td>Camp Size</td>
+        </tr>
+			</table>
+		</div>
 
-	<!--Right Card-->
-	<div class="w3-card-4 w3-padding">
+    <div id="block1-camp1" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <div class="w3-container w3-blue">
+          <span onclick="document.getElementById('block1-camp1').style.display='none'" class="w3-button w3-display-topright w3-black">&times;</span>
+          <p>Some text. Some text. Some text.</p>
+          <p>Some text. Some text. Some text.</p>
+        </div>
+      </div>
+    </div>
 
-		<p class="head">Block 4 Camps:</p>
-		<div>Woodworking: click for more info</div>
-		<div>Woodworking info here blah blah blah</div>
-		<hr>
-		<div>masonry: click for more info</div>
-		<div>masonry info here blah blah blah</div>
-		<hr>
-		<div>bird watching: click for more info</div>
-		<div>bird watching info here blah blah blah</div>
-		<hr>
-		<div>caligraphy: click for more info</div>
-		<div>caligraphy info here blah blah blah</div>
-		<hr>
-		<div>welding: click for more info</div>
-		<div>welding info here blah blah blah</div>
+    <div id="block1-camp2" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <div class="w3-container w3-yellow">
+          <span onclick="document.getElementById('block1-camp2').style.display='none'" class="w3-button w3-display-topright w3-black">&times;</span>
+          <p>More text. Some text. Some text.</p>
+          <p>Some text. Some text. Some text.</p>
+        </div>
+      </div>
+    </div>
 
 	</div>
 </div>

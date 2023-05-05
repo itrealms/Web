@@ -75,6 +75,10 @@ a:not(table *) {
 	text-align: justify;
 }
 
+.link {
+	cursor: pointer;
+}
+
 .flex, .button-grid {
 	display: flex;
 }
