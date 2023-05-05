@@ -31,7 +31,9 @@ body,
 }
 
 /* ========== Colors ========== */
-.w3-container > div, .w3-container > a, table.dark tr td {
+.w3-container > div,
+.w3-container > a,
+table.dark tr td {
 		background-color: #282828;
 		color: White;
 }
@@ -116,4 +118,8 @@ tr:nth-child(even) {
 
 .table25 td {
 	width: 25%;
+}
+
+.table20 td {
+	width: 20%;
 }
