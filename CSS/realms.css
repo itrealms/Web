@@ -79,11 +79,13 @@ a:not(table *) {
 	cursor: pointer;
 }
 
-.flex, .button-grid {
+.flex,
+.button-grid {
 	display: flex;
 }
 
-.flex > div, .button-grid > a {
+.flex > div,
+.button-grid > a {
 	flex: 1;
 	margin-left: 25px;
 }
@@ -101,7 +103,8 @@ a:not(table *) {
 	color: #282828;
 }
 
-.flex > div:first-child, .button-grid > a:first-child {
+.flex > div:first-child,
+.button-grid > a:first-child {
 	margin-left: 0px;
 }
 
