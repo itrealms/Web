@@ -7,19 +7,6 @@
 <link rel="stylesheet" href="https://itrealms.github.io/website/CSS/realms.css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- ==================== Avoid editing above here ==================== -->
-<script>
-  $(function() {
-    $("#en2es").click(function() {
-      $("#card-en").hide();
-      $("#card-es").show();
-    });
-
-    $("#es2en").click(function() {
-      $("#card-en").show();
-      $("#card-es").hide();
-    });
-  });
-</script>
 
 <div class="w3-container w3-padding">
   <div class="w3-card-4 w3-padding">
@@ -34,7 +21,7 @@
 
 		<p class="head">Camps and Schedules:</p>
     <p class="justify">Welcome summer camp messages here. So excited. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dolor nulla, volutpat quis nibh sit amet, semper tempus felis. Aenean aliquam convallis nibh ac cursus. Integer bibendum odio sit amet tempus rhoncus. Pellentesque faucibus tortor a faucibus gravida. Curabitur ut augue mattis, vestibulum neque eu, pharetra ligula. Nam turpis turpis, vestibulum ut imperdiet quis, lobortis eu erat. Etiam scelerisque nulla at gravida lobortis. Ut tempus ex ut diam varius, eu mollis neque consequat</p>
-    <p>Please find below the summer camp schedule for summer 2023. You will need to sign-up each child for each block you wish to attend.</p>
+    <p>Please find below the summer camp schedule for summer 2023. You will need to sign-up each child for each block you wish to attend. Click on the course name to view more details about that class</p>
 
     <div>
       <p class="head">Block 1 (start time - end time) - Sign-up <a href="">HERE</a></p>
@@ -48,14 +35,14 @@
             <td>Camp Size</td>
           </tr>
         </thead>
-        <tr onclick="document.getElementById('block1-camp1').style.display='block'">
+        <tr class="link" onclick="document.getElementById('block1-camp1').style.display='block'">
           <td>Bio-Engineering</td>
           <td>3+</td>
           <td>M-F</td>
           <td>4:00 am - 8:00 am</td>
           <td>10</td>
         </tr>
-        <tr onclick="document.getElementById('block1-camp2').style.display='block'">
+        <tr class="link" onclick="document.getElementById('block1-camp2').style.display='block'">
           <td>Genetics Research</td>
           <td>8+</td>
           <td>M, W, F</td>
@@ -104,7 +91,7 @@
     <div id="block1-camp1" class="w3-modal">
       <div class="w3-modal-content w3-card-4">
         <div class="w3-container w3-blue">
-          <span onclick="document.getElementById('block1-camp1').style.display='none'" class="w3-button w3-display-topright w3-black">&times;</span>
+          <span onclick="document.getElementById('block1-camp1').style.display='none'" class="w3-button w3-display-topright w3-red">&times;</span>
           <p>Some text. Some text. Some text.</p>
           <p>Some text. Some text. Some text.</p>
         </div>
@@ -114,7 +101,7 @@
     <div id="block1-camp2" class="w3-modal">
       <div class="w3-modal-content w3-card-4">
         <div class="w3-container w3-yellow">
-          <span onclick="document.getElementById('block1-camp2').style.display='none'" class="w3-button w3-display-topright w3-black">&times;</span>
+          <span onclick="document.getElementById('block1-camp2').style.display='none'" class="w3-button w3-display-topright w3-red">&times;</span>
           <p>More text. Some text. Some text.</p>
           <p>Some text. Some text. Some text.</p>
         </div>
