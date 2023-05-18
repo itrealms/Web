@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap">
@@ -7,249 +8,861 @@
 <link rel="stylesheet" href="https://itrealms.github.io/website/CSS/realms.css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- ==================== Avoid editing above here ==================== -->
+<script>
+  $(function() {
+    // Session 1 Data //
+    ////////////////////////////////////////////////////////////////////////////////
+    var data_b1c1 = {
+      'camp_name': 'Reading & Writing Workshop',
+      'age_group': '5-8 yrs',
+      'days': 'M, T, W, Th',
+      'time': '8:30 am - 10:00 am',
+      'camp_size': '20',
+      'description': 'Do you love reading? How about writing? If you want to grow in your ability to do both, please join us for the Reading & Writing Workshop. We will be spending about 30 minutes each day reading in a variety of formats: individually, partner, small group, and whole class. We will also have about an hour each day to dive into some fun and engaging writing activities, such as writing about the books we are reading, autobiographies, interviewing family members and writing biographies, poetry, short stories, and plays which can be acted out. This class will be an opportunity to use many of the ELA skills students acquire during the school year in a fun and engaging way'
+    };
+    var data_b1c2 = {
+      'camp_name': 'Math & Science Club',
+      'age_group': '9-13 yrs',
+      'days': 'M, T, W, Th',
+      'time': '8:30 am - 10:00 am',
+      'camp_size': '20',
+      'description': 'If you love math and science activities, this is the class for you! We will be spending time each day engaged in a variety of activities using mathematical skills and concepts such as measurement of distance, angles, and volume, as well as learning how to effectively estimate a measureable quantity. Additionally, students will be able to engage in scientific exploration of the world around them to better understand how the world operates and how that operation can be studied using scientific principles and with simple engaging experiments'
+    };
+    var data_b1c3 = {
+      'camp_name': 'PBIS Video Class',
+      'age_group': '9-13 yrs',
+      'days': 'M',
+      'time': '8:30 am - 10:00 am',
+      'camp_size': '10',
+      'description': 'Please join us in the design, production, and editing of a series of videos to be used in the upcoming school year to introduce REALMS school-wide expectations for our revamped PBIS program. Students will be provided with all necessary equipment and software by the teacher to do the work. Students will learn the steps involved in producing several videos from conceptual ideas to the planning stages through developing the actual video and still footage and finally to editing and post-production work. If you have experience with video production or want to learn something new, please join us for this 8 week-long project'
+    };
+    var data_b1c4 = {
+      'camp_name': 'Music Theory Games',
+      'age_group': '6-13 yrs',
+      'days': 'T, W, Th*',
+      'time': '8:30 am - 10:00 am',
+      'camp_size': '20',
+      'description': 'Children will have fun learning about the music alphabet, dynamics, rhythms, note reading, and more thru games designed for elementary children!<br>**NOTE**<br>June session starts: June 13th<br>July Session starts: July 11th'
+    };
+    // Session 2 Data //
+    ////////////////////////////////////////////////////////////////////////////////
+    var data_b2c1 = {
+      'camp_name': 'Reading & Writing Workshop',
+      'age_group': '9-13 yrs',
+      'days': 'M, T, W, Th',
+      'time': '10:00 am - 11:30 am',
+      'camp_size': '20',
+      'description': 'Do you love reading? How about writing? If you want to grow in your ability to do both, please join us for the Reading & Writing Workshop. We will be spending about 30 minutes each day reading in a variety of formats: individually, partner, small group, and whole class. We will also have about an hour each day to dive into some fun and engaging writing activities, such as writing about the books we are reading, autobiographies, interviewing family members and writing biographies, poetry, short stories, and plays which can be acted out. This class will be an opportunity to use many of the ELA skills students acquire during the school year in a fun and engaging way'
+    };
+    var data_b2c2 = {
+      'camp_name': 'Math & Science Club',
+      'age_group': '5-8 yrs',
+      'days': 'M, T, W, Th',
+      'time': '10:00 am - 11:30 am',
+      'camp_size': '20',
+      'description': 'If you love math and science activities, this is the class for you! We will be spending time each day engaged in a variety of activities using mathematical skills and concepts such as measurement of distance, angles, and volume, as well as learning how to effectively estimate a measureable quantity. Additionally, students will be able to engage in scientific exploration of the world around them to better understand how the world operates and how that operation can be studied using scientific principles and with simple engaging experiments'
+    };
+    var data_b2c3 = {
+      'camp_name': 'Beginning Ukulele',
+      'age_group': '8-17 yrs',
+      'days': 'T, W, Th*',
+      'time': '10:00 am - 11:30 am',
+      'camp_size': '20',
+      'description': 'This class is for children with little to no experience. Children will have fun learning the instrument strings, how to tune, learn single notes and chords!<br>**NOTE**<br>June session starts: June 13th<br>July Session starts: July 11th'
+    };
+    // Session 3 Data //
+    ////////////////////////////////////////////////////////////////////////////////
+    var data_b3c1 = {
+      'camp_name': 'Art',
+      'age_group': '7-11 yrs',
+      'days': 'M, T, W, Th',
+      'time': '12:00 pm - 1:30 pm',
+      'camp_size': '20',
+      'description': 'Children will have a chance to bring out their artistic side and learn how to draw, paint, etc!'
+    };
+    var data_b3c2 = {
+      'camp_name': 'Spanish Club',
+      'age_group': '5-8 yrs',
+      'days': 'M, T, W, Th',
+      'time': '12:00 pm - 1:30 pm',
+      'camp_size': '20',
+      'description': 'Hola! Tu quieres hablar en espanol? Then join us for some fun and engaging Spanish lessons and activities. Each 90 minute class will be a combination of Spanish language lessons for about 30 minutes and opportunities to read, listen, and speak in Spanish for about 60 minutes. We will have a chance to explore Spanish food, music, videos and geography as a way for students to engage with the Spanish they study all year long at REALMS. Students will have an opportunity to learn more about Spanish speaking culture while growing in their language skills.'
+    };
+    var data_b3c3 = {
+      'camp_name': 'Yoga',
+      'age_group': '3-12 yrs',
+      'days': 'M',
+      'time': '12:30 pm - 1:30 pm',
+      'camp_size': '15',
+      'description': 'Are you in need of more flexibility and strength? Are you looking for a new type of exercise that you have never tried before? Then come and give yoga a try! Yoga is great for not only improved flexibility and muscle tone, but it also has a meditative aspect that allows practitioners to calm their minds for greater clarity of their surroundings and mind-body connectedness. Yoga is a wonderful addition to any other sport you may be engaged in throughout your week. Come and try yoga as something new!'
+    };
+    var data_b3c4 = {
+      'camp_name': 'Yoga',
+      'age_group': '13-17 yrs',
+      'days': 'M',
+      'time': '12:00 pm - 12:30 pm',
+      'camp_size': '15',
+      'description': 'Are you in need of more flexibility and strength? Are you looking for a new type of exercise that you have never tried before? Then come and give yoga a try! Yoga is great for not only improved flexibility and muscle tone, but it also has a meditative aspect that allows practitioners to calm their minds for greater clarity of their surroundings and mind-body connectedness. Yoga is a wonderful addition to any other sport you may be engaged in throughout your week. Come and try yoga as something new!'
+    };
+    var data_b3c5 = {
+      'camp_name': 'Intro to Woodworking',
+      'age_group': '9-12 yrs',
+      'days': 'M',
+      'time': '12:00 pm - 1:30 pm',
+      'camp_size': '10',
+      'description': 'In this introductory woodworking class, students will learn about the different tools and materials involved in woodworking and how to use them safely and properly. In each session, students will assemble a simple wood project, such as a birdhouse, toolbox, etc,while improving their math skills, motor skills, and ability to following directions.'
+    };
+    var data_b3c6 = {
+      'camp_name': 'Beginning Guitar',
+      'age_group': '8-17 yrs',
+      'days': 'T, W, Th*',
+      'time': '12:00 pm - 1:30 pm',
+      'camp_size': '10',
+      'description': 'This class is for children with little to no experience. Children will have fun learning the instrument strings, how to tune, learn single notes and chords!<br>**NOTE**<br>June session starts: June 13th<br>July Session starts: July 11th'
+    };
+    // Session 4 Data //
+    ////////////////////////////////////////////////////////////////////////////////
+    var data_b4c1 = {
+      'camp_name': 'Art',
+      'age_group': '4-6 yrs',
+      'days': 'M, T, W, Th',
+      'time': '1:30 pm - 3:00 pm',
+      'camp_size': '20',
+      'description': 'Children will have a chance to bring out their artistic side and learn how to draw, paint, etc!'
+    };
+    var data_b4c2 = {
+      'camp_name': 'Spanish Club',
+      'age_group': '9-13 yrs',
+      'days': 'M, T, W, Th',
+      'time': '1:30 pm - 3:00 pm',
+      'camp_size': '20',
+      'description': 'Hola! Tu quieres hablar en espanol? Then join us for some fun and engaging Spanish lessons and activities. Each 90 minute class will be a combination of Spanish language lessons for about 30 minutes and opportunities to read, listen, and speak in Spanish for about 60 minutes. We will have a chance to explore Spanish food, music, videos and geography as a way for students to engage with the Spanish they study all year long at REALMS. Students will have an opportunity to learn more about Spanish speaking culture while growing in their language skills.'
+    };
+    var data_b4c3 = {
+      'camp_name': 'Intro to Shop',
+      'age_group': '5-8 yrs',
+      'days': 'M',
+      'time': '1:30 pm - 3:00 pm',
+      'camp_size': '10',
+      'description': 'If your child is interested in learning about the world of maintenance and shop, this is the class for them! In each class, there will be an introduction to different aspects of maintenance work, including which tools are used and how to use them. Through the course of the class, students will practice their motor skills by using tools, practice math skills by measuring and estimating for small projects, and engage in problem solving by thinking through different real world maintenance problems and the most effective ways to solve them.'
+    };
+    var data_b4c4 = {
+      'camp_name': 'Beginning Orchestra',
+      'age_group': '8-17 yrs',
+      'days': 'T, Th*',
+      'time': '1:30 pm - 3:00 pm',
+      'camp_size': '25*',
+      'description': 'This class is for children with little to no experience. Children will have fun learning to play instruments and read sheet music.<br>**NOTE**<br>June session starts: June 13th<br>July Session starts: July 11th<br>10 spots available for students who do not own their own instrument.<br>15 spots available for students who do own their own instrument.'
+    };
+    var data_b4c5 = {
+      'camp_name': 'Jamily',
+      'age_group': '8-17 yrs',
+      'days': 'W*',
+      'time': '1:30 pm - 3:00 pm',
+      'camp_size': '25',
+      'description': 'This class is for advanced student musicians who want to jam, play music, and talk music in a safe and fun environment.<br>**NOTE**<br>June session starts: June 13th<br>July Session starts: July 11th'
+    };
+    //Session 1 //
+    w3.displayObject("data_b1c1", data_b1c1);
+    w3.displayObject("data_b1c2", data_b1c2);
+    w3.displayObject("data_b1c3", data_b1c3);
+    w3.displayObject("data_b1c4", data_b1c4);
+    w3.displayObject("b1c1", data_b1c1);
+    w3.displayObject("b1c2", data_b1c2);
+    w3.displayObject("b1c3", data_b1c3);
+    w3.displayObject("b1c4", data_b1c4);
+    //Session 2 //
+    w3.displayObject("data_b2c1", data_b2c1);
+    w3.displayObject("data_b2c2", data_b2c2);
+    w3.displayObject("data_b2c3", data_b2c3);
+    w3.displayObject("b2c1", data_b2c1);
+    w3.displayObject("b2c2", data_b2c2);
+    w3.displayObject("b2c3", data_b2c3);
+    //Session 3 //
+    w3.displayObject("data_b3c1", data_b3c1);
+    w3.displayObject("data_b3c2", data_b3c2);
+    w3.displayObject("data_b3c3", data_b3c3);
+    w3.displayObject("data_b3c4", data_b3c4);
+    w3.displayObject("data_b3c5", data_b3c5);
+    w3.displayObject("data_b3c6", data_b3c6);
+    w3.displayObject("b3c1", data_b3c1);
+    w3.displayObject("b3c2", data_b3c2);
+    w3.displayObject("b3c3", data_b3c3);
+    w3.displayObject("b3c4", data_b3c4);
+    w3.displayObject("b3c5", data_b3c5);
+    w3.displayObject("b3c6", data_b3c6);
+    //Session 4 //
+    w3.displayObject("data_b4c1", data_b4c1);
+    w3.displayObject("data_b4c2", data_b4c2);
+    w3.displayObject("data_b4c3", data_b4c3);
+    w3.displayObject("data_b4c4", data_b4c4);
+    w3.displayObject("data_b4c5", data_b4c5);
+    w3.displayObject("b4c1", data_b4c1);
+    w3.displayObject("b4c2", data_b4c2);
+    w3.displayObject("b4c3", data_b4c3);
+    w3.displayObject("b4c4", data_b4c4);
+    w3.displayObject("b4c5", data_b4c5);
+    $(".desc").hide();
+    $("#en2es").click(function() {
+      $("#card-en").hide();
+      $("#card-es").show();
+      $("#en2es").hide();
+      $("#es2en").show();
+    });
+    $("#es2en").click(function() {
+      $("#card-en").show();
+      $("#card-es").hide();
+      $("#en2es").show();
+      $("#es2en").hide();
+    });
+  });
+
+  function toggleDesc(descID) {
+    if ($(descID).is(":visible")) {
+      $(descID).hide();
+    } else {
+      $(".desc").hide();
+      $(descID).show();
+    }
+  };
+</script>
 
 <div class="w3-container w3-padding">
-	<div class="w3-card-4 w3-padding">
+  <div class="w3-card-4 w3-padding">
 
-		<div class="title w3-center">REALMS Summer Camp Sign-Ups</div>
+    <div class="title w3-center">REALMS Summer Camp Sign-Ups</div>
+    <div class="small w3-center">
+      <span style="text-decoration: underline;" id="en2es">haga clic aquí para español</span>
+      <span style="text-decoration: underline; display: none;" id="es2en">Click here for English</span>
+    </div>
 
-	</div>
+  </div>
 </div>
 
-<div class="w3-container w3-padding">
-	<div class="w3-card-4 w3-padding">
+<div class="w3-container w3-padding" id="card-en">
+  <div class="w3-card-4 w3-padding">
 
-		<p class="head">Camps and Schedules:</p>
-		<p class="justify">Welcome summer camp messages here. So excited. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dolor nulla, volutpat quis nibh sit amet, semper tempus felis. Aenean aliquam convallis nibh ac cursus. Integer bibendum odio sit amet tempus rhoncus. Pellentesque faucibus tortor a faucibus gravida. Curabitur ut augue mattis, vestibulum neque eu, pharetra ligula. Nam turpis turpis, vestibulum ut imperdiet quis, lobortis eu erat. Etiam scelerisque nulla at gravida lobortis. Ut tempus ex ut diam varius, eu mollis neque consequat</p>
-		<p>Please find below the summer camp schedule for summer 2023. You will need to sign-up each child for each block you wish to attend. Click on the course name to view more details about that class</p>
+    <p class="head">Hello students, parents & guardians!</p>
+    <p class="justify">We are excited to share our Summer Camp 2023 schedule with you. This year the focus of summer camp will be on opportunities to apply many of the skills that students have been learning at REALMS. We will be exploring a variety of avenues for applying reading, writing, math, science, Spanish, music, and art skills through creative projects and activities. Please take some time to read each of the class descriptions below to learn about some of the fun and engaging ways that students can maintain over the summer what they have worked hard to learn this school year.</p>
+    <p>Free breakfast and lunch will be provided at the times below:</p>
+    <p>
+      Breakfast: M, T, W, Th - 8:00am to 8:30am
+      <br>
+      Lunch: M, T, W, Th - 11:30am to 12:00pm
+    </p>
+    <p>Please plan to drop students off no earlier than 8am since no supervision will be provided prior to 8am. The camp will end at 3pm, so please plan to pick students up promptly at 3pm.</p>
+    <p>We will have two summer camp sessions:<br>
+      June 5 - June 29 and July 3 - July 27</p>
+    <p>You will need to sign-up each child for each block you wish to attend. Click on the course name to view more details about that class. Please rememeber to sign up for the correct session(s) on the form. We hope that students will enjoy this Summer Camp as much as we will!</p>
 
-		<hr>
+    <hr>
 
-		<div>
-			<p class="head">Morning Session 1 (8:30 am - 10:00 am) - Sign-up <a href="https://forms.gle/ijCajgNsvwzfQeRB9">HERE</a></p>
-			<table class="w3-table w3-hoverable table20" id="block1">
-				<thead class=>
-					<tr class="w3-green">
-						<td>Camp Name</td>
-						<td>Age Group</td>
-						<td>Days</td>
-						<td>Time</td>
-						<td>Camp Size</td>
-					</tr>
-				</thead>
-				<tr class="link" onclick="document.getElementById('block1-camp1').style.display='block'">
-					<td>Reading Writing Workshop</td>
-					<td>4-7 yrs</td>
-					<td>M, T, W, Th</td>
-					<td>8:30 am - 10:00 am</td>
-					<td>15?</td>
-				</tr>
-				<tr id="b1-c1" class="w3-hide">
-					<td colspan="4">
-						Description here
-					<td>
-				</tr>
-				<tr class="link" onclick="document.getElementById('block1-camp2').style.display='block'">
-					<td>Math & Science Club</td>
-					<td>7-11 yrs</td>
-					<td>M, T, W, Th</td>
-					<td>8:30 am - 10:00 am</td>
-					<td>15?</td>
-				</tr>
-				<tr class="link" onclick="document.getElementById('block1-camp2').style.display='block'">
-					<td>Video Workshop</td>
-					<td>7-11 yrs</td>
-					<td>M</td>
-					<td>8:30 am - 10:00 am</td>
-					<td>15?</td>
-				</tr>
-				<tr class="link" onclick="document.getElementById('block1-camp2').style.display='block'">
-					<td>Music Theory Games</td>
-					<td>6-13 yrs</td>
-					<td>T, W, Th</td>
-					<td>8:30 am - 10:00 am</td>
-					<td>15?</td>
-				</tr>
-			</table>
-		</div>
+    <div>
+      <p class="head">Session 1 (8:30 am - 10:00 am) - Sign-up <a href="https://forms.gle/ijCajgNsvwzfQeRB9">HERE</a></p>
+      <table class="w3-table w3-hoverable table20">
+        <thead>
+          <tr class="w3-green">
+            <td>Camp Name</td>
+            <td>Age Group</td>
+            <td>Days</td>
+            <td>Time</td>
+            <td>Camp Size</td>
+          </tr>
+        </thead>
+        <tr id="data_b1c1" class="link" onclick="toggleDesc('#b1c1')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b1c1" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+        <tr id="data_b1c2" class="link" onclick="toggleDesc('#b1c2')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b1c2" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+        <tr id="data_b1c3" class="link" onclick="toggleDesc('#b1c3')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b1c3" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+        <tr id="data_b1c4" class="link" onclick="toggleDesc('#b1c4')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b1c4" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+      </table>
+    </div>
 
-		<hr>
+    <hr>
 
-		<div>
-			<p class="head">Morning Session 2 (10:00 am - 11:30 am) - Sign-up <a href="https://forms.gle/WtarW6thp1exVc449">HERE</a></p>
-			<table class="w3-table w3-hoverable table20" id="block2">
-				<thead class=>
-					<tr class="w3-green">
-						<td>Camp Name</td>
-						<td>Age Group</td>
-						<td>Days</td>
-						<td>Time</td>
-						<td>Camp Size</td>
-					</tr>
-				</thead>
-				<tr class="link" onclick="document.getElementById('block1-camp1').style.display='block'">
-					<td>Reading Writing Workshop</td>
-					<td>7-11 yrs</td>
-					<td>M, T, W, Th</td>
-					<td>10:00 am - 11:30 am</td>
-					<td>20?</td>
-				</tr>
-				<tr class="link" onclick="document.getElementById('block1-camp2').style.display='block'">
-					<td>Math & Science Club</td>
-					<td>4-7 yrs</td>
-					<td>M, T, W, Th</td>
-					<td>10:00 am - 11:30 am</td>
-					<td>20?</td>
-				</tr>
-				<tr class="link" onclick="document.getElementById('block1-camp2').style.display='block'">
-					<td>Video Workshop</td>
-					<td>7-11 yrs</td>
-					<td>M</td>
-					<td>10:00 am - 11:30 am</td>
-					<td>20?</td>
-				</tr>
-				<tr class="link" onclick="document.getElementById('block1-camp2').style.display='block'">
-					<td>Beginning Ukulele</td>
-					<td>8-17 yrs</td>
-					<td>T, W, Th</td>
-					<td>10:00 am - 11:30 am</td>
-					<td>20?</td>
-				</tr>
-			</table>
-		</div>
+    <div>
+      <p class="head">Session 2 (10:00 am - 11:30 am) - Sign-up <a href="https://forms.gle/WtarW6thp1exVc449">HERE</a></p>
+      <table class="w3-table w3-hoverable table20">
+        <thead>
+          <tr class="w3-green">
+            <td>Camp Name</td>
+            <td>Age Group</td>
+            <td>Days</td>
+            <td>Time</td>
+            <td>Camp Size</td>
+          </tr>
+        </thead>
+        <tr id="data_b2c1" class="link" onclick="toggleDesc('#b2c1')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b2c1" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+        <tr id="data_b2c2" class="link" onclick="toggleDesc('#b2c2')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b2c2" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+        <tr id="data_b2c3" class="link" onclick="toggleDesc('#b2c3')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b2c3" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+      </table>
+    </div>
 
-		<hr>
+    <hr>
 
-		<div>
-			<p class="head">Afternoon Session 1 (12:00 pm - 1:30 pm) - Sign-up <a href="https://forms.gle/XCsdZNexz1D5xzkp7">HERE</a></p>
-			<table class="w3-table w3-hoverable table20" id="block3">
-				<thead class=>
-					<tr class="w3-green">
-						<td>Camp Name</td>
-						<td>Age Group</td>
-						<td>Days</td>
-						<td>Time</td>
-						<td>Camp Size</td>
-					</tr>
-				</thead>
-				<tr class="link" onclick="document.getElementById('block1-camp1').style.display='block'">
-					<td>Art</td>
-					<td>7-11 yrs</td>
-					<td>M, T, W, Th</td>
-					<td>12:00 pm - 1:30 pm</td>
-					<td>20?</td>
-				</tr>
-				<tr class="link" onclick="document.getElementById('block1-camp2').style.display='block'">
-					<td>Spanish Club</td>
-					<td>4-7 yrs</td>
-					<td>M, T, W, Th</td>
-					<td>12:00 pm - 1:30 pm</td>
-					<td>20?</td>
-				</tr>
-				<tr class="link" onclick="document.getElementById('block1-camp2').style.display='block'">
-					<td>Yoga</td>
-					<td>3-12 yrs</td>
-					<td>M</td>
-					<td>12:00 pm - 12:30 pm</td>
-					<td>20?</td>
-				</tr>
-				<tr class="link" onclick="document.getElementById('block1-camp2').style.display='block'">
-					<td>Yoga</td>
-					<td>13-17 yrs</td>
-					<td>M</td>
-					<td>12:30 pm - 1:30 pm</td>
-					<td>20?</td>
-				</tr>
-				<tr class="link" onclick="document.getElementById('block1-camp2').style.display='block'">
-					<td>Introduction to Shop</td>
-					<td>4-7 yrs</td>
-					<td>M</td>
-					<td>12:00 pm - 1:30 pm</td>
-					<td>20?</td>
-				</tr>
-				<tr class="link" onclick="document.getElementById('block1-camp2').style.display='block'">
-					<td>Beginning Guitar</td>
-					<td>8-17 yrs</td>
-					<td>T, W, Th</td>
-					<td>12:00 pm - 1:30 pm</td>
-					<td>20?</td>
-				</tr>
-			</table>
-		</div>
+    <div>
+      <p class="head">Session 3 (12:00 pm - 1:30 pm) - Sign-up <a href="https://forms.gle/XCsdZNexz1D5xzkp7">HERE</a></p>
+      <table class="w3-table w3-hoverable table20">
+        <thead>
+          <tr class="w3-green">
+            <td>Camp Name</td>
+            <td>Age Group</td>
+            <td>Days</td>
+            <td>Time</td>
+            <td>Camp Size</td>
+          </tr>
+        </thead>
+        <tr id="data_b3c1" class="link" onclick="toggleDesc('#b3c1')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b3c1" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+        <tr id="data_b3c2" class="link" onclick="toggleDesc('#b3c2')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b3c2" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+        <tr id="data_b3c3" class="link" onclick="toggleDesc('#b3c3')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b3c3" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+        <tr id="data_b3c4" class="link" onclick="toggleDesc('#b3c4')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b3c4" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+        <tr id="data_b3c5" class="link" onclick="toggleDesc('#b3c5')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b3c5" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+        <tr id="data_b3c6" class="link" onclick="toggleDesc('#b3c6')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b3c6" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+      </table>
+    </div>
 
-		<hr>
+    <hr>
 
-		<div>
-			<p class="head">Afternoon Session 2 (1:30 pm - 3:00 pm) - Sign-up <a href="https://forms.gle/JRMt6tfoauvabdK87">HERE</a></p>
-			<table class="w3-table w3-hoverable table20" id="block3">
-				<thead class=>
-					<tr class="w3-green">
-						<td>Camp Name</td>
-						<td>Age Group</td>
-						<td>Days</td>
-						<td>Time</td>
-						<td>Camp Size</td>
-					</tr>
-				</thead>
-				<tr class="link" onclick="document.getElementById('block1-camp1').style.display='block'">
-					<td>Art</td>
-					<td>4-7 yrs</td>
-					<td>M, T, W, Th</td>
-					<td>1:30 pm - 3:00 pm</td>
-					<td>20?</td>
-				</tr>
-				<tr class="link" onclick="document.getElementById('block1-camp2').style.display='block'">
-					<td>Spanish Club</td>
-					<td>7-11 yrs</td>
-					<td>M, T, W, Th</td>
-					<td>1:30 pm - 3:00 pm</td>
-					<td>20?</td>
-				</tr>
-				<tr class="link" onclick="document.getElementById('block1-camp2').style.display='block'">
-					<td>Introduction to Woodworking</td>
-					<td>7-11 yrs</td>
-					<td>M</td>
-					<td>1:30 pm - 3:00 pm</td>
-					<td>20?</td>
-				</tr>
-				<tr class="link" onclick="document.getElementById('block1-camp2').style.display='block'">
-					<td>Beginning Orchestra</td>
-					<td>8-17 yrs</td>
-					<td>T, Th</td>
-					<td>1:30 pm - 3:00 pm</td>
-					<td>20?</td>
-				</tr>
-				<tr class="link" onclick="document.getElementById('block1-camp2').style.display='block'">
-					<td>Jamily </td>
-					<td>8-17 yrs</td>
-					<td>W</td>
-					<td>1:30 pm - 3:00 pm</td>
-					<td>20?</td>
-				</tr>
-			</table>
-		</div>
+    <div>
+      <p class="head">Session 4 (1:30 pm - 3:00 pm) - Sign-up <a href="https://forms.gle/JRMt6tfoauvabdK87">HERE</a></p>
+      <table class="w3-table w3-hoverable table20">
+        <thead>
+          <tr class="w3-green">
+            <td>Camp Name</td>
+            <td>Age Group</td>
+            <td>Days</td>
+            <td>Time</td>
+            <td>Camp Size</td>
+          </tr>
+        </thead>
+        <tr id="data_b4c1" class="link" onclick="toggleDesc('#b4c1')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b4c1" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+        <tr id="data_b4c2" class="link" onclick="toggleDesc('#b4c2')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b4c2" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+        <tr id="data_b4c3" class="link" onclick="toggleDesc('#b4c3')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b4c3" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+        <tr id="data_b4c4" class="link" onclick="toggleDesc('#b4c4')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b4c4" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+        <tr id="data_b4c5" class="link" onclick="toggleDesc('#b4c5')">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="b4c5" class="desc">
+          <td colspan="4">{{description}}
+          <td>
+        </tr>
+      </table>
+    </div>
+    &nbsp;
+  </div>
+</div>
 
-		<br>
+<!-- ================================================================================================================================================================================ -->
+<!-- ================================================================================================================================================================================ -->
+<!-- ================================================================================================================================================================================ -->
+<!-- ================================================================================================================================================================================ -->
+<!-- ================================================================================================================================================================================ -->
 
-		<div id="block1-camp1" class="w3-modal">
-			<div class="w3-modal-content w3-card-4">
-				<div class="w3-container w3-blue">
-					<span onclick="document.getElementById('block1-camp1').style.display='none'" class="w3-button w3-display-topright w3-red">&times;</span>
-					<p>Some text. Some text. Some text.</p>
-					<p>Some text. Some text. Some text.</p>
-				</div>
-			</div>
-		</div>
+<div class="w3-container w3-padding" id="card-es" style="display: none">
+  <div class="w3-card-4 w3-padding">
 
-		<div id="block1-camp2" class="w3-modal">
-			<div class="w3-modal-content w3-card-4">
-				<div class="w3-container w3-yellow">
-					<span onclick="document.getElementById('block1-camp2').style.display='none'" class="w3-button w3-display-topright w3-red">&times;</span>
-					<p>More text. Some text. Some text.</p>
-					<p>Some text. Some text. Some text.</p>
-				</div>
-			</div>
-		</div>
+    <p class="head">¡Hola estudiantes, padres y tutores!</p>
+    <p class="justify">Estamos emocionados de compartir nuestro programa de campamento de verano 2023 con usted. Este año, el enfoque del campamento de verano estará en las oportunidades para aplicar muchas de las habilidades que los estudiantes han estado aprendiendo en REALMS. Exploraremos una variedad de vías para aplicar las habilidades de lectura, escritura, matemáticas, ciencias, español, música y arte a través de proyectos y actividades creativas. Tómese un tiempo para leer cada una de las descripciones de las clases a continuación para conocer algunas de las formas divertidas y atractivas en que los estudiantes pueden mantener durante el verano lo que han trabajado duro para aprender este año escolar.</p>
+    <p>Se proporcionará desayuno y almuerzo gratis en los horarios a continuación:</p>
+    <p>
+      Desayuno: L, Ma, Mi, J - 8:00am to 8:30am
+      <br>
+      almorzar: L, Ma, Mi, J - 11:30am to 12:00pm
+    </p>
+    <p>Planee dejar a los estudiantes no antes de las 8 a. m., ya que no se proporcionará supervisión antes de las 8 a. m. El campamento terminará a las 3:00 p. m., así que planee recoger a los estudiantes puntualmente a las 3:00 p. m..</p>
+    <p>Tendremos dos sesiones de campamento de verano:<br>
+      5 de Junio - 29 de Junio y 3 de Julio - 27 de Julio</p>
+    <p>Deberá inscribir a cada niño para cada bloque al que desee asistir. Haga clic en el nombre del curso para ver más detalles sobre esa clase. Recuerde inscribirse en la(s) sesión(es) correcta(s) en el formulario. Esperamos que los estudiantes disfruten de este campamento de verano tanto como nosotros!</p>
 
-	</div>
+    <hr>
+
+    <div>
+      <p class="head">Sesión 1 (8:30 am - 10:00 am) - Registrate <a href="https://forms.gle/ijCajgNsvwzfQeRB9">aquí</a></p>
+      <table class="w3-table w3-hoverable table20">
+        <thead>
+          <tr class="w3-green">
+            <td>Nombre del campamento</td>
+            <td>Grupo de edad</td>
+            <td>Días</td>
+            <td>Tiempo</td>
+            <td>Tamaño del campamento</td>
+          </tr>
+        </thead>
+        <tr class="link" onclick="toggleDesc('#b1c1es')">
+          <td>Taller de lectura y escritura</td>
+          <td>5-8 años</td>
+          <td>L, Ma, Mi, J</td>
+          <td>8:30 am - 10:00 am</td>
+          <td>20</td>
+        </tr>
+        <tr id="b1c1es" class="desc">
+          <td colspan="4">
+            ¿Te encanta leer? ¿Qué tal escribir? Si desea aumentar su capacidad para hacer ambas cosas, únase a nosotros en el taller de lectura y escritura. Pasaremos alrededor de 30 minutos cada día leyendo en una variedad de formatos: individualmente, en pareja, en grupos pequeños y con toda la clase. También tendremos alrededor de una hora cada día para sumergirnos en algunas actividades de escritura divertidas y atractivas, como escribir sobre los libros que estamos leyendo, autobiografías, entrevistar a miembros de la familia y escribir biografías, poesía, cuentos y obras de teatro que se pueden representar. . Esta clase será una oportunidad para usar muchas de las habilidades de ELA que los estudiantes adquieren durante el año escolar de una manera divertida y atractiva.
+          <td>
+        </tr>
+        <tr class="link" onclick="toggleDesc('#b1c2es')">
+          <td>Club de Matemáticas y Ciencias</td>
+          <td>9-13 años</td>
+          <td>L, Ma, Mi, J</td>
+          <td>8:30 am - 10:00 am</td>
+          <td>20</td>
+        </tr>
+        <tr id="b1c2es" class="desc">
+          <td colspan="4">
+            Si te encantan las actividades de matemáticas y ciencias, ¡esta es la clase para ti! Pasaremos tiempo todos los días participando en una variedad de actividades usando habilidades y conceptos matemáticos como la medición de distancia, ángulos y volumen, así como también aprenderemos a estimar de manera efectiva una cantidad medible. Además, los estudiantes podrán participar en la exploración científica del mundo que los rodea para comprender mejor cómo funciona el mundo y cómo se puede estudiar esa operación utilizando principios científicos y con experimentos simples y atractivos.
+          <td>
+        </tr>
+        <tr class="link" onclick="toggleDesc('#b1c3es')">
+          <td>Videoclase de PBIS</td>
+          <td>9-13 años</td>
+          <td>L</td>
+          <td>8:30 am - 10:00 am</td>
+          <td>10</td>
+        </tr>
+        <tr id="b1c3es" class="desc">
+          <td colspan="4">
+            Únase a nosotros en el diseño, la producción y la edición de una serie de videos que se usarán en el próximo año escolar para presentar las expectativas de toda la escuela REALMS para nuestro programa PBIS renovado. El profesor proporcionará a los estudiantes todo el equipo y el software necesarios para realizar el trabajo. Los estudiantes aprenderán los pasos involucrados en la producción de varios videos, desde las ideas conceptuales hasta las etapas de planificación, pasando por el desarrollo del video real y las imágenes fijas, y finalmente hasta el trabajo de edición y posproducción. Si tiene experiencia con la producción de videos o desea aprender algo nuevo, únase a nosotros en este proyecto de 8 semanas.
+          <td>
+        </tr>
+        <tr class="link" onclick="toggleDesc('#b1c4es')">
+          <td>Juegos de teoría musical</td>
+          <td>6-13 años</td>
+          <td>Ma, Mi, J*</td>
+          <td>8:30 am - 10:00 am</td>
+          <td>20</td>
+        </tr>
+        <tr id="b1c4es" class="desc">
+          <td colspan="4">
+            Los niños se divertirán aprendiendo sobre el alfabeto musical, dinámicas, ritmos, lectura de notas y más a través de juegos diseñados para niños de primaria!
+            <br>
+            **NOTA**
+            <br>
+            Sesión de Junio comienza: 13 de junio
+            <br>
+            Sesión de Julio comienza: 11 de julio
+          <td>
+        </tr>
+      </table>
+    </div>
+
+    <hr>
+
+    <div>
+      <p class="head">Sesión 2 (10:00 am - 11:30 am) - Registrate <a href="https://forms.gle/WtarW6thp1exVc449">aquí</a></p>
+      <table class="w3-table w3-hoverable table20">
+        <thead>
+          <tr class="w3-green">
+            <td>Nombre del campamento</td>
+            <td>Grupo de edad</td>
+            <td>Días</td>
+            <td>Tiempo</td>
+            <td>Tamaño del campamento</td>
+          </tr>
+        </thead>
+        <tr class="link" onclick="toggleDesc('#b2c1es')">
+          <td>Taller de lectura y escritura</td>
+          <td>9-13 años</td>
+          <td>L, Ma, Mi, J</td>
+          <td>10:00 am - 11:30 am</td>
+          <td>20</td>
+        </tr>
+        <tr id="b2c1es" class="desc">
+          <td colspan="4">
+            ¿Te encanta leer? ¿Qué tal escribir? Si desea aumentar su capacidad para hacer ambas cosas, únase a nosotros en el taller de lectura y escritura. Pasaremos alrededor de 30 minutos cada día leyendo en una variedad de formatos: individualmente, en pareja, en grupos pequeños y con toda la clase. También tendremos alrededor de una hora cada día para sumergirnos en algunas actividades de escritura divertidas y atractivas, como escribir sobre los libros que estamos leyendo, autobiografías, entrevistar a miembros de la familia y escribir biografías, poesía, cuentos y obras de teatro que se pueden representar. . Esta clase será una oportunidad para usar muchas de las habilidades de ELA que los estudiantes adquieren durante el año escolar de una manera divertida y atractiva.
+          <td>
+        </tr>
+        <tr class="link" onclick="toggleDesc('#b2c2es')">
+          <td>Club de Matemáticas y Ciencias</td>
+          <td>5-8 años</td>
+          <td>L, Ma, Mi, J</td>
+          <td>10:00 am - 11:30 am</td>
+          <td>20</td>
+        </tr>
+        <tr id="b2c2es" class="desc">
+          <td colspan="4">
+            Si te encantan las actividades de matemáticas y ciencias, ¡esta es la clase para ti! Pasaremos tiempo todos los días participando en una variedad de actividades usando habilidades y conceptos matemáticos como la medición de distancia, ángulos y volumen, así como también aprenderemos a estimar de manera efectiva una cantidad medible. Además, los estudiantes podrán participar en la exploración científica del mundo que los rodea para comprender mejor cómo funciona el mundo y cómo se puede estudiar esa operación utilizando principios científicos y con experimentos simples y atractivos.
+          <td>
+        </tr>
+        <tr class="link" onclick="toggleDesc('#b2c4es')">
+          <td>Ukelele principiante</td>
+          <td>8-17 años</td>
+          <td>Ma, Mi, J*</td>
+          <td>10:00 am - 11:30 am</td>
+          <td>20</td>
+        </tr>
+        <tr id="b2c4es" class="desc">
+          <td colspan="4">
+            Esta clase es para niños con poca o ninguna experiencia. ¡Los niños se divertirán aprendiendo las cuerdas del instrumento, cómo afinar, aprender notas individuales y acordes!
+            <br>
+            **NOTA**
+            <br>
+            Sesión de Junio comienza: 13 de junio
+            <br>
+            Sesión de Julio comienza: 11 de julio
+          <td>
+        </tr>
+      </table>
+    </div>
+
+    <hr>
+
+    <div>
+      <p class="head">Sesión 3 (12:00 pm - 1:30 pm) - Registrate <a href="https://forms.gle/XCsdZNexz1D5xzkp7">aquí</a></p>
+      <table class="w3-table w3-hoverable table20">
+        <thead>
+          <tr class="w3-green">
+            <td>Nombre del campamento</td>
+            <td>Grupo de edad</td>
+            <td>Días</td>
+            <td>Tiempo</td>
+            <td>Tamaño del campamento</td>
+          </tr>
+        </thead>
+        <tr class="link" onclick="toggleDesc('#b3c1es')">
+          <td>Arte</td>
+          <td>7-11 años</td>
+          <td>L, Ma, Mi, J</td>
+          <td>12:00 pm - 1:30 pm</td>
+          <td>20</td>
+        </tr>
+        <tr id="b3c1es" class="desc">
+          <td colspan="4">
+            ¡Los niños tendrán la oportunidad de sacar su lado artístico y aprender a dibujar, pintar, etc!
+          <td>
+        </tr>
+        <tr class="link" onclick="toggleDesc('#b3c2es')">
+          <td>Club de español</td>
+          <td>5-8 años</td>
+          <td>L, Ma, Mi, J</td>
+          <td>12:00 pm - 1:30 pm</td>
+          <td>20</td>
+        </tr>
+        <tr id="b3c2es" class="desc">
+          <td colspan="4">
+            Hola! Tu quieres hablar en espanol? Entonces únase a nosotros para disfrutar de algunas lecciones y actividades de español divertidas y atractivas. Cada clase de 90 minutos será una combinación de lecciones de español durante unos 30 minutos y oportunidades para leer, escuchar y hablar en español durante unos 60 minutos. Tendremos la oportunidad de explorar la comida, la música, los videos y la geografía españoles como una forma para que los estudiantes se involucren con el español que estudian durante todo el año en REALMS. Los estudiantes tendrán la oportunidad de aprender más sobre la cultura de habla hispana mientras aumentan sus habilidades lingüísticas.
+          <td>
+        </tr>
+        <tr class="link" onclick="toggleDesc('#b3c3es')">
+          <td>Yoga</td>
+          <td>3-12 años</td>
+          <td>L</td>
+          <td>12:00 pm - 12:30 pm</td>
+          <td>15</td>
+        </tr>
+        <tr id="b3c3es" class="desc">
+          <td colspan="4">
+            ¿Necesita más flexibilidad y fuerza? ¿Estás buscando un nuevo tipo de ejercicio que nunca has probado antes? ¡Entonces ven y prueba el yoga! El yoga es excelente no solo para mejorar la flexibilidad y el tono muscular, sino que también tiene un aspecto meditativo que permite a los practicantes calmar sus mentes para una mayor claridad de su entorno y la conexión mente-cuerpo. El yoga es una adición maravillosa a cualquier otro deporte que pueda practicar durante la semana. ¡Ven y prueba el yoga como algo nuevo!
+          <td>
+        </tr>
+        <tr class="link" onclick="toggleDesc('#b3c4es')">
+          <td>Yoga</td>
+          <td>13-17 años</td>
+          <td>L</td>
+          <td>12:30 pm - 1:30 pm</td>
+          <td>15</td>
+        </tr>
+        <tr id="b3c4es" class="desc">
+          <td colspan="4">
+            ¿Necesita más flexibilidad y fuerza? ¿Estás buscando un nuevo tipo de ejercicio que nunca has probado antes? ¡Entonces ven y prueba el yoga! El yoga es excelente no solo para mejorar la flexibilidad y el tono muscular, sino que también tiene un aspecto meditativo que permite a los practicantes calmar sus mentes para una mayor claridad de su entorno y la conexión mente-cuerpo. El yoga es una adición maravillosa a cualquier otro deporte que pueda practicar durante la semana. ¡Ven y prueba el yoga como algo nuevo!
+          <td>
+        </tr>
+        <tr class="link" onclick="toggleDesc('#b3c5es')">
+          <td>Introducción a la Carpintería</td>
+          <td>9-12 años</td>
+          <td>L</td>
+          <td>12:00 pm - 1:30 pm</td>
+          <td>10</td>
+        </tr>
+        <tr id="b3c5es" class="desc">
+          <td colspan="4">
+            En esta clase introductoria de carpintería, los estudiantes aprenderán sobre las diferentes herramientas y materiales involucrados en la carpintería y cómo usarlos de manera segura y adecuada. En cada sesión, los estudiantes ensamblarán un proyecto de madera simple, como una casa para pájaros, una caja de herramientas, etc., mientras mejoran sus habilidades matemáticas, motrices y su capacidad para seguir instrucciones.
+          <td>
+        </tr>
+        <tr class="link" onclick="toggleDesc('#b3c6es')">
+          <td>guitarra principiante</td>
+          <td>8-17 años</td>
+          <td>Ma, Mi, J*</td>
+          <td>12:00 pm - 1:30 pm</td>
+          <td>10</td>
+        </tr>
+        <tr id="b3c6es" class="desc">
+          <td colspan="4">
+            Esta clase es para niños con poca o ninguna experiencia. ¡Los niños se divertirán aprendiendo las cuerdas del instrumento, cómo afinar, aprender notas individuales y acordes!
+            <br>
+            **NOTA**
+            <br>
+            Sesión de Junio comienza: 13 de junio
+            <br>
+            Sesión de Julio comienza: 11 de julio
+          <td>
+        </tr>
+      </table>
+    </div>
+
+    <hr>
+
+    <div>
+      <p class="head">Sesión 4 (1:30 pm - 3:00 pm) - Registrate <a href="https://forms.gle/JRMt6tfoauvabdK87">aquí</a></p>
+      <table class="w3-table w3-hoverable table20">
+        <thead>
+          <tr class="w3-green">
+            <td>Nombre del campamento</td>
+            <td>Grupo de edad</td>
+            <td>Días</td>
+            <td>Tiempo</td>
+            <td>Tamaño del campamento</td>
+          </tr>
+        </thead>
+        <tr class="link" onclick="toggleDesc('#b4c1es')">
+          <td>Arte</td>
+          <td>4-7 años</td>
+          <td>L, Ma, Mi, J</td>
+          <td>1:30 pm - 3:00 pm</td>
+          <td>20</td>
+        </tr>
+        <tr id="b4c1es" class="desc">
+          <td colspan="4">
+            ¡Los niños tendrán la oportunidad de sacar su lado artístico y aprender a dibujar, pintar, etc.!
+          <td>
+        </tr>
+        <tr class="link" onclick="toggleDesc('#b4c2es')">
+          <td>Club de español</td>
+          <td>9-13 años</td>
+          <td>L, Ma, Mi, J</td>
+          <td>1:30 pm - 3:00 pm</td>
+          <td>20</td>
+        </tr>
+        <tr id="b4c2es" class="desc">
+          <td colspan="4">
+            Hola! Tu quieres hablar en espanol? Entonces únase a nosotros para disfrutar de algunas lecciones y actividades de español divertidas y atractivas. Cada clase de 90 minutos será una combinación de lecciones de español durante unos 30 minutos y oportunidades para leer, escuchar y hablar en español durante unos 60 minutos. Tendremos la oportunidad de explorar la comida, la música, los videos y la geografía españoles como una forma para que los estudiantes se involucren con el español que estudian durante todo el año en REALMS. Los estudiantes tendrán la oportunidad de aprender más sobre la cultura de habla hispana mientras aumentan sus habilidades lingüísticas.
+          <td>
+        </tr>
+        <tr class="link" onclick="toggleDesc('#b4c3es')">
+          <td>Introducción a la tienda</td>
+          <td>5-8 años</td>
+          <td>L</td>
+          <td>1:30 pm - 3:00 pm</td>
+          <td>10</td>
+        </tr>
+        <tr id="b4c3es" class="desc">
+          <td colspan="4">
+            Si su hijo está interesado en aprender sobre el mundo del mantenimiento y la tienda, ¡esta es la clase para él! En cada clase, habrá una introducción a los diferentes aspectos del trabajo de mantenimiento, incluidas las herramientas que se usan y cómo usarlas. A lo largo de la clase, los estudiantes practicarán sus habilidades motoras usando herramientas, practicarán habilidades matemáticas midiendo y estimando para proyectos pequeños, y participarán en la resolución de problemas pensando en diferentes problemas de mantenimiento del mundo real y las formas más efectivas de resolverlos.
+          <td>
+        </tr>
+        <tr class="link" onclick="toggleDesc('#b4c4es')">
+          <td>Orquesta principiante</td>
+          <td>8-17 años</td>
+          <td>Ma, J*</td>
+          <td>1:30 pm - 3:00 pm</td>
+          <td>25*</td>
+        </tr>
+        <tr id="b4c4es" class="desc">
+          <td colspan="4">
+            Esta clase es para niños con poca o ninguna experiencia. Los niños se divertirán aprendiendo a tocar instrumentos y leer partituras.
+            <br>
+            **NOTA**
+            <br>
+            Sesión de Junio comienza: 13 de junio
+            <br>
+            Sesión de Julio comienza: 11 de julio
+            <br>
+            10 cupos disponibles para estudiantes que no posean su propio instrumento.
+            <br>
+            15 cupos disponibles para estudiantes que sí poseen su propio instrumento.
+          <td>
+        </tr>
+        <tr class="link" onclick="toggleDesc('#b4c5es')">
+          <td>yamily</td>
+          <td>8-17 años</td>
+          <td>Mi*</td>
+          <td>1:30 pm - 3:00 pm</td>
+          <td>25</td>
+        </tr>
+        <tr id="b4c5es" class="desc">
+          <td colspan="4">
+            Esta clase es para estudiantes de música avanzados que quieren improvisar, tocar música y hablar de música en un ambiente seguro y divertido.
+            <br>
+            **NOTA**
+            <br>
+            Sesión de Junio comienza: 13 de junio
+            <br>
+            Sesión de Julio comienza: 11 de julio
+          <td>
+        </tr>
+      </table>
+    </div>
+    &nbsp;
+  script</div>
 </div>
