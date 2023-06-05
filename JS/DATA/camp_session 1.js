@@ -2,7 +2,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 var session_1_class_1 = {
-	'camp_name': 'Reading & Writing Workshop',
+	'camp_name': 'Reading & Writing Workshop1',
 	'age_group': '5-8 yrs',
 	'days': 'M, T, W, Th',
 	'time': '8:30 am - 10:00 am',
@@ -49,3 +49,5 @@ var session_1_class_6 = {
 	'camp_size': '',
 	'description': ''
 };
+
+var read_write = {'description': 'Do you love reading? How about writing? If you want to grow in your ability to do both, please join us for the Reading & Writing Workshop. We will be spending about 30 minutes each day reading in a variety of formats: individually, partner, small group, and whole class. We will also have about an hour each day to dive into some fun and engaging writing activities, such as writing about the books we are reading, autobiographies, interviewing family members and writing biographies, poetry, short stories, and plays which can be acted out. This class will be an opportunity to use many of the ELA skills students acquire during the school year in a fun and engaging way'};
