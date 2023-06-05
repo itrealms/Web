@@ -1,4 +1,29 @@
 $(function() {
-    w3.displayObject("data_b1c1", data_b1c1);
-    w3.displayObject("data_b2c2", data_b2c2);
+    w3.displayObject("session_1_class_1", session_1_class_1);
+    w3.displayObject("session_1_class_2", session_1_class_2);
+    w3.displayObject("session_1_class_3", session_1_class_3);
+    w3.displayObject("session_1_class_4", session_1_class_4);
+    w3.displayObject("session_1_class_5", session_1_class_5);
+    w3.displayObject("session_1_class_6", session_1_class_6);
+
+    w3.displayObject("session_2_class_1", session_2_class_1);
+    w3.displayObject("session_2_class_2", session_2_class_2);
+    w3.displayObject("session_2_class_3", session_2_class_3);
+    w3.displayObject("session_2_class_4", session_2_class_4);
+    w3.displayObject("session_2_class_5", session_2_class_5);
+    w3.displayObject("session_2_class_6", session_2_class_6);
+
+    w3.displayObject("session_3_class_1", session_3_class_1);
+    w3.displayObject("session_3_class_2", session_3_class_2);
+    w3.displayObject("session_3_class_3", session_3_class_3);
+    w3.displayObject("session_3_class_4", session_3_class_4);
+    w3.displayObject("session_3_class_5", session_3_class_5);
+    w3.displayObject("session_3_class_6", session_3_class_6);
+
+    w3.displayObject("session_4_class_1", session_4_class_1);
+    w3.displayObject("session_4_class_2", session_4_class_2);
+    w3.displayObject("session_4_class_3", session_4_class_3);
+    w3.displayObject("session_4_class_4", session_4_class_4);
+    w3.displayObject("session_4_class_5", session_4_class_5);
+    w3.displayObject("session_4_class_6", session_4_class_6);
 });

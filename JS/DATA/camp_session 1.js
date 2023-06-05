@@ -34,18 +34,18 @@ var session_1_class_4 = {
 'description': 'Children will have fun learning about the music alphabet, dynamics, rhythms, note reading, and more thru games designed for elementary children!<br>**NOTE**<br>June session starts: June 13th<br>July Session starts: July 11th'
 };
 var session_1_class_5 = {
-'camp_name': 'Music Theory Games',
-'age_group': '6-13 yrs',
-'days': 'T, W, Th*',
-'time': '8:30 am - 10:00 am',
-'camp_size': 'CLOSED',
-'description': 'Children will have fun learning about the music alphabet, dynamics, rhythms, note reading, and more thru games designed for elementary children!<br>**NOTE**<br>June session starts: June 13th<br>July Session starts: July 11th'
+	'camp_name': '',
+	'age_group': '',
+	'days': '',
+	'time': '',
+	'camp_size': '',
+	'description': ''
 };
 var session_1_class_6 = {
-'camp_name': 'Music Theory Games',
-'age_group': '6-13 yrs',
-'days': 'T, W, Th*',
-'time': '8:30 am - 10:00 am',
-'camp_size': 'CLOSED',
-'description': 'Children will have fun learning about the music alphabet, dynamics, rhythms, note reading, and more thru games designed for elementary children!<br>**NOTE**<br>June session starts: June 13th<br>July Session starts: July 11th'
+	'camp_name': '',
+	'age_group': '',
+	'days': '',
+	'time': '',
+	'camp_size': '',
+	'description': ''
 };
