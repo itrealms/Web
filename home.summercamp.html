@@ -14,6 +14,13 @@
 <!-- Custom CSS and JS -->
 <link rel="stylesheet" href="https://itrealms.github.io/website/CSS/realms.css">
 <!-- ====================== Avoid editing above here ====================== -->
+<script src="https://itrealms.github.io/website/JS/DATA/camp_session 1.js"></script>
+<script src="https://itrealms.github.io/website/JS/DATA/camp_session 2.js"></script>
+<script src="https://itrealms.github.io/website/JS/DATA/camp_session 3.js"></script>
+<script src="https://itrealms.github.io/website/JS/DATA/camp_session 4.js"></script>
+<script src="https://itrealms.github.io/website/JS/DATA/camp_descriptions.js"></script>
+<script src="https://itrealms.github.io/website/JS/summer_camp.js"></script>
+<script src="https://itrealms.github.io/website/JS/en2es-es2en.js"></script>
 
 
 <div class="w3-container w3-padding">
@@ -47,7 +54,7 @@
     <hr>
 
     <div>
-      <p class="head">Session 1 (8:30 am - 10:00 am)</p>
+      <p class="head">Session 1 (8:30 am - 10:00 am)<span id="session_1_signup"> - Sign-up <a href="">HERE</a></span></p>
       <table class="w3-table w3-hoverable table20">
         <thead>
           <tr class="w3-green">
@@ -58,46 +65,65 @@
             <td>Camp Size</td>
           </tr>
         </thead>
-        <tr id="data_b1c1" class="link" onclick="toggleDesc('#b1c1')">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-          <td>{{description}}</td>
-        </tr>
-        <tr id="data_b1c2" class="link" onclick="toggleDesc('#b1c2')">
+        <tr id="session_1_class_1" class="link">
           <td>{{camp_name}}</td>
           <td>{{age_group}}</td>
           <td>{{days}}</td>
           <td>{{time}}</td>
           <td>{{camp_size}}</td>
         </tr>
-        <tr id="b1c2" class="desc">
-          <td colspan="4">{{description}}
-          <td>
+        <tr id="read_write">
+          <td colspan="5">{{description}}</td>
         </tr>
-        <tr id="data_b1c3" class="link" onclick="toggleDesc('#b1c3')">
+        <tr id="session_1_class_2" class="link">
           <td>{{camp_name}}</td>
           <td>{{age_group}}</td>
           <td>{{days}}</td>
           <td>{{time}}</td>
           <td>{{camp_size}}</td>
         </tr>
-        <tr id="b1c3" class="desc">
-          <td colspan="4">{{description}}
-          <td>
+        <tr id="math_sci">
+          <td colspan="5">{{description}}</td>
         </tr>
-        <tr id="data_b1c4" class="link" onclick="toggleDesc('#b1c4')">
+        <tr id="session_1_class_3" class="link">
           <td>{{camp_name}}</td>
           <td>{{age_group}}</td>
           <td>{{days}}</td>
           <td>{{time}}</td>
           <td>{{camp_size}}</td>
         </tr>
-        <tr id="b1c4" class="desc">
-          <td colspan="4">{{description}}
-          <td>
+        <tr id="pbis_vid">
+          <td colspan="5">{{description}}</td>
+        </tr>
+        <tr id="session_1_class_4" class="link">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="music_games">
+          <td colspan="5">{{description}}</td>
+        </tr>
+        <tr id="session_1_class_5" class="link">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="">
+          <td colspan="5">{{description}}</td>
+        </tr>
+        <tr id="session_1_class_6" class="link">
+          <td>{{camp_name}}</td>
+          <td>{{age_group}}</td>
+          <td>{{days}}</td>
+          <td>{{time}}</td>
+          <td>{{camp_size}}</td>
+        </tr>
+        <tr id="">
+          <td colspan="5">{{description}}</td>
         </tr>
       </table>
     </div>
