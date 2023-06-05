@@ -6,7 +6,7 @@ $(function() {
     w3.displayObject("session_1_class_3", session_1_class_3);
     w3.displayObject("session_1_class_4", session_1_class_4);
     w3.displayObject("session_1_class_5", session_1_class_5);
-    w3.displayObject("session_1_class_6", session_1_class_6)
+    w3.displayObject("session_1_class_6", session_1_class_6);
 
     w3.displayObject("session_2_class_1", session_2_class_1);
     w3.displayObject("session_2_class_2", session_2_class_2);
