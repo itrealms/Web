@@ -38,13 +38,11 @@ $(function() {
     w3.displayObject("music_games", music_games);
     w3.displayObject("ukulele", ukulele);
     w3.displayObject("art", art)
-
     w3.displayObject("spanish", spanish);
     w3.displayObject("yoga", yoga);
     w3.displayObject("wood", wood);
     w3.displayObject("guitar", guitar);
     w3.displayObject("shop", shop);
     w3.displayObject("orchestra", orchestra);
-
     w3.displayObject("jamily", jamily);
 });
