@@ -29,7 +29,6 @@ $(function() {
     w3.displayObject("session_4_class_5", session_4_class_5);
     w3.displayObject("session_4_class_6", session_4_class_6);
 
-
     // Display Course Descriptions
     /////////////////////////////////////////////////////////
     w3.displayObject("read_write", read_write);
