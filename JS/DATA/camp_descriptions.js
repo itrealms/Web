@@ -6,9 +6,9 @@ var math_sci = {"description": "If you love math and science activities, this is
 
 var pbis_vid = {"description": "Please join us in the design, production, and editing of a series of videos to be used in the upcoming school year to introduce REALMS school-wide expectations for our revamped PBIS program. Students will be provided with all necessary equipment and software by the teacher to do the work. Students will learn the steps involved in producing several videos from conceptual ideas to the planning stages through developing the actual video and still footage and finally to editing and post-production work. If you have experience with video production or want to learn something new, please join us for this 8 week-long project"};
 
-var music_games = {"description": "Children will have fun learning about the music alphabet, dynamics, rhythms, note reading, and more thru games designed for elementary children!<br>**NOTE**<br>June session starts: June 13th<br>July Session starts: July 11th"};
+var music_games = {"description": "Children will have fun learning about the music alphabet, dynamics, rhythms, note reading, and more thru games designed for elementary children!<br>**NOTE**<br>June session starts: June 13th<br>July session starts: July 11th"};
 
-var ukulele = {"description": "This class is for children with little to no experience. Children will have fun learning the instrument strings, how to tune, learn single notes and chords!<br>**NOTE**<br>June session starts: June 13th<br>July Session starts: July 11th"};
+var ukulele = {"description": "This class is for children with little to no experience. Children will have fun learning the instrument strings, how to tune, learn single notes and chords!<br>**NOTE**<br>June session starts: June 13th<br>July session starts: July 11th"};
 
 var art = {"description": "Children will have a chance to bring out their artistic side and learn how to draw, paint, etc!"};
 
@@ -18,10 +18,10 @@ var yoga = {"description": "Are you in need of more flexibility and strength? Ar
 
 var wood = {"description": "In this introductory woodworking class, students will learn about the different tools and materials involved in woodworking and how to use them safely and properly. In each session, students will assemble a simple wood project, such as a birdhouse, toolbox, etc,while improving their math skills, motor skills, and ability to following directions."};
 
-var guitar = {"description": "This class is for children with little to no experience. Children will have fun learning the instrument strings, how to tune, learn single notes and chords!<br>**NOTE**<br>June session starts: June 13th<br>July Session starts: July 11th"};
+var guitar = {"description": "This class is for children with little to no experience. Children will have fun learning the instrument strings, how to tune, learn single notes and chords!<br>**NOTE**<br>June session starts: June 13th<br>July session starts: July 11th"};
 
 var shop = {"description": "If your child is interested in learning about the world of maintenance and shop, this is the class for them! In each class, there will be an introduction to different aspects of maintenance work, including which tools are used and how to use them. Through the course of the class, students will practice their motor skills by using tools, practice math skills by measuring and estimating for small projects, and engage in problem solving by thinking through different real world maintenance problems and the most effective ways to solve them."};
 
-var orchestra = {"description": "This class is for children with little to no experience. Children will have fun learning to play instruments and read sheet music.<br>**NOTE**<br>June session starts: June 13th<br>July Session starts: July 11th<br>10 spots available for students who do not own their own instrument.<br>15 spots available for students who do own their own instrument"};
+var orchestra = {"description": "This class is for children with little to no experience. Children will have fun learning to play instruments and read sheet music.<br>**NOTE**<br>June session starts: June 13th<br>July session starts: July 11th<br>10 spots available for students who do not own their own instrument.<br>15 spots available for students who do own their own instrument"};
 
-var jamily = {"description": "This class is for advanced student musicians who want to jam, play music, and talk music in a safe and fun environment.<br>**NOTE**<br>June session starts: June 13th<br>July Session starts: July 11th"};
+var jamily = {"description": "This class is for advanced student musicians who want to jam, play music, and talk music in a safe and fun environment.<br>**NOTE**<br>June session starts: June 13th<br>July session starts: July 11th"};
