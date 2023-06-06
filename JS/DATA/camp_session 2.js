@@ -1,7 +1,7 @@
 // Session 2 Data //
 ////////////////////////////////////////////////////////////////////////////////
 var session_2_class_1 = {
-	'camp_name': 'Reading & Writing Workshop2',
+	'camp_name': 'Reading & Writing Workshop',
 	'age_group': '9-13 yrs',
 	'days': 'M, T, W, Th',
 	'time': '10:00 am - 11:30 am',
