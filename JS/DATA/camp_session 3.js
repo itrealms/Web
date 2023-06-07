@@ -23,7 +23,7 @@ var session_3_class_3 = {
 };
 var session_3_class_4 = {
 	'camp_name': 'Intro to Woodworking',
-	'age_group': '9-12 yrs',
+	'age_group': '9-13 yrs',
 	'days': 'M',
 	'time': '12:00 pm - 1:30 pm',
 	'camp_size': 'CLOSED'
