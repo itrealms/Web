@@ -2,7 +2,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 var session_3_class_1 = {
 	'camp_name': 'Art',
-	'age_group': '7-11 yrs',
+	'age_group': '9-13 yrs',
 	'days': 'M, T, W, Th',
 	'time': '12:00 pm - 1:30 pm',
 	'camp_size': 'CLOSED'
