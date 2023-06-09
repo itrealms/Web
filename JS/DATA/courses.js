@@ -25,11 +25,11 @@ var language = {"courses" : [
 // Music Data //
 ////////////////////////////////////////////////////////////////////////////////
 var music = {"courses" : [
-	{"CourseName" : "Beginning Guitar", "Description" : "This class is for children with little to no experience. Children will have fun learning the instrument strings, how to tune, learn single notes and chords!<br>**NOTE**<br>June session starts: June 13th<br>July session starts: July 11th"},
-	{"CourseName" : "Beginning Orchestra", "Description" : "This class is for children with little to no experience. Children will have fun learning to play instruments and read sheet music.<br>**NOTE**<br>June session starts: June 13th<br>July session starts: July 11th<br>10 spots available for students who do not own their own instrument.<br>15 spots available for students who do own their own instrument"},
-	{"CourseName" : "Beginning Ukulele", "Description" : "This class is for children with little to no experience. Children will have fun learning the instrument strings, how to tune, learn single notes and chords!<br>**NOTE**<br>June session starts: June 13th<br>July session starts: July 11th"},
-	{"CourseName" : "Jamily", "Description" : "This class is for advanced student musicians who want to jam, play music, and talk music in a safe and fun environment.<br>**NOTE**<br>June session starts: June 13th<br>July session starts: July 11th"},
-	{"CourseName" : "Music Theory Games", "Description" : "Children will have fun learning about the music alphabet, dynamics, rhythms, note reading, and more thru games designed for elementary children!<br>**NOTE**<br>June session starts: June 13th<br>July session starts: July 11th"}
+	{"CourseName" : "Beginning Guitar", "Description" : "This class is for children with little to no experience. Children will have fun learning the instrument strings, how to tune, learn single notes and chords!<br>**NOTE**<br>June session: June 13 to June 29<br>July session: July 11 to July 27"},
+	{"CourseName" : "Beginning Orchestra", "Description" : "This class is for children with little to no experience. Children will have fun learning to play instruments and read sheet music.<br>**NOTE**<br>June session: June 13 to June 29<br>July session: July 11 to July 27<br>10 spots available for students who do not own their own instrument.<br>15 spots available for students who do own their own instrument"},
+	{"CourseName" : "Beginning Ukulele", "Description" : "This class is for children with little to no experience. Children will have fun learning the instrument strings, how to tune, learn single notes and chords!<br>**NOTE**<br>June session: June 13 to June 29<br>July session: July 11 to July 27"},
+	{"CourseName" : "Jamily", "Description" : "This class is for advanced student musicians who want to jam, play music, and talk music in a safe and fun environment.<br>**NOTE**<br>June session: June 13 to June 29<br>July session: July 11 to July 27"},
+	{"CourseName" : "Music Theory Games", "Description" : "Children will have fun learning about the music alphabet, dynamics, rhythms, note reading, and more thru games designed for elementary children!<br>**NOTE**<br>June session: June 13 to June 29<br>July session: July 11 to July 27"}
 ]};
 
 // Video Production Data //
