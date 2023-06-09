@@ -1,25 +1,25 @@
 // Arts & Crafts Data //
 ////////////////////////////////////////////////////////////////////////////////
 var arts = {"courses" : [
-	{"CourseName" : "Art Workshop",
+	{"CourseName" : "Art",
 	"Description" : "Children will have a chance to bring out their artistic side and learn how to draw, paint, etc!"},
-	{"CourseName" : "Shop",
+	{"CourseName" : "Into To Shop",
 	"Description" : "If your child is interested in learning about the world of maintenance and shop, this is the class for them! In each class, there will be an introduction to different aspects of maintenance work, including which tools are used and how to use them. Through the course of the class, students will practice their motor skills by using tools, practice math skills by measuring and estimating for small projects, and engage in problem solving by thinking through different real world maintenance problems and the most effective ways to solve them"},
-	{"CourseName" : "Woodworking",
+	{"CourseName" : "Into To Woodworking",
 	"Description" : "In this introductory woodworking class, students will learn about the different tools and materials involved in woodworking and how to use them safely and properly. In each session, students will assemble a simple wood project, such as a birdhouse, toolbox, etc,while improving their math skills, motor skills, and ability to following directions"}
 ]};
 
 // Core Learning Data //
 ////////////////////////////////////////////////////////////////////////////////
 var core = {"courses" : [
-	{"CourseName" : "Math & Science Workshop", "Description" : "If you love math and science activities, this is the class for you! We will be spending time each day engaged in a variety of activities using mathematical skills and concepts such as measurement of distance, angles, and volume, as well as learning how to effectively estimate a measureable quantity. Additionally, students will be able to engage in scientific exploration of the world around them to better understand how the world operates and how that operation can be studied using scientific principles and with simple engaging experiments"},
+	{"CourseName" : "Math & Science Club", "Description" : "If you love math and science activities, this is the class for you! We will be spending time each day engaged in a variety of activities using mathematical skills and concepts such as measurement of distance, angles, and volume, as well as learning how to effectively estimate a measureable quantity. Additionally, students will be able to engage in scientific exploration of the world around them to better understand how the world operates and how that operation can be studied using scientific principles and with simple engaging experiments"},
 	{"CourseName" : "Reading & Writing Workshop", "Description" : "Do you love reading? How about writing? If you want to grow in your ability to do both, please join us for the Reading & Writing Workshop. We will be spending about 30 minutes each day reading in a variety of formats: individually, partner, small group, and whole class. We will also have about an hour each day to dive into some fun and engaging writing activities, such as writing about the books we are reading, autobiographies, interviewing family members and writing biographies, poetry, short stories, and plays which can be acted out. This class will be an opportunity to use many of the ELA skills students acquire during the school year in a fun and engaging way"}
 ]};
 
 // Language Data //
 ////////////////////////////////////////////////////////////////////////////////
 var language = {"courses" : [
-	{"CourseName" : "Spanish", "Description" : "Hola! Tu quieres hablar en espanol? Then join us for some fun and engaging Spanish lessons and activities. Each 90 minute class will be a combination of Spanish language lessons for about 30 minutes and opportunities to read, listen, and speak in Spanish for about 60 minutes. We will have a chance to explore Spanish food, music, videos and geography as a way for students to engage with the Spanish they study all year long at REALMS. Students will have an opportunity to learn more about Spanish speaking culture while growing in their language skills"}
+	{"CourseName" : "Spanish Club", "Description" : "Hola! Tu quieres hablar en espanol? Then join us for some fun and engaging Spanish lessons and activities. Each 90 minute class will be a combination of Spanish language lessons for about 30 minutes and opportunities to read, listen, and speak in Spanish for about 60 minutes. We will have a chance to explore Spanish food, music, videos and geography as a way for students to engage with the Spanish they study all year long at REALMS. Students will have an opportunity to learn more about Spanish speaking culture while growing in their language skills"}
 ]};
 
 // Music Data //

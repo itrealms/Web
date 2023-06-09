@@ -1,7 +1,7 @@
 // Session 3 Data //
 ////////////////////////////////////////////////////////////////////////////////
 var session_3_class_1 = {
-	'camp_name': 'Art Workshop',
+	'camp_name': 'Art',
 	'age_group': '9-13 yrs',
 	'days': 'M, T, W, Th',
 	'time': '12:00 pm - 1:30 pm',
@@ -9,7 +9,7 @@ var session_3_class_1 = {
 };
 
 var session_3_class_2 = {
-	'camp_name': 'Woodworking',
+	'camp_name': 'Into To Woodworking',
 	'age_group': '9-13 yrs',
 	'days': 'M',
 	'time': '12:00 pm - 1:30 pm',
@@ -17,7 +17,7 @@ var session_3_class_2 = {
 };
 
 var session_3_class_3 = {
-	'camp_name': 'Spanish',
+	'camp_name': 'Spanish Club',
 	'age_group': '5-8 yrs',
 	'days': 'M, T, W, Th',
 	'time': '12:00 pm - 1:30 pm',

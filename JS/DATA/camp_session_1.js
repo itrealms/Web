@@ -17,7 +17,7 @@ var session_1_class_2 = {
 };
 
 var session_1_class_3 = {
-	'camp_name': 'PBIS Video Class',
+	'camp_name': 'PBIS Video Workshop',
 	'age_group': '9-13 yrs',
 	'days': 'M',
 	'time': '8:30 am - 10:00 am',
