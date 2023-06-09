@@ -9,7 +9,7 @@ var session_4_class_1 = {
 };
 
 var session_4_class_2 = {
-	'camp_name': 'Into To Shop',
+	'camp_name': 'Intro To Shop',
 	'age_group': '5-8 yrs',
 	'days': 'M',
 	'time': '1:30 pm - 3:00 pm',

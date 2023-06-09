@@ -20,6 +20,42 @@
 <script src="https://itrealms.github.io/website/JS/DATA/camp_session_3.js"></script>
 <script src="https://itrealms.github.io/website/JS/DATA/camp_session_4.js"></script>
 <script src="https://itrealms.github.io/website/JS/summer_camp.js"></script>
+<script>
+	$(function() {
+		var session1 = "closed";
+		var session2 = "closed";
+		var session3 = "closed";
+		var session4 = "closed";
+		
+		if (session1 == "open") {
+			$("#signup1").html('<a href="">08:30 - 10:00</a>');
+		} else {
+			$("#signup1").html("08:30 - 10:00");
+		}
+		if (session2 == "open") {
+			$("#signup2").html('<a href="">10:00 - 11:30</a>');
+		} else {
+			$("#signup2").html("10:00 - 11:30");
+		}
+		if (session3 == "open") {
+			$("#signup3").html('<a href="">12:00 - 01:30</a>');
+		} else {
+			$("#signup3").html("12:00 - 01:30");
+		}
+		if (session4 == "open") {
+			$("#signup4").html('<a href="">01:30 - 03:00</a>');
+		} else {
+			$("#signup4").html("01:30 - 03:00");
+		}
+		
+		if ((session1 == "closed" && session2 == "closed" && session3 == "closed" && session4 == "closed")) {
+			$("#signupStatus").text("All courses closed at this time. Please check back for updates. Thank you");
+		} else {
+			$("#signupStatus").text("Please click the time to sign-up for courses in that time slot. You will need to sign up each child in each time slot you wish them to participate in. Thank you");
+		}
+		
+	});
+</script>
 
 <div class="w3-container w3-padding">
 	<div class="w3-card-4 w3-padding">
@@ -42,9 +78,11 @@
 		<p>Please plan to drop students off no earlier than 8am since no supervision will be provided prior to 8am. The camp will end at 3pm, so please plan to pick students up promptly at 3pm.</p>
 		<p>
 			We will have two summer camp sessions:<br>
-			June 5 - June 29 and July 3 - July 27
+			June 5 - June 29 and July 3 - July 27<br>
+			PLEASE NOTE: Music sessions are:<br>
+			June 13 - June 29 and July 11 - July 27
 		</p>
-		<p>You will need to sign-up each child for each block you wish to attend. Click on the course name to view more details about that class. Please rememeber to sign up for the correct session(s) on the form. We hope that students will enjoy this Summer Camp as much as we will!</p>
+		<p>You will need to sign-up each child for each block you wish to attend. Please rememeber to sign up for the correct session(s) on the form. We hope that students will enjoy this Summer Camp as much as we will!</p>
 
 		<hr>
 
@@ -153,8 +191,7 @@
 				</tr>
 			</thead>
 
-      <div class="w3-hide">Please click the time to sign-up for courses in that time slot. You will need to sign up each child in each time slot you wish them to participate in. Thank you</div>
-      <div class="">All courses closed at this time. Please check back for updates. Thank you</div>
+			<div id="signupStatus"></div>
 
 			<!-- Breakfast -->
 			<tr class="w3-white">
@@ -165,8 +202,7 @@
 
 			<!-- Session 1 -->
 			<tr class="w3-white" id="session_1_class_1">
-				<td style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="4">08:30 - 10:00</td>
-        <td style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="4" class="w3-hide"><a href="">08:30 - 10:00</a></td>
+				<td id="signup1" style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="4"></td>
 				<td style="background: #76ff34;" colspan="4">{{camp_name}} ({{age_group}})</td>
 			</tr>
 
@@ -186,8 +222,7 @@
 
 			<!-- Session 2 -->
 			<tr class="w3-white" id="session_2_class_1">
-				<td style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="3">10:00 - 11:30</td>
-        <td style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="3" class="w3-hide"><a href="">10:00 - 11:30</a></td>
+				<td id="signup2" style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="3"></td>
 				<td style="background: #3333ff;" colspan="4">{{camp_name}} ({{age_group}})</td>
 			</tr>
 
@@ -208,8 +243,7 @@
 
 			<!-- Session 3 -->
 			<tr class="w3-white" id="session_3_class_1">
-				<td style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="5">12:00 - 01:30</td>
-        <td style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="5" class="w3-hide"><a href="">12:00 - 01:30</a></td>
+				<td id="signup3" style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="5"></td>
 				<td style="background: #31ffff;" colspan="4">{{camp_name}} ({{age_group}})</td>
 			</tr>
 
@@ -234,8 +268,7 @@
 
 			<!-- Session 4 -->
 			<tr class="w3-white" id="session_4_class_1">
-				<td style="vertical-align: middle;" rowspan="5">01:30 - 03:00</td>
-        <td style="vertical-align: middle;" rowspan="5" class="w3-hide"><a href="">01:30 - 03:00</a></td>
+				<td id="signup4" style="vertical-align: middle;" rowspan="5"></td>
 
 				<td style="background: #31ff77;" colspan="4">{{camp_name}} ({{age_group}})</td>
 			</tr>
