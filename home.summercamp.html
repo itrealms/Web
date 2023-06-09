@@ -14,13 +14,12 @@
 <!-- Custom CSS and JS -->
 <link rel="stylesheet" href="https://itrealms.github.io/website/CSS/realms.css">
 <!-- ====================== Avoid editing above here ====================== -->
-<script src="https://itrealms.github.io/website/JS/DATA/camp_session 1.js"></script>
-<script src="https://itrealms.github.io/website/JS/DATA/camp_session 2.js"></script>
-<script src="https://itrealms.github.io/website/JS/DATA/camp_session 3.js"></script>
-<script src="https://itrealms.github.io/website/JS/DATA/camp_session 4.js"></script>
-<script src="https://itrealms.github.io/website/JS/DATA/camp_descriptions.js"></script>
-<script src="https://itrealms.github.io/website/JS/summer_camp.js"></script>
-<script src="https://itrealms.github.io/website/JS/en2es-es2en.js"></script>
+<script src="./courses.js"></script>
+<script src="./camp_session_1.js"></script>
+<script src="./camp_session_2.js"></script>
+<script src="./camp_session_3.js"></script>
+<script src="./camp_session_4.js"></script>
+<script src="./summer_camp.js"></script>
 
 
 <div class="w3-container w3-padding">
@@ -28,8 +27,8 @@
 
     <div class="title w3-center">REALMS Summer Camp Sign-Ups</div>
     <div class="small w3-center">
-      <span style="text-decoration: underline;" id="en2es">haga clic aquí para español</span>
-      <span style="text-decoration: underline; display: none;" id="es2en">Click here for English</span>
+      <span id="en2es" class="link" style="text-decoration: underline;" >haga clic aquí para español</span>
+      <span id="es2en" class="link" style="text-decoration: underline; display: none;" >Click here for English</span>
     </div>
 
   </div>
@@ -42,665 +41,235 @@
     <p class="justify">We are excited to share our Summer Camp 2023 schedule with you. This year the focus of summer camp will be on opportunities to apply many of the skills that students have been learning at REALMS. We will be exploring a variety of avenues for applying reading, writing, math, science, Spanish, music, and art skills through creative projects and activities. Please take some time to read each of the class descriptions below to learn about some of the fun and engaging ways that students can maintain over the summer what they have worked hard to learn this school year.</p>
     <p>Free breakfast and lunch will be provided at the times below:</p>
     <p>
-      Breakfast: M, T, W, Th - 8:00am to 8:30am
-      <br>
+      Breakfast: M, T, W, Th - 8:00am to 8:30am<br>
       Lunch: M, T, W, Th - 11:30am to 12:00pm
     </p>
     <p>Please plan to drop students off no earlier than 8am since no supervision will be provided prior to 8am. The camp will end at 3pm, so please plan to pick students up promptly at 3pm.</p>
-    <p>We will have two summer camp sessions:<br>
-      June 5 - June 29 and July 3 - July 27</p>
+    <p>
+      We will have two summer camp sessions:<br>
+      June 5 - June 29 and July 3 - July 27
+    </p>
     <p>You will need to sign-up each child for each block you wish to attend. Click on the course name to view more details about that class. Please rememeber to sign up for the correct session(s) on the form. We hope that students will enjoy this Summer Camp as much as we will!</p>
 
     <hr>
 
-    <div>
-      <p class="head">Session 1 (8:30 am - 10:00 am)<span> - Sign-up <a href="">HERE</a></span></p>
-      <table class="w3-table w3-hoverable table20">
-        <thead>
-          <tr class="w3-green">
-            <td>Camp Name</td>
-            <td>Age Group</td>
-            <td>Days</td>
-            <td>Time</td>
-            <td>Camp Size</td>
-          </tr>
-        </thead>
-        <tr id="session_1_class_1">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
+    <p class="head w3-center">Course Catalog</p>
+    <br><div class="subhead">Core Learning</div>
+    <table id="core" class="w3-table w3-hoverable">
+      <thead>
+        <tr class="subhead w3-blue">
+          <td style="width: 20%;">Course Name</td>
+          <td>Description</td>
         </tr>
-        <tr id="session_1_class_1_desc">
-          <td colspan="5">{{description}}</td>
+      </thead>
+      <tr w3-repeat="courses">
+        <td>{{CourseName}}</td>
+        <td>{{Description}}</td>
+      </tr>
+    </table>
+
+    <br><div class="subhead">Arts & Crafts</div>
+    <table id="arts" class="w3-table w3-hoverable">
+      <thead>
+        <tr class="subhead w3-blue">
+          <td style="width: 20%;">Course Name</td>
+          <td>Description</td>
         </tr>
-        <tr id="session_1_class_2">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
+      </thead>
+      <tr w3-repeat="courses">
+        <td>{{CourseName}}</td>
+        <td>{{Description}}</td>
+      </tr>
+    </table>
+
+    <br><div class="subhead">Language Studies</div>
+    <table id="language" class="w3-table w3-hoverable">
+      <thead>
+        <tr class="subhead w3-blue">
+          <td style="width: 20%;">Course Name</td>
+          <td>Description</td>
         </tr>
-        <tr id="session_1_class_2_desc">
-          <td colspan="5">{{description}}</td>
+      </thead>
+      <tr w3-repeat="courses">
+        <td>{{CourseName}}</td>
+        <td>{{Description}}</td>
+      </tr>
+    </table>
+
+    <br><div class="subhead">Music (**NOTE** June session begins June 13 and July session begins July 11)</div>
+    <table id="music" class="w3-table w3-hoverable">
+      <thead>
+        <tr class="subhead w3-blue">
+          <td style="width: 20%;">Course Name</td>
+          <td>Description</td>
         </tr>
-        <tr id="session_1_class_3">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
+      </thead>
+      <tr w3-repeat="courses">
+        <td>{{CourseName}}</td>
+        <td>{{Description}}</td>
+      </tr>
+    </table>
+
+    <br><div class="subhead">Video Production</div>
+    <table id="video" class="w3-table w3-hoverable">
+      <thead>
+        <tr class="subhead w3-blue">
+          <td style="width: 20%;">Course Name</td>
+          <td>Description</td>
         </tr>
-        <tr id="session_1_class_3_desc">
-          <td colspan="5">{{description}}</td>
+      </thead>
+      <tr w3-repeat="courses">
+        <td>{{CourseName}}</td>
+        <td>{{Description}}</td>
+      </tr>
+    </table>
+
+    <br><div class="subhead">Wellness</div>
+    <table id="wellness" class="w3-table w3-hoverable">
+      <thead>
+        <tr class="subhead w3-blue">
+          <td style="width: 20%;">Course Name</td>
+          <td>Description</td>
         </tr>
-        <tr id="session_1_class_4">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_1_class_4_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-        <tr id="session_1_class_5">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_1_class_5_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-        <tr id="session_1_class_6">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_1_class_6_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-      </table>
-    </div>
+      </thead>
+      <tr w3-repeat="courses">
+        <td>{{CourseName}}</td>
+        <td>{{Description}}</td>
+      </tr>
+    </table>
 
     <hr>
 
-    <div>
-      <p class="head">Session 2 (10:00 am - 11:30 am)<span> - Sign-up <a href="">HERE</a></span></p>
-      <table class="w3-table w3-hoverable table20">
-        <thead>
-          <tr class="w3-green">
-            <td>Camp Name</td>
-            <td>Age Group</td>
-            <td>Days</td>
-            <td>Time</td>
-            <td>Camp Size</td>
-          </tr>
-        </thead>
-        <tr id="session_2_class_1">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
+    <p class="head w3-center">Weekly Schedule</p>
+    <table class="w3-table w3-centered">
+      <thead>
+        <tr class="subhead w3-green">
+          <td>&nbsp;</td>
+          <td>Monday</td>
+          <td>Tuesday</td>
+          <td>Wednesday</td>
+          <td>Thursday</td>
+          <td>Friday</td>
         </tr>
-        <tr id="session_2_class_1_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-        <tr id="session_2_class_2">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_2_class_2_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-        <tr id="session_2_class_3">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_2_class_3_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-        <tr id="session_2_class_4">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_2_class_4_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-        <tr id="session_2_class_5">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_2_class_5_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-        <tr id="session_2_class_6">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_2_class_6_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-      </table>
-    </div>
+      </thead>
 
-    <hr>
+      <!-- Breakfast -->
+      <tr class="w3-white">
+        <td style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="1">08:00 - 08:30</td>
+        <td style="border-bottom: 2px solid black;" colspan="4">Breakfast</td>
+        <td style="background: #ff3333; vertical-align: middle;" rowspan="19">No Classes</td>
+      </tr>
 
-    <div>
-      <p class="head">Session 3 (12:00 pm - 1:30 pm)<span> - Sign-up <a href="">HERE</a></span></p>
-      <table class="w3-table w3-hoverable table20">
-        <thead>
-          <tr class="w3-green">
-            <td>Camp Name</td>
-            <td>Age Group</td>
-            <td>Days</td>
-            <td>Time</td>
-            <td>Camp Size</td>
-          </tr>
-        </thead>
-        <tr id="session_3_class_1">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_3_class_1_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-        <tr id="session_3_class_2">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_3_class_2_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-        <tr id="session_3_class_3">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_3_class_3_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-        <tr id="session_3_class_4">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_3_class_4_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-        <tr id="session_3_class_5">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_3_class_5_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-        <tr id="session_3_class_6">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_3_class_6_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-      </table>
-    </div>
 
-    <hr>
+      <!-- Session 1 -->
+      <tr class="w3-white" id="session_1_class_1">
+        <td style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="4" >08:30 - 10:00</td>
+        <td style="background: #ff7734;" colspan="4">{{camp_name}} ({{age_group}})</td>
+      </tr>
 
-    <div>
-      <p class="head">Session 4 (1:30 pm - 3:00 pm)<span> - Sign-up <a href="">HERE</a></span></p>
-      <table class="w3-table w3-hoverable table20">
-        <thead>
-          <tr class="w3-green">
-            <td>Camp Name</td>
-            <td>Age Group</td>
-            <td>Days</td>
-            <td>Time</td>
-            <td>Camp Size</td>
-          </tr>
-        </thead>
-        <tr id="session_4_class_1">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_4_class_1_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-        <tr id="session_4_class_2">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_4_class_2_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-        <tr id="session_4_class_3">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_4_class_3_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-        <tr id="session_4_class_4">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_4_class_4_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-        <tr id="session_4_class_5">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_4_class_5_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-        <tr id="session_4_class_6">
-          <td>{{camp_name}}</td>
-          <td>{{age_group}}</td>
-          <td>{{days}}</td>
-          <td>{{time}}</td>
-          <td>{{camp_size}}</td>
-        </tr>
-        <tr id="session_4_class_6_desc">
-          <td colspan="5">{{description}}</td>
-        </tr>
-      </table>
-    </div>
-    &nbsp;
-  </div>
-</div>
+      <tr class="w3-white" id="session_1_class_2">
+        <td style="background: #ffba34;" colspan="4">{{camp_name}} ({{age_group}})</td>
+      </tr>
 
-<!-- ================================================================================================================================================================================ -->
-<!-- ================================================================================================================================================================================ -->
-<!-- ================================================================================================================================================================================ -->
-<!-- ================================================================================================================================================================================ -->
-<!-- ================================================================================================================================================================================ -->
+      <tr class="w3-white" id="session_1_class_3">
+        <td style="background: #ffff34;">{{camp_name}} ({{age_group}})</td>
+        <td colspan="3">&nbsp;</td>
+      </tr>
 
-<div class="w3-container w3-padding" id="card-es" style="display: none">
-  <div class="w3-card-4 w3-padding">
+      <tr class="w3-white" id="session_1_class_4">
+        <td style="border-bottom: 2px solid black;" colspan="1">&nbsp;</td>
+        <td style="background: #bbff34; border-bottom: 2px solid black;" colspan="3">{{camp_name}} ({{age_group}})</td>
+      </tr>
 
-    <p class="head">¡Hola estudiantes, padres y tutores!</p>
-    <p class="justify">Estamos emocionados de compartir nuestro programa de campamento de verano 2023 con usted. Este año, el enfoque del campamento de verano estará en las oportunidades para aplicar muchas de las habilidades que los estudiantes han estado aprendiendo en REALMS. Exploraremos una variedad de vías para aplicar las habilidades de lectura, escritura, matemáticas, ciencias, español, música y arte a través de proyectos y actividades creativas. Tómese un tiempo para leer cada una de las descripciones de las clases a continuación para conocer algunas de las formas divertidas y atractivas en que los estudiantes pueden mantener durante el verano lo que han trabajado duro para aprender este año escolar.</p>
-    <p>Se proporcionará desayuno y almuerzo gratis en los horarios a continuación:</p>
-    <p>
-      Desayuno: L, Ma, Mi, J - 8:00am to 8:30am
-      <br>
-      almorzar: L, Ma, Mi, J - 11:30am to 12:00pm
-    </p>
-    <p>Planee dejar a los estudiantes no antes de las 8 a. m., ya que no se proporcionará supervisión antes de las 8 a. m. El campamento terminará a las 3:00 p. m., así que planee recoger a los estudiantes puntualmente a las 3:00 p. m..</p>
-    <p>Tendremos dos sesiones de campamento de verano:<br>
-      5 de Junio - 29 de Junio y 3 de Julio - 27 de Julio</p>
-    <p>Deberá inscribir a cada niño para cada bloque al que desee asistir. Haga clic en el nombre del curso para ver más detalles sobre esa clase. Recuerde inscribirse en la(s) sesión(es) correcta(s) en el formulario. Esperamos que los estudiantes disfruten de este campamento de verano tanto como nosotros!</p>
 
-    <hr>
+      <!-- Session 2 -->
+      <tr class="w3-white" id="session_2_class_1">
+        <td style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="3" >10:00 - 11:30</td>
+        <td style="background: #76ff34;" colspan="4">{{camp_name}} ({{age_group}})</td>
+      </tr>
 
-    <div>
-      <p class="head">Sesión 1 (8:30 am - 10:00 am)</p>
-      <table class="w3-table w3-hoverable table20">
-        <thead>
-          <tr class="w3-green">
-            <td>Nombre del campamento</td>
-            <td>Grupo de edad</td>
-            <td>Días</td>
-            <td>Tiempo</td>
-            <td>Tamaño del campamento</td>
-          </tr>
-        </thead>
-        <tr onclick="toggleDesc('#b1c1es')">
-          <td>Taller de lectura y escritura</td>
-          <td>5-8 años</td>
-          <td>L, Ma, Mi, J</td>
-          <td>8:30 am - 10:00 am</td>
-          <td>20</td>
-        </tr>
-        <tr id="b1c1es" class="desc">
-          <td colspan="4">
-            ¿Te encanta leer? ¿Qué tal escribir? Si desea aumentar su capacidad para hacer ambas cosas, únase a nosotros en el taller de lectura y escritura. Pasaremos alrededor de 30 minutos cada día leyendo en una variedad de formatos: individualmente, en pareja, en grupos pequeños y con toda la clase. También tendremos alrededor de una hora cada día para sumergirnos en algunas actividades de escritura divertidas y atractivas, como escribir sobre los libros que estamos leyendo, autobiografías, entrevistar a miembros de la familia y escribir biografías, poesía, cuentos y obras de teatro que se pueden representar. . Esta clase será una oportunidad para usar muchas de las habilidades de ELA que los estudiantes adquieren durante el año escolar de una manera divertida y atractiva.
-          <td>
-        </tr>
-        <tr onclick="toggleDesc('#b1c2es')">
-          <td>Club de Matemáticas y Ciencias</td>
-          <td>9-13 años</td>
-          <td>L, Ma, Mi, J</td>
-          <td>8:30 am - 10:00 am</td>
-          <td>20</td>
-        </tr>
-        <tr id="b1c2es" class="desc">
-          <td colspan="4">
-            Si te encantan las actividades de matemáticas y ciencias, ¡esta es la clase para ti! Pasaremos tiempo todos los días participando en una variedad de actividades usando habilidades y conceptos matemáticos como la medición de distancia, ángulos y volumen, así como también aprenderemos a estimar de manera efectiva una cantidad medible. Además, los estudiantes podrán participar en la exploración científica del mundo que los rodea para comprender mejor cómo funciona el mundo y cómo se puede estudiar esa operación utilizando principios científicos y con experimentos simples y atractivos.
-          <td>
-        </tr>
-        <tr onclick="toggleDesc('#b1c3es')">
-          <td>Videoclase de PBIS</td>
-          <td>9-13 años</td>
-          <td>L</td>
-          <td>8:30 am - 10:00 am</td>
-          <td>10</td>
-        </tr>
-        <tr id="b1c3es" class="desc">
-          <td colspan="4">
-            Únase a nosotros en el diseño, la producción y la edición de una serie de videos que se usarán en el próximo año escolar para presentar las expectativas de toda la escuela REALMS para nuestro programa PBIS renovado. El profesor proporcionará a los estudiantes todo el equipo y el software necesarios para realizar el trabajo. Los estudiantes aprenderán los pasos involucrados en la producción de varios videos, desde las ideas conceptuales hasta las etapas de planificación, pasando por el desarrollo del video real y las imágenes fijas, y finalmente hasta el trabajo de edición y posproducción. Si tiene experiencia con la producción de videos o desea aprender algo nuevo, únase a nosotros en este proyecto de 8 semanas.
-          <td>
-        </tr>
-        <tr onclick="toggleDesc('#b1c4es')">
-          <td>Juegos de teoría musical</td>
-          <td>6-13 años</td>
-          <td>Ma, Mi, J*</td>
-          <td>8:30 am - 10:00 am</td>
-          <td>20</td>
-        </tr>
-        <tr id="b1c4es" class="desc">
-          <td colspan="4">
-            Los niños se divertirán aprendiendo sobre el alfabeto musical, dinámicas, ritmos, lectura de notas y más a través de juegos diseñados para niños de primaria!
-            <br>
-            **NOTA**
-            <br>
-            Sesión de Junio comienza: 13 de junio
-            <br>
-            Sesión de Julio comienza: 11 de julio
-          <td>
-        </tr>
-      </table>
-    </div>
+      <tr class="w3-white" id="session_2_class_2">
+        <td style="background: #31ff34;" colspan="4">{{camp_name}} ({{age_group}})</td>
+      </tr>
 
-    <hr>
+      <tr class="w3-white" id="session_2_class_3">
+        <td style="border-bottom: 2px solid black;" colspan="1">&nbsp;</td>
+        <td style="background: #31ff77; border-bottom: 2px solid black;" colspan="3">{{camp_name}} ({{age_group}})</td>
+      </tr>
 
-    <div>
-      <p class="head">Sesión 2 (10:00 am - 11:30 am)</p>
-      <table class="w3-table w3-hoverable table20">
-        <thead>
-          <tr class="w3-green">
-            <td>Nombre del campamento</td>
-            <td>Grupo de edad</td>
-            <td>Días</td>
-            <td>Tiempo</td>
-            <td>Tamaño del campamento</td>
-          </tr>
-        </thead>
-        <tr onclick="toggleDesc('#b2c1es')">
-          <td>Taller de lectura y escritura</td>
-          <td>9-13 años</td>
-          <td>L, Ma, Mi, J</td>
-          <td>10:00 am - 11:30 am</td>
-          <td>20</td>
-        </tr>
-        <tr id="b2c1es" class="desc">
-          <td colspan="4">
-            ¿Te encanta leer? ¿Qué tal escribir? Si desea aumentar su capacidad para hacer ambas cosas, únase a nosotros en el taller de lectura y escritura. Pasaremos alrededor de 30 minutos cada día leyendo en una variedad de formatos: individualmente, en pareja, en grupos pequeños y con toda la clase. También tendremos alrededor de una hora cada día para sumergirnos en algunas actividades de escritura divertidas y atractivas, como escribir sobre los libros que estamos leyendo, autobiografías, entrevistar a miembros de la familia y escribir biografías, poesía, cuentos y obras de teatro que se pueden representar. . Esta clase será una oportunidad para usar muchas de las habilidades de ELA que los estudiantes adquieren durante el año escolar de una manera divertida y atractiva.
-          <td>
-        </tr>
-        <tr onclick="toggleDesc('#b2c2es')">
-          <td>Club de Matemáticas y Ciencias</td>
-          <td>5-8 años</td>
-          <td>L, Ma, Mi, J</td>
-          <td>10:00 am - 11:30 am</td>
-          <td>20</td>
-        </tr>
-        <tr id="b2c2es" class="desc">
-          <td colspan="4">
-            Si te encantan las actividades de matemáticas y ciencias, ¡esta es la clase para ti! Pasaremos tiempo todos los días participando en una variedad de actividades usando habilidades y conceptos matemáticos como la medición de distancia, ángulos y volumen, así como también aprenderemos a estimar de manera efectiva una cantidad medible. Además, los estudiantes podrán participar en la exploración científica del mundo que los rodea para comprender mejor cómo funciona el mundo y cómo se puede estudiar esa operación utilizando principios científicos y con experimentos simples y atractivos.
-          <td>
-        </tr>
-        <tr onclick="toggleDesc('#b2c4es')">
-          <td>Ukelele principiante</td>
-          <td>8-17 años</td>
-          <td>Ma, Mi, J*</td>
-          <td>10:00 am - 11:30 am</td>
-          <td>20</td>
-        </tr>
-        <tr id="b2c4es" class="desc">
-          <td colspan="4">
-            Esta clase es para niños con poca o ninguna experiencia. ¡Los niños se divertirán aprendiendo las cuerdas del instrumento, cómo afinar, aprender notas individuales y acordes!
-            <br>
-            **NOTA**
-            <br>
-            Sesión de Junio comienza: 13 de junio
-            <br>
-            Sesión de Julio comienza: 11 de julio
-          <td>
-        </tr>
-      </table>
-    </div>
 
-    <hr>
+      <!-- Lunch -->
+      <tr class="w3-white">
+        <td style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="1">11:30 - 12:00</td>
+        <td style="border-bottom: 2px solid black;" colspan="4">Lunch</td>
+      </tr>
 
-    <div>
-      <p class="head">Sesión 3 (12:00 pm - 1:30 pm)</p>
-      <table class="w3-table w3-hoverable table20">
-        <thead>
-          <tr class="w3-green">
-            <td>Nombre del campamento</td>
-            <td>Grupo de edad</td>
-            <td>Días</td>
-            <td>Tiempo</td>
-            <td>Tamaño del campamento</td>
-          </tr>
-        </thead>
-        <tr onclick="toggleDesc('#b3c1es')">
-          <td>Arte</td>
-          <td>7-11 años</td>
-          <td>L, Ma, Mi, J</td>
-          <td>12:00 pm - 1:30 pm</td>
-          <td>20</td>
-        </tr>
-        <tr id="b3c1es" class="desc">
-          <td colspan="4">
-            ¡Los niños tendrán la oportunidad de sacar su lado artístico y aprender a dibujar, pintar, etc!
-          <td>
-        </tr>
-        <tr onclick="toggleDesc('#b3c2es')">
-          <td>Club de español</td>
-          <td>5-8 años</td>
-          <td>L, Ma, Mi, J</td>
-          <td>12:00 pm - 1:30 pm</td>
-          <td>20</td>
-        </tr>
-        <tr id="b3c2es" class="desc">
-          <td colspan="4">
-            Hola! Tu quieres hablar en espanol? Entonces únase a nosotros para disfrutar de algunas lecciones y actividades de español divertidas y atractivas. Cada clase de 90 minutos será una combinación de lecciones de español durante unos 30 minutos y oportunidades para leer, escuchar y hablar en español durante unos 60 minutos. Tendremos la oportunidad de explorar la comida, la música, los videos y la geografía españoles como una forma para que los estudiantes se involucren con el español que estudian durante todo el año en REALMS. Los estudiantes tendrán la oportunidad de aprender más sobre la cultura de habla hispana mientras aumentan sus habilidades lingüísticas.
-          <td>
-        </tr>
-        <tr onclick="toggleDesc('#b3c3es')">
-          <td>Yoga</td>
-          <td>3-12 años</td>
-          <td>L</td>
-          <td>12:00 pm - 12:30 pm</td>
-          <td>15</td>
-        </tr>
-        <tr id="b3c3es" class="desc">
-          <td colspan="4">
-            ¿Necesita más flexibilidad y fuerza? ¿Estás buscando un nuevo tipo de ejercicio que nunca has probado antes? ¡Entonces ven y prueba el yoga! El yoga es excelente no solo para mejorar la flexibilidad y el tono muscular, sino que también tiene un aspecto meditativo que permite a los practicantes calmar sus mentes para una mayor claridad de su entorno y la conexión mente-cuerpo. El yoga es una adición maravillosa a cualquier otro deporte que pueda practicar durante la semana. ¡Ven y prueba el yoga como algo nuevo!
-          <td>
-        </tr>
-        <tr onclick="toggleDesc('#b3c4es')">
-          <td>Yoga</td>
-          <td>13-17 años</td>
-          <td>L</td>
-          <td>12:30 pm - 1:30 pm</td>
-          <td>15</td>
-        </tr>
-        <tr id="b3c4es" class="desc">
-          <td colspan="4">
-            ¿Necesita más flexibilidad y fuerza? ¿Estás buscando un nuevo tipo de ejercicio que nunca has probado antes? ¡Entonces ven y prueba el yoga! El yoga es excelente no solo para mejorar la flexibilidad y el tono muscular, sino que también tiene un aspecto meditativo que permite a los practicantes calmar sus mentes para una mayor claridad de su entorno y la conexión mente-cuerpo. El yoga es una adición maravillosa a cualquier otro deporte que pueda practicar durante la semana. ¡Ven y prueba el yoga como algo nuevo!
-          <td>
-        </tr>
-        <tr onclick="toggleDesc('#b3c5es')">
-          <td>Introducción a la Carpintería</td>
-          <td>9-12 años</td>
-          <td>L</td>
-          <td>12:00 pm - 1:30 pm</td>
-          <td>10</td>
-        </tr>
-        <tr id="b3c5es" class="desc">
-          <td colspan="4">
-            En esta clase introductoria de carpintería, los estudiantes aprenderán sobre las diferentes herramientas y materiales involucrados en la carpintería y cómo usarlos de manera segura y adecuada. En cada sesión, los estudiantes ensamblarán un proyecto de madera simple, como una casa para pájaros, una caja de herramientas, etc., mientras mejoran sus habilidades matemáticas, motrices y su capacidad para seguir instrucciones.
-          <td>
-        </tr>
-        <tr onclick="toggleDesc('#b3c6es')">
-          <td>guitarra principiante</td>
-          <td>8-17 años</td>
-          <td>Ma, Mi, J*</td>
-          <td>12:00 pm - 1:30 pm</td>
-          <td>10</td>
-        </tr>
-        <tr id="b3c6es" class="desc">
-          <td colspan="4">
-            Esta clase es para niños con poca o ninguna experiencia. ¡Los niños se divertirán aprendiendo las cuerdas del instrumento, cómo afinar, aprender notas individuales y acordes!
-            <br>
-            **NOTA**
-            <br>
-            Sesión de Junio comienza: 13 de junio
-            <br>
-            Sesión de Julio comienza: 11 de julio
-          <td>
-        </tr>
-      </table>
-    </div>
 
-    <hr>
+      <!-- Session 3 -->
+      <tr class="w3-white" id="session_3_class_1">
+        <td style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="5" >12:00 - 01:30</td>
+        <td style="background: #31ffbb;" colspan="4">{{camp_name}} ({{age_group}})</td>
+      </tr>
 
-    <div>
-      <p class="head">Sesión 4 (1:30 pm - 3:00 pm)</p>
-      <table class="w3-table w3-hoverable table20">
-        <thead>
-          <tr class="w3-green">
-            <td>Nombre del campamento</td>
-            <td>Grupo de edad</td>
-            <td>Días</td>
-            <td>Tiempo</td>
-            <td>Tamaño del campamento</td>
-          </tr>
-        </thead>
-        <tr onclick="toggleDesc('#b4c1es')">
-          <td>Arte</td>
-          <td>4-7 años</td>
-          <td>L, Ma, Mi, J</td>
-          <td>1:30 pm - 3:00 pm</td>
-          <td>20</td>
-        </tr>
-        <tr id="b4c1es" class="desc">
-          <td colspan="4">
-            ¡Los niños tendrán la oportunidad de sacar su lado artístico y aprender a dibujar, pintar, etc.!
-          <td>
-        </tr>
-        <tr onclick="toggleDesc('#b4c2es')">
-          <td>Club de español</td>
-          <td>9-13 años</td>
-          <td>L, Ma, Mi, J</td>
-          <td>1:30 pm - 3:00 pm</td>
-          <td>20</td>
-        </tr>
-        <tr id="b4c2es" class="desc">
-          <td colspan="4">
-            Hola! Tu quieres hablar en espanol? Entonces únase a nosotros para disfrutar de algunas lecciones y actividades de español divertidas y atractivas. Cada clase de 90 minutos será una combinación de lecciones de español durante unos 30 minutos y oportunidades para leer, escuchar y hablar en español durante unos 60 minutos. Tendremos la oportunidad de explorar la comida, la música, los videos y la geografía españoles como una forma para que los estudiantes se involucren con el español que estudian durante todo el año en REALMS. Los estudiantes tendrán la oportunidad de aprender más sobre la cultura de habla hispana mientras aumentan sus habilidades lingüísticas.
-          <td>
-        </tr>
-        <tr onclick="toggleDesc('#b4c3es')">
-          <td>Introducción a la tienda</td>
-          <td>5-8 años</td>
-          <td>L</td>
-          <td>1:30 pm - 3:00 pm</td>
-          <td>10</td>
-        </tr>
-        <tr id="b4c3es" class="desc">
-          <td colspan="4">
-            Si su hijo está interesado en aprender sobre el mundo del mantenimiento y la tienda, ¡esta es la clase para él! En cada clase, habrá una introducción a los diferentes aspectos del trabajo de mantenimiento, incluidas las herramientas que se usan y cómo usarlas. A lo largo de la clase, los estudiantes practicarán sus habilidades motoras usando herramientas, practicarán habilidades matemáticas midiendo y estimando para proyectos pequeños, y participarán en la resolución de problemas pensando en diferentes problemas de mantenimiento del mundo real y las formas más efectivas de resolverlos.
-          <td>
-        </tr>
-        <tr onclick="toggleDesc('#b4c4es')">
-          <td>Orquesta principiante</td>
-          <td>8-17 años</td>
-          <td>Ma, J*</td>
-          <td>1:30 pm - 3:00 pm</td>
-          <td>25*</td>
-        </tr>
-        <tr id="b4c4es" class="desc">
-          <td colspan="4">
-            Esta clase es para niños con poca o ninguna experiencia. Los niños se divertirán aprendiendo a tocar instrumentos y leer partituras.
-            <br>
-            **NOTA**
-            <br>
-            Sesión de Junio comienza: 13 de junio
-            <br>
-            Sesión de Julio comienza: 11 de julio
-            <br>
-            10 cupos disponibles para estudiantes que no posean su propio instrumento.
-            <br>
-            15 cupos disponibles para estudiantes que sí poseen su propio instrumento.
-          <td>
-        </tr>
-        <tr onclick="toggleDesc('#b4c5es')">
-          <td>yamily</td>
-          <td>8-17 años</td>
-          <td>Mi*</td>
-          <td>1:30 pm - 3:00 pm</td>
-          <td>25</td>
-        </tr>
-        <tr id="b4c5es" class="desc">
-          <td colspan="4">
-            Esta clase es para estudiantes de música avanzados que quieren improvisar, tocar música y hablar de música en un ambiente seguro y divertido.
-            <br>
-            **NOTA**
-            <br>
-            Sesión de Junio comienza: 13 de junio
-            <br>
-            Sesión de Julio comienza: 11 de julio
-          <td>
-        </tr>
-      </table>
-    </div>
-    &nbsp;
+      <tr class="w3-white" id="session_3_class_2">
+        <td style="background: #31ffff;" colspan="1">{{camp_name}} ({{age_group}})</td>
+        <td colspan="3">&nbsp;</td>
+      </tr>
+
+      <tr class="w3-white" id="session_3_class_3">
+        <td style="background: #32baff;" colspan="4">{{camp_name}} ({{age_group}})</td>
+      </tr>
+
+      <tr class="w3-white" id="session_3_class_4">
+        <td style="background: #3377ff;" colspan="1">{{camp_name}} ({{age_group}})</td>
+        <td colspan="3">&nbsp;</td>
+      </tr>
+
+      <tr class="w3-white" id="session_3_class_5">
+        <td style="border-bottom: 2px solid black;" colspan="1">&nbsp;</td>
+        <td style="background: #3333ff; border-bottom: 2px solid black;" colspan="3">{{camp_name}} ({{age_group}})</td>
+      </tr>
+
+
+      <!-- Session 4 -->
+      <tr class="w3-white" id="session_4_class_1">
+        <td style="vertical-align: middle;" rowspan="5" >01:30 - 03:00</td>
+        <td style="background: #7733ff;" colspan="4">{{camp_name}} ({{age_group}})</td>
+      </tr>
+
+      <tr class="w3-white" id="session_4_class_2">
+        <td style="background: #bb33ff;" colspan="1">{{camp_name}} ({{age_group}})</td>
+        <td colspan="3">&nbsp;</td>
+      </tr>
+
+      <tr class="w3-white" id="session_4_class_3">
+        <td style="background: #ff33ff;" colspan="4">{{camp_name}} ({{age_group}})</td>
+      </tr>
+
+      <tr class="w3-white" id="session_4_class_4">
+        <td colspan="1">&nbsp;</td>
+        <td style="background: #ff33bb;" colspan="1">{{camp_name}} ({{age_group}})</td>
+        <td colspan="1">&nbsp;</td>
+        <td style="background: #ff33bb;" colspan="1">{{camp_name}} ({{age_group}})</td>
+      </tr>
+
+      <tr class="w3-white" id="session_4_class_5">
+        <td colspan="2">&nbsp;</td>
+        <td style="background: #ff3378;" colspan="1">{{camp_name}} ({{age_group}})</td>
+        <td colspan="1">&nbsp;</td>
+      </tr>
+    </table>
+
+
+
+
+
+
+
+    <p class="head">Session 1 (8:30 am - 10:00 am)<span id="signup1"> - Sign-up <a href="">HERE</a></span></p>
+    <p class="head">Session 2 (10:00 am - 11:30 am)<span id="signup2"> - Sign-up <a href="">HERE</a></span></p>
+    <p class="head">Session 3 (12:00 pm - 1:30 pm)<span id="signup3"> - Sign-up <a href="">HERE</a></span></p>
+    <p class="head">Session 4 (1:30 pm - 3:00 pm)<span id="signup4"> - Sign-up <a href="">HERE</a></span></p>
+
   </div>
 </div>
