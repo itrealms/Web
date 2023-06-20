@@ -2,11 +2,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 var arts = {"courses" : [
 	{"CourseName" : "Art",
-	"Description" : "Children will have a chance to bring out their artistic side and learn how to draw, paint, etc!"},
-	{"CourseName" : "Intro To Shop",
-	"Description" : "If your child is interested in learning about the world of maintenance and shop, this is the class for them! In each class, there will be an introduction to different aspects of maintenance work, including which tools are used and how to use them. Through the course of the class, students will practice their motor skills by using tools, practice math skills by measuring and estimating for small projects, and engage in problem solving by thinking through different real world maintenance problems and the most effective ways to solve them"},
-	{"CourseName" : "Intro To Woodworking",
-	"Description" : "In this introductory woodworking class, students will learn about the different tools and materials involved in woodworking and how to use them safely and properly. In each session, students will assemble a simple wood project, such as a birdhouse, toolbox, etc,while improving their math skills, motor skills, and ability to following directions"}
+	"Description" : "Children will have a chance to bring out their artistic side and learn how to draw, paint, etc!"}
 ]};
 
 // Core Learning Data //
