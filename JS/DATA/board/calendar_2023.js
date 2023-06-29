@@ -81,3 +81,93 @@ const apr2023 = {"apr" : [
     "minutes_date" : "2023-04-25 - Minutes"
   }
 ]};
+
+const may2023 = {"may" : [
+  {
+    "agenda" : "https://drive.google.com/file/d/1MPrUQH9yoIiKdfAU-g3zjkp-93YFwaaj/view",
+    "agenda_date" : "2023-05-08 - Special Agenda",
+    "minutes" : "https://drive.google.com/file/d/1C6VgRBWTqUghYRkcnqXJAO_Z9KhUg9Om/view",
+    "minutes_date" : "2023-05-08 - Special Minutes"
+  },
+  {
+    "agenda" : "https://drive.google.com/file/d/1chh-JX4pUVk-T8j0xc0AuziMMFkKtUit/view",
+    "agenda_date" : "2023-05-23 - Agenda",
+    "minutes" : "#",
+    "minutes_date" : "2023-05-23 - Minutes"
+  }
+]};
+
+const jun2023 = {"jun" : [
+  {
+    "agenda" : "https://drive.google.com/file/d/1ylHeOz3ef6AZ-P4zpKLhPefQgjLgsvyS/view",
+    "agenda_date" : "2023-06-01 - Budget Committee Agenda",
+    "minutes" : "#",
+    "minutes_date" : "2023-06-01 - Budget Committee Minutes"
+  },
+  {
+    "agenda" : "https://drive.google.com/file/d/1_7dZolB3Ot6PoZ4XGzeyqjZYivhWyzHy/view",
+    "agenda_date" : "2023-06-22 - Special Agenda",
+    "minutes" : "#",
+    "minutes_date" : "2023-06-22 - Special Minutes"
+  },
+  {
+    "agenda" : "https://drive.google.com/file/d/10w6s5TZLHS3wpNlpQeRhPtubyF9LGNfI/view",
+    "agenda_date" : "2023-06-27 - Agenda",
+    "minutes" : "#",
+    "minutes_date" : "2023-06-27 - Minutes"
+  }
+]};
+
+const jul2023 = {"jul" : [
+  {
+    "agenda" : "#",
+    "agenda_date" : "2023-07-25 - Upcoming",
+    "minutes" : "#",
+    "minutes_date" : ""
+  }
+]};
+
+const aug2023 = {"aug" : [
+  {
+    "agenda" : "#",
+    "agenda_date" : "2023-08-29 - Upcoming",
+    "minutes" : "#",
+    "minutes_date" : ""
+  }
+]};
+
+const sep2023 = {"sep" : [
+  {
+    "agenda" : "#",
+    "agenda_date" : "2023-09-26 - Upcoming",
+    "minutes" : "#",
+    "minutes_date" : ""
+  }
+]};
+
+const oct2023 = {"oct" : [
+  {
+    "agenda" : "#",
+    "agenda_date" : "",
+    "minutes" : "#",
+    "minutes_date" : ""
+  }
+]};
+
+const nov2023 = {"nov" : [
+  {
+    "agenda" : "#",
+    "agenda_date" : "",
+    "minutes" : "#",
+    "minutes_date" : ""
+  }
+]};
+
+const dec2023 = {"dec" : [
+  {
+    "agenda" : "#",
+    "agenda_date" : "",
+    "minutes" : "#",
+    "minutes_date" : ""
+  }
+]};
