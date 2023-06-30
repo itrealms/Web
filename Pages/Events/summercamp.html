@@ -22,30 +22,35 @@
 <script src="https://itrealms.github.io/Web/JS/summer_camp.js"></script>
 <script>
   $(function() {
-    var session1 = "closed";
-    var session2 = "closed";
-    var session3 = "closed";
-    var session4 = "closed";
-    if (session1 == "open") {
+	  const session1 = "closed";
+	  const session2 = "closed";
+	  const session3 = "closed";
+	  const session4 = "closed";
+
+	  if (session1 == "open") {
       $("#signup1").html('<a href="">08:30 - 10:00</a>');
     } else {
       $("#signup1").html("08:30 - 10:00");
     }
+
     if (session2 == "open") {
       $("#signup2").html('<a href="">10:00 - 11:30</a>');
     } else {
       $("#signup2").html("10:00 - 11:30");
     }
+
     if (session3 == "open") {
       $("#signup3").html('<a href="">12:00 - 01:30</a>');
     } else {
       $("#signup3").html("12:00 - 01:30");
     }
+
     if (session4 == "open") {
       $("#signup4").html('<a href="">01:30 - 03:00</a>');
     } else {
       $("#signup4").html("01:30 - 03:00");
     }
+
     if ((session1 == "closed" && session2 == "closed" && session3 == "closed" && session4 == "closed")) {
       $("#signupStatus").text("All courses closed at this time. Please check back for updates. Thank you");
     } else {
