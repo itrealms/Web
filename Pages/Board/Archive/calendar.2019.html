@@ -14,6 +14,8 @@
 <!-- Custom CSS and JS -->
 <link rel="stylesheet" href="https://itrealms.github.io/Web/CSS/realms.css">
 <!-- ====================== Avoid editing above here ====================== -->
+<script src="https://itrealms.github.io/Web/JS/DATA/board/archive/calendar_2019.js"></script>
+<script src="https://itrealms.github.io/Web/JS/DATA/board/archive/board_archive.js"></script>
 
 <div class="w3-container w3-padding">
 	<div class="w3-card-4">
@@ -31,20 +33,44 @@
 			</thead>
 
 			<tr class="board">
-				<td>
+				<td id="jan2019">
 					<!-- January -->
 
+					<p w3-repeat="jan">
+						<a href="{{agenda}}">{{agenda_date}}</a>
+						<br>
+						<a href="{{minutes}}">{{minutes_date}}</a>
+					</p>
+
 				</td>
-				<td>
+				<td id="feb2019">
 					<!-- February -->
 
-				</td>
-				<td>
-					<!-- March -->
+					<p w3-repeat="feb">
+						<a href="{{agenda}}">{{agenda_date}}</a>
+						<br>
+						<a href="{{minutes}}">{{minutes_date}}</a>
+					</p>
 
 				</td>
-				<td>
+				<td id="mar2019">
+					<!-- March -->
+
+					<p w3-repeat="mar">
+						<a href="{{agenda}}">{{agenda_date}}</a>
+						<br>
+						<a href="{{minutes}}">{{minutes_date}}</a>
+					</p>
+
+				</td>
+				<td id="apr2019">
 					<!-- April -->
+
+					<p w3-repeat="apr">
+						<a href="{{agenda}}">{{agenda_date}}</a>
+						<br>
+						<a href="{{minutes}}">{{minutes_date}}</a>
+					</p>
 
 				</td>
 			</tr>
@@ -59,37 +85,43 @@
 			</thead>
 
 			<tr class="board">
-				<td>
+				<td id="may2019">
 					<!-- May -->
 
+					<p w3-repeat="may">
+						<a href="{{agenda}}">{{agenda_date}}</a>
+						<br>
+						<a href="{{minutes}}">{{minutes_date}}</a>
+					</p>
+
 				</td>
-				<td>
+				<td id="jun2019">
 					<!-- June -->
 
-					<p>
-						<a href="https://drive.google.com/file/d/1n7x2mm4g-hgr_l4sOIVohmGAQfmt_-_L/view">2019-06-12 - Special Agenda</a>
+					<p w3-repeat="jun">
+						<a href="{{agenda}}">{{agenda_date}}</a>
 						<br>
-						2019-06-12 - Special Minutes
-					</p>
-
-					<p>
-						2019-06-26 - Agenda
-						<br>
-						<a href="https://drive.google.com/file/d/1zH1U1KvQH6tJEfq_g6WUKaeNoTkHJnuo/view">2019-06-26 - Minutes</a>
+						<a href="{{minutes}}">{{minutes_date}}</a>
 					</p>
 
 				</td>
-				<td>
+				<td id="jul2019">
 					<!-- July -->
 
+					<p w3-repeat="jul">
+						<a href="{{agenda}}">{{agenda_date}}</a>
+						<br>
+						<a href="{{minutes}}">{{minutes_date}}</a>
+					</p>
+
 				</td>
-				<td>
+				<td id="aug2019">
 					<!-- August -->
 
-					<p>
-						2019-08-28 - Agenda
+					<p w3-repeat="aug">
+						<a href="{{agenda}}">{{agenda_date}}</a>
 						<br>
-						<a href="https://drive.google.com/file/d/1dMKp575H03jP4lSi28BXyllhbrHnIlV-/view">2019-08-28 - Minutes</a>
+						<a href="{{minutes}}">{{minutes_date}}</a>
 					</p>
 
 				</td>
@@ -105,67 +137,43 @@
 			</thead>
 
 			<tr class="board">
-				<td>
+				<td id="sep2019">
 					<!-- September -->
 
-					<p>
-						<a href="https://drive.google.com/file/d/1GTSEykjm99J90oDJ4iZ5p_A6p8gP-J4h/view">2019-09-16 - Special Agenda</a>
+					<p w3-repeat="sep">
+						<a href="{{agenda}}">{{agenda_date}}</a>
 						<br>
-						2019-09-16 - Special Minutes
-					</p>
-
-					<p>
-						<a href="https://drive.google.com/file/d/13Wz-OZ4Piz2-ttUBwJFQiMX8kFwZrkNG/view">2019-09-25 - Agenda</a>
-						<br>
-						2019-09-25 - Minutes
+						<a href="{{minutes}}">{{minutes_date}}</a>
 					</p>
 
 				</td>
-				<td>
+				<td id="oct2019">
 					<!-- October -->
 
-					<p>
-						<a href="https://drive.google.com/file/d/1DDXP4iT30lxCLfM19ylSpjYq7pm0uZFO/view">2019-10-11 - Special Agenda</a>
+					<p w3-repeat="oct">
+						<a href="{{agenda}}">{{agenda_date}}</a>
 						<br>
-						2019-10-11 - Special Minutes
-					</p>
-
-					<p>
-						2019-10-23 - Agenda
-						<br>
-						<a href="https://drive.google.com/file/d/13bFHL86FCyF1ckx_1q3g9FgTCY8rYptg/view">2019-10-23 - Minutes</a>
+						<a href="{{minutes}}">{{minutes_date}}</a>
 					</p>
 
 				</td>
-				<td>
+				<td id="nov2019">
 					<!-- November -->
 
-					<p>
-						<a href="https://drive.google.com/file/d/1uQafgFWd6eva4bC7fXjgYCx-xHVYQj9U/view">2019-11-09 - Special Agenda</a>
+					<p w3-repeat="nov">
+						<a href="{{agenda}}">{{agenda_date}}</a>
 						<br>
-						2019-11-09 - Special Minutes
-					</p>
-
-					<p>
-						2019-11-20 - Agenda
-						<br>
-						<a href="https://drive.google.com/file/d/1s-3QBfAnKdZwNE3DFjG4iZ701AeIE78H/view">2019-11-20 - Minutes</a>
+						<a href="{{minutes}}">{{minutes_date}}</a>
 					</p>
 
 				</td>
-				<td>
+				<td id="dec2019">
 					<!-- December -->
 
-					<p>
-						2019-12-11 - Special Agenda
+					<p w3-repeat="dec">
+						<a href="{{agenda}}">{{agenda_date}}</a>
 						<br>
-						<a href="https://drive.google.com/file/d/105zh1uJSDnA_Kra_6Y_usbrQtY-jvZ6m/view">2019-12-11 - Special Minutes</a>
-					</p>
-
-					<p>
-						2019-12-18 - Agenda
-						<br>
-						<a href="https://drive.google.com/file/d/1Eadgkv_zSQm0XyRW8Fe8C-HXsZk06srG/view">2019-12-18 - Minutes</a>
+						<a href="{{minutes}}">{{minutes_date}}</a>
 					</p>
 
 				</td>
