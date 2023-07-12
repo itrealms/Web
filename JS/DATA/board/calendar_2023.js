@@ -101,7 +101,7 @@ const jun2023 = {"jun" : [
   {
     "agenda" : "https://drive.google.com/file/d/1ylHeOz3ef6AZ-P4zpKLhPefQgjLgsvyS/view",
     "agenda_date" : "2023-06-01 - Budget Committee Agenda",
-    "minutes" : "#",
+    "minutes" : "https://drive.google.com/file/d/1Hgwk9FRxc5LtSHbNWzIQHlN7QMlUCdzS/view",
     "minutes_date" : "2023-06-01 - Budget Committee Minutes"
   },
   {
