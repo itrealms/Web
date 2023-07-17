@@ -53,13 +53,13 @@ const apr2023 = {"apr" : [
   {
     "agenda" : "https://drive.google.com/file/d/1yA2dwxlp1CkB3vvmLvgFOWeldp_JIvD5/view",
     "agenda_date" : "2023-04-07 - Hiring Committee Agenda",
-    "minutes" : "#",
+    "minutes" : "https://drive.google.com/file/d/1NmdMn0mFjGbBGV6Q1Vt9V8J1DhbDg00L/view",
     "minutes_date" : "2023-04-07 - Hiring Committee Minutes"
   },
   {
     "agenda" : "https://drive.google.com/file/d/1KHCEBOzNRyLVfasYCXoGtkFwQKM80S4O/view",
     "agenda_date" : "2023-04-14 - Hiring Committee Agenda",
-    "minutes" : "#",
+    "minutes" : "https://drive.google.com/file/d/1wyri6piSQ1Hg-37CCmOwM9pv_PcEcSAN/view",
     "minutes_date" : "2023-04-14 - Hiring Committee Minutes"
   },
   {
