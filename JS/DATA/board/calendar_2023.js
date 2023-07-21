@@ -120,8 +120,8 @@ const jun2023 = {"jun" : [
 
 const jul2023 = {"jul" : [
   {
-    "agenda" : "#",
-    "agenda_date" : "2023-07-25 - Upcoming",
+    "agenda" : "https://drive.google.com/file/d/1mW5ekPX9VAQKILoIU8PkypVXVa7rxMr7/view",
+    "agenda_date" : "2023-07-25 - Agenda",
     "minutes" : "#",
     "minutes_date" : ""
   }
