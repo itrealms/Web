@@ -130,7 +130,7 @@ const jul2023 = {"jul" : [
 const aug2023 = {"aug" : [
   {
     "agenda" : "#",
-    "agenda_date" : "2023-08-15 - Upcoming",
+    "agenda_date" : "2023-08-22 - Upcoming",
     "minutes" : "#",
     "minutes_date" : ""
   }
