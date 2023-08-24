@@ -129,8 +129,8 @@ const jul2023 = {"jul" : [
 
 const aug2023 = {"aug" : [
   {
-    "agenda" : "#",
-    "agenda_date" : "2023-08-22 - Upcoming",
+    "agenda" : "https://drive.google.com/file/d/1a8s-dbfB77mjGG7zo1zkQBlXoDjkbryj/view",
+    "agenda_date" : "2023-08-22 - Agenda",
     "minutes" : "#",
     "minutes_date" : ""
   }
