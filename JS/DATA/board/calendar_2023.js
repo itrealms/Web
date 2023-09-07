@@ -113,7 +113,7 @@ const jun2023 = {"jun" : [
   {
     "agenda" : "https://drive.google.com/file/d/10w6s5TZLHS3wpNlpQeRhPtubyF9LGNfI/view",
     "agenda_date" : "2023-06-27 - Agenda",
-    "minutes" : "#",
+    "minutes" : "https://drive.google.com/file/d/1550F2n_Cmtg4MFrkt6hXj6oSYE1u7EFq/view",
     "minutes_date" : "2023-06-27 - Minutes"
   }
 ]};
