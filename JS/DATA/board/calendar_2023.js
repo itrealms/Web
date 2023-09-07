@@ -122,7 +122,7 @@ const jul2023 = {"jul" : [
   {
     "agenda" : "https://drive.google.com/file/d/1mW5ekPX9VAQKILoIU8PkypVXVa7rxMr7/view",
     "agenda_date" : "2023-07-25 - Agenda",
-    "minutes" : "#",
+    "minutes" : "https://drive.google.com/file/d/1Qpbn1e2iEaTXmgHt9U89gnH6G_s2ONnV/view",
     "minutes_date" : "2023-07-25 - Minutes"
   }
 ]};
@@ -131,7 +131,7 @@ const aug2023 = {"aug" : [
   {
     "agenda" : "https://drive.google.com/file/d/1a8s-dbfB77mjGG7zo1zkQBlXoDjkbryj/view",
     "agenda_date" : "2023-08-22 - Agenda",
-    "minutes" : "https://drive.google.com/file/d/1Qpbn1e2iEaTXmgHt9U89gnH6G_s2ONnV/view",
+    "minutes" : "#",
     "minutes_date" : "2023-08-22 - Minutes"
   }
 ]};
