@@ -139,16 +139,22 @@ const aug2023 = {"aug" : [
 const sep2023 = {"sep" : [
   {
     "agenda" : "#",
-    "agenda_date" : "2023-09-19 - Upcoming",
+    "agenda_date" : "2023-09-12 - Upcoming",
     "minutes" : "#",
     "minutes_date" : ""
+  },
+  {
+  "agenda" : "#",
+  "agenda_date" : "2023-09-26 - Upcoming",
+  "minutes" : "#",
+  "minutes_date" : ""
   }
 ]};
 
 const oct2023 = {"oct" : [
   {
     "agenda" : "#",
-    "agenda_date" : "2023-10-17 - Upcoming",
+    "agenda_date" : "2023-10-24 - Upcoming",
     "minutes" : "#",
     "minutes_date" : ""
   }
