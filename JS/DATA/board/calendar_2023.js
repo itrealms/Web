@@ -138,8 +138,8 @@ const aug2023 = {"aug" : [
 
 const sep2023 = {"sep" : [
   {
-    "agenda" : "#",
-    "agenda_date" : "2023-09-12 - Upcoming",
+    "agenda" : "https://drive.google.com/file/d/1MR-cdPYQuR8LxR91dn_cUBqSBdV61g3J/view",
+    "agenda_date" : "2023-09-12 - Agenda",
     "minutes" : "#",
     "minutes_date" : ""
   },
