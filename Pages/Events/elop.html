@@ -1,0 +1,293 @@
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap">
+
+<!-- W3 CSS and JS -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Custom CSS and JS -->
+<link rel="stylesheet" href="https://itrealms.github.io/Web/CSS/realms.css">
+<!-- ====================== Avoid editing above here ====================== -->
+<script src="https://itrealms.github.io/Web/JS/DATA/ELOP/courses.js"></script>
+<script src="https://itrealms.github.io/Web/JS/DATA/camp_session_1.js"></script>
+<script src="https://itrealms.github.io/Web/JS/DATA/camp_session_2.js"></script>
+<script src="https://itrealms.github.io/Web/JS/DATA/camp_session_3.js"></script>
+<script src="https://itrealms.github.io/Web/JS/DATA/camp_session_4.js"></script>
+<script src="https://itrealms.github.io/Web/JS/ELOP/elop.js"></script>
+<script>
+  $(function() {
+	  const session1 = "closed";
+	  const session2 = "closed";
+	  const session3 = "closed";
+	  const session4 = "closed";
+
+	  if (session1 == "open") {
+      $("#signup1").html('<a href="">08:30 - 10:00</a>');
+    } else {
+      $("#signup1").html("08:30 - 10:00");
+    }
+
+    if (session2 == "open") {
+      $("#signup2").html('<a href="">10:00 - 11:30</a>');
+    } else {
+      $("#signup2").html("10:00 - 11:30");
+    }
+
+    if (session3 == "open") {
+      $("#signup3").html('<a href="">12:00 - 01:30</a>');
+    } else {
+      $("#signup3").html("12:00 - 01:30");
+    }
+
+    if (session4 == "open") {
+      $("#signup4").html('<a href="">01:30 - 03:00</a>');
+    } else {
+      $("#signup4").html("01:30 - 03:00");
+    }
+
+    if ((session1 == "closed" && session2 == "closed" && session3 == "closed" && session4 == "closed")) {
+      $("#signupStatus").text("All courses closed at this time. Please check back for updates. Thank you");
+    } else {
+      $("#signupStatus").text("Please click the time to sign-up for courses in that time slot. You will need to sign up each child in each time slot you wish them to participate in. Thank you");
+    }
+  });
+</script>
+
+<div class="w3-container w3-padding">
+  <div class="w3-card-4 w3-padding">
+
+    <div class="title w3-center">REALMS Summer Camp Sign-Ups</div>
+
+  </div>
+</div>
+
+<div class="w3-container w3-padding" id="card-en">
+  <div class="w3-card-4 w3-padding">
+
+    <p class="head">Hello students, parents & guardians!</p>
+    <p class="justify">We are excited to share our Summer Camp 2023 schedule with you. This year the focus of summer camp will be on opportunities to apply many of the skills that students have been learning at REALMS. We will be exploring a variety of avenues for applying reading, writing, math, science, Spanish, music, and art skills through creative projects and activities. Please take some time to read each of the class descriptions below to learn about some of the fun and engaging ways that students can maintain over the summer what they have worked hard to learn this school year.</p>
+    <p>Free breakfast and lunch will be provided at the times below:</p>
+    <p>
+      Breakfast: M, T, W, Th - 8:00am to 8:30am<br>
+      Lunch: M, T, W, Th - 11:30am to 12:00pm
+    </p>
+    <p>Please plan to drop students off no earlier than 8am since no supervision will be provided prior to 8am. The camp will end at 3pm, so please plan to pick students up promptly at 3pm.</p>
+    <p>
+      We will have two summer camp sessions:<br>
+      June 5 - June 29 and July 3 - July 27<br>
+      PLEASE NOTE: Music sessions are:<br>
+      June 13 - June 29 and July 11 - July 27
+    </p>
+    <p>You will need to sign-up each child for each block you wish to attend. Please rememeber to sign up for the correct session(s) on the form. We hope that students will enjoy this Summer Camp as much as we will!</p>
+
+    <hr>
+
+    <p class="head w3-center">Course Catalog</p>
+    <div class="subhead">Core Learning</div>
+    <table id="core" class="w3-table w3-hoverable">
+      <thead>
+        <tr class="subhead w3-blue">
+          <td style="width: 20%;">Course Name</td>
+          <td>Description</td>
+        </tr>
+      </thead>
+      <tr w3-repeat="courses">
+        <td>{{CourseName}}</td>
+        <td>{{Description}}</td>
+      </tr>
+    </table>
+
+    <br>
+    <div class="subhead">Arts & Crafts</div>
+    <table id="arts" class="w3-table w3-hoverable">
+      <thead>
+        <tr class="subhead w3-blue">
+          <td style="width: 20%;">Course Name</td>
+          <td>Description</td>
+        </tr>
+      </thead>
+      <tr w3-repeat="courses">
+        <td>{{CourseName}}</td>
+        <td>{{Description}}</td>
+      </tr>
+    </table>
+
+    <br>
+    <div class="subhead">Language Studies</div>
+    <table id="language" class="w3-table w3-hoverable">
+      <thead>
+        <tr class="subhead w3-blue">
+          <td style="width: 20%;">Course Name</td>
+          <td>Description</td>
+        </tr>
+      </thead>
+      <tr w3-repeat="courses">
+        <td>{{CourseName}}</td>
+        <td>{{Description}}</td>
+      </tr>
+    </table>
+
+    <br>
+    <div class="subhead">Music (**NOTE** June session: June 13 to June 29 and July session: July 11 to July 27)</div>
+    <table id="music" class="w3-table w3-hoverable">
+      <thead>
+        <tr class="subhead w3-blue">
+          <td style="width: 20%;">Course Name</td>
+          <td>Description</td>
+        </tr>
+      </thead>
+      <tr w3-repeat="courses">
+        <td>{{CourseName}}</td>
+        <td>{{Description}}</td>
+      </tr>
+    </table>
+
+    <br>
+    <div class="subhead">Video Production</div>
+    <table id="video" class="w3-table w3-hoverable">
+      <thead>
+        <tr class="subhead w3-blue">
+          <td style="width: 20%;">Course Name</td>
+          <td>Description</td>
+        </tr>
+      </thead>
+      <tr w3-repeat="courses">
+        <td>{{CourseName}}</td>
+        <td>{{Description}}</td>
+      </tr>
+    </table>
+
+    <br>
+    <div class="subhead">Wellness</div>
+    <table id="wellness" class="w3-table w3-hoverable">
+      <thead>
+        <tr class="subhead w3-blue">
+          <td style="width: 20%;">Course Name</td>
+          <td>Description</td>
+        </tr>
+      </thead>
+      <tr w3-repeat="courses">
+        <td>{{CourseName}}</td>
+        <td>{{Description}}</td>
+      </tr>
+    </table>
+
+    <hr>
+
+    <p class="head w3-center">Weekly Schedule</p>
+    <table class="w3-table w3-centered">
+      <thead>
+        <tr class="subhead w3-green">
+          <td>&nbsp;</td>
+          <td>Monday</td>
+          <td>Tuesday</td>
+          <td>Wednesday</td>
+          <td>Thursday</td>
+          <td>Friday</td>
+        </tr>
+      </thead>
+
+      <div id="signupStatus"></div>
+
+      <!-- Breakfast -->
+      <tr class="w3-white">
+        <td style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="1">08:00 - 08:30</td>
+        <td style="border-bottom: 2px solid black;" colspan="4">Breakfast</td>
+        <td style="background: #ff0000; vertical-align: middle;" rowspan="19">No Classes</td>
+      </tr>
+
+      <!-- Session 1 -->
+      <tr class="w3-white" id="session_1_class_1">
+        <td id="signup1" style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="4"></td>
+        <td style="background: #76ff34;" colspan="4">{{camp_name}} ({{age_group}})</td>
+      </tr>
+
+      <tr class="w3-white" id="session_1_class_2">
+        <td style="background: #31ffbb;" colspan="4">{{camp_name}} ({{age_group}})</td>
+      </tr>
+
+      <tr class="w3-white" id="session_1_class_3">
+        <td style="background: #ffba34;">{{camp_name}} ({{age_group}})</td>
+        <td colspan="3">&nbsp;</td>
+      </tr>
+
+      <tr class="w3-white" id="session_1_class_4">
+        <td style="border-bottom: 2px solid black;" colspan="1">&nbsp;</td>
+        <td style="background: #bbff34; border-bottom: 2px solid black;" colspan="3">{{camp_name}} ({{age_group}})</td>
+      </tr>
+
+      <!-- Session 2 -->
+      <tr class="w3-white" id="session_2_class_1">
+        <td id="signup2" style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="3"></td>
+        <td style="background: #3333ff;" colspan="4">{{camp_name}} ({{age_group}})</td>
+      </tr>
+
+      <tr class="w3-white" id="session_2_class_2">
+        <td style="background: #bb33ff;" colspan="4">{{camp_name}} ({{age_group}})</td>
+      </tr>
+
+      <tr class="w3-white" id="session_2_class_3">
+        <td style="border-bottom: 2px solid black;" colspan="1">&nbsp;</td>
+        <td style="background: #ff33bb; border-bottom: 2px solid black;" colspan="3">{{camp_name}} ({{age_group}})</td>
+      </tr>
+
+      <!-- Lunch -->
+      <tr class="w3-white">
+        <td style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="1">11:30 - 12:00</td>
+        <td style="border-bottom: 2px solid black;" colspan="4">Lunch</td>
+      </tr>
+
+      <!-- Session 3 -->
+      <tr class="w3-white" id="session_3_class_1">
+        <td id="signup3" style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="4"></td>
+        <td style="background: #31ffff;" colspan="4">{{camp_name}} ({{age_group}})</td>
+      </tr>
+
+      <tr class="w3-white" id="session_3_class_3">
+        <td style="background: #ff3378;" colspan="4">{{camp_name}} ({{age_group}})</td>
+      </tr>
+
+      <tr class="w3-white" id="session_3_class_4">
+        <td style="background: #ff7734;" colspan="1">{{camp_name}} ({{age_group}})</td>
+        <td colspan="3">&nbsp;</td>
+      </tr>
+
+      <tr class="w3-white" id="session_3_class_5">
+        <td style="border-bottom: 2px solid black;" colspan="1">&nbsp;</td>
+        <td style="background: #7733ff; border-bottom: 2px solid black;" colspan="3">{{camp_name}} ({{age_group}})</td>
+      </tr>
+
+      <!-- Session 4 -->
+      <tr class="w3-white" id="session_4_class_1">
+        <td id="signup4" style="vertical-align: middle;" rowspan="4"></td>
+
+        <td style="background: #31ff77;" colspan="4">{{camp_name}} ({{age_group}})</td>
+      </tr>
+
+      <tr class="w3-white" id="session_4_class_3">
+        <td style="background: #ffff34;" colspan="4">{{camp_name}} ({{age_group}})</td>
+      </tr>
+
+      <tr class="w3-white" id="session_4_class_4">
+        <td colspan="1">&nbsp;</td>
+        <td style="background: #31ff34;" colspan="1">{{camp_name}} ({{age_group}})</td>
+        <td colspan="1">&nbsp;</td>
+        <td style="background: #31ff34;" colspan="1">{{camp_name}} ({{age_group}})</td>
+      </tr>
+
+      <tr class="w3-white" id="session_4_class_5">
+        <td colspan="2">&nbsp;</td>
+        <td style="background: #3377ff;" colspan="1">{{camp_name}} ({{age_group}})</td>
+        <td colspan="1">&nbsp;</td>
+      </tr>
+    </table>
+    &nbsp;
+
+  </div>
+</div>
