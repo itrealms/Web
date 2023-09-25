@@ -172,7 +172,7 @@ const nov2023 = {"nov" : [
 const dec2023 = {"dec" : [
   {
     "agenda" : "#",
-    "agenda_date" : "",
+    "agenda_date" : "2023-12-19 - Upcoming",
     "minutes" : "#",
     "minutes_date" : ""
   }
