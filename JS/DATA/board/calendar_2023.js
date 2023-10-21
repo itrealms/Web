@@ -153,10 +153,10 @@ const sep2023 = {"sep" : [
 
 const oct2023 = {"oct" : [
   {
-    "agenda" : "#",
-    "agenda_date" : "2023-10-24 - Upcoming",
+    "agenda" : "https://drive.google.com/file/d/107hb6fDwThY-aDxWy-ESC1fiuoKBgtUM/view",
+    "agenda_date" : "2023-10-24 - Agenda",
     "minutes" : "#",
-    "minutes_date" : ""
+    "minutes_date" : "2023-10-24 - Minutes"
   }
 ]};
 
