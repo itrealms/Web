@@ -147,7 +147,7 @@ const sep2023 = {"sep" : [
     "agenda" : "https://drive.google.com/file/d/1gcK6zgVgrWc7oDe0HqEz-FGpgmfgGU52/view",
     "agenda_date" : "2023-09-26 - Agenda",
     "minutes" : "#",
-    "minutes_date" : "2023-09-26 - Agenda"
+    "minutes_date" : "2023-09-26 - Minutes"
   }
 ]};
 
