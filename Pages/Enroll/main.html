@@ -80,7 +80,7 @@
 		<p>Q: How much does REALMS Charter School cost?<br>
 			REALMS is a FREE public charter school. We also offer free lunches for all our students.
 		</p>
-		<p>Q: Is my student eligible for Transitional-Kinder or Kindergarten?<br>
+		<p>Q: What grade is my student currently eligible to enroll in?<br>
 			Please select your student's birthday:</p>
 
 		<div class="w3-row-padding w3-medium">
@@ -158,131 +158,6 @@
 			<button id="checkBDay" class="w3-button w3-round blue">Check Birthday</button>
 		</div>
 
-		<script>
-			$(document).ready(function() {
-				function resetPanel() {
-					$("#year").removeClass("w3-text-red");
-					$("#month").removeClass("w3-text-red");
-					$("#day").removeClass("w3-text-red");
-					$("#EnrollResp").removeClass("w3-green");
-					$("#EnrollResp").removeClass("w3-orange");
-					$("#EnrollResp").removeClass("w3-red");
-					$("#EnrollResp").removeClass("w3-leftbar w3-border-red w3-pale-red w3-text-black");
-				}
-				$("#year").change(function() {
-					$("#year").removeClass("w3-text-red");
-					$("#EnrollResp").addClass("w3-hide");
-				});
-				$("#month").change(function() {
-					$("#month").removeClass("w3-text-red");
-					$("#EnrollResp").addClass("w3-hide");
-				});
-				$("#day").change(function() {
-					$("#day").removeClass("w3-text-red");
-					$("#EnrollResp").addClass("w3-hide");
-				});
-				$("#checkBDay").on("click", function() {
-					let errorFlag = 0;
-					if ($("#year").val() == null) {
-						$("#year").addClass("w3-text-red");
-						errorFlag = 1;
-					}
-					if ($("#month").val() == null) {
-						$("#month").addClass("w3-text-red");
-						errorFlag = 1;
-					}
-					if ($("#day").val() == null) {
-						$("#day").addClass("w3-text-red");
-						errorFlag = 1;
-					}
-					if (errorFlag == 1) {
-						$("#EnrollResp").text("Please fix the above fields in red. These are required. Thank you.");
-						$("#EnrollResp").addClass("w3-leftbar w3-border-red w3-pale-red w3-text-black");
-						$("#EnrollResp").removeClass("w3-hide");
-						return;
-					}
-					const firstday = new Date(2023, 7, 7);
-					const lastday = new Date(2024, 4, 29);
-					const cutoff_cy_start = new Date(2023, 8, 2);
-					const cutoff_cy_end = new Date(2024, 3, 30);
-
-					const firstday2 = new Date(2024, 7, 5);
-					const lastday2 = new Date(2025, 4, 28);
-					const cutoff_ny_start = new Date(2024, 8, 2);
-					const cutoff_ny_end = new Date(2025, 5, 1);
-
-					const monthb = $("#month").val();
-					const dayb = $("#day").val();
-					const yearb = $("#year").val();
-					const bday = new Date(yearb, monthb, dayb);
-					const year5 = parseInt($("#year").val(), 10) + 5;
-					const bday5 = new Date(year5, monthb, dayb);
-
-					const firstdayage = Math.floor((firstday - bday) / 31556952000);
-					const firstdayage2 = Math.floor((firstday2 - bday) / 31556952000);
-
-					let grade = "No";
-					let startdate = "No";
-					let canstarttoday = "No";
-						// Rule 1: IF 5th bday after the last day of next school year THEN too young
-					if (bday5 > lastday2) {
-						grade = "young";
-						// Rule 2: IF older than 5 before start of current school year THEN too old
-					} else if (firstdayage > 5) {
-						grade = "old";
-						// Rule 3: IF turning 5 before cutoff THEN Kinder on first day of school
-					} else if (bday5 < cutoff_cy_start) {
-						grade = "Kindergarten";
-						startdate = firstday;
-						// Rule 4: IF turning 5 between cutoff dates THEN TK first day of school current year
-					} else if (bday5 >= cutoff_cy_start && bday5 <= cutoff_cy_end) {
-						grade = "Transitional-Kinder";
-						startdate = firstday;
-						// Rule 5 & 8: IF turning 5 after cutoff and before last day THEN TK on 5th bday either year
-					} else if ((bday5 > cutoff_cy_end && bday5 <= lastday) || (bday5 > cutoff_ny_end && bday5 <= lastday2)) {
-						grade = "Transitional-Kinder";
-						startdate = bday5;
-						//Rule 6: IF turning 5 after current year and before start of next THEN K first day next year
-					} else if (bday5 > lastday && bday5 < cutoff_ny_start) {
-						grade = "Kindergarten";
-						startdate = firstday2;
-						// Rule 7: IF turning 5 between cutoff dates next year THEN TK first day of school next year
-					} else if (bday5 >= cutoff_ny_start && bday5 <= cutoff_ny_end) {
-						grade = "Transitional-Kinder";
-						startdate = firstday2;
-					}
-					if (startdate != "No") {
-						if (new Date() >= startdate) {
-							canstarttoday = "Yes";
-						}
-						startdate_nice = startdate.toLocaleDateString('en-us', {
-							month: "short",
-							day: "numeric",
-							year: "numeric"
-						});
-					}
-					resetPanel();
-					if (grade == "old" || grade == "young") {
-						$("#EnrollResp").addClass("w3-red");
-						$("#EnrollResp").text("Sorry, your student is too " + grade + " to be eligible for Transitional-Kinder or Kindergarten at this time.");
-					} else {
-						if (canstarttoday == "Yes") {
-							$("#EnrollResp").addClass("w3-green");
-							$("#EnrollResp").text("Congratulations, your student is eligible to start " + grade + " today!");
-						} else {
-							if (startdate > lastday && startdate <= lastday2) {
-								$("#EnrollResp").addClass("w3-orange");
-								$("#EnrollResp").text("Your student may be eligible for early enrollment for " + grade + " during the " + firstday2.getFullYear() + "-" + lastday2.getFullYear() + " school year. Please contact Jessica at info@rcrealms.org or call (760) 375-1010 for more information");
-							} else {
-								$("#EnrollResp").addClass("w3-green");
-								$("#EnrollResp").text("Congratulations, your student is eligible to enroll for " + grade + " today! Your student may start on: " + startdate_nice);
-							}
-						}
-					}
-					$("#EnrollResp").removeClass("w3-hide");
-				});
-			});
-		</script>
 		<div id="EnrollResp" class="w3-panel w3-padding w3-hide"></div>
 
 		<p>Q: How long are your TK and K classes?<br>
