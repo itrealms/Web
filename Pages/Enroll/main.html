@@ -13,6 +13,7 @@
 
 <!-- Custom CSS and JS -->
 <link rel="stylesheet" href="https://itrealms.github.io/Web/CSS/realms.css">
+<script src="https://itrealms.github.io/Web/Pages/Enroll/enroll_calc.js"></script>
 <!-- ====================== Avoid editing above here ====================== -->
 
 <div class="w3-container w3-padding">
@@ -141,10 +142,16 @@
 			<div class="w3-col" style="width:150px;">
 				<select id="year" class="w3-select w3-border">
 					<option value="" disabled selected>Year</option>
+					<option value="2011">2011</option>
+					<option value="2012">2012</option>
+					<option value="2013">2013</option>
+					<option value="2014">2014</option>
+					<option value="2015">2015</option>
+					<option value="2016">2016</option>
 					<option value="2017">2017</option>
 					<option value="2018">2018</option>
 					<option value="2019">2019</option>
-					<option value="2020">2020</option>
+
 				</select>
 			</div>
 
@@ -265,7 +272,7 @@
 						} else {
 							if (startdate > lastday && startdate <= lastday2) {
 								$("#EnrollResp").addClass("w3-orange");
-								$("#EnrollResp").text("Your student may be eligible for early enrollment for " + grade + " during the " + firstday2.getFullYear() + "-" + lastday2.getFullYear() + " school year. Please contact Debora at info@rcrealms.org or call (760) 375-1010 for more information");
+								$("#EnrollResp").text("Your student may be eligible for early enrollment for " + grade + " during the " + firstday2.getFullYear() + "-" + lastday2.getFullYear() + " school year. Please contact Jessica at info@rcrealms.org or call (760) 375-1010 for more information");
 							} else {
 								$("#EnrollResp").addClass("w3-green");
 								$("#EnrollResp").text("Congratulations, your student is eligible to enroll for " + grade + " today! Your student may start on: " + startdate_nice);
