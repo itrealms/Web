@@ -46,8 +46,8 @@ $(document).ready(function() {
 		const birthYear = $("#year").val();
 		const birthday = new Date(birthYear, birthMonth, birthDay);
 
-		// Updating these values should affect the rest of teh calculations without needing to update rest of the code.
-		// The code for "Too young" will need top be updated manually below
+		// Updating these values should affect the rest of the calculations without needing to update rest of the code.
+		// The code for "Too young" will need to be updated manually below
 		const schoolYear = 2023;
 		const cutoffStartMonth = 8; // Zero indexed month. 8 = September
 		const cutoffStartDay = 2;
@@ -106,9 +106,12 @@ $(document).ready(function() {
 
 		resetPanel();
 
-		if (grade == "old" || grade == "young") {
+		if (grade == "old") {
 			$("#EnrollResp").addClass("w3-red");
-			$("#EnrollResp").text("Sorry, your student is currently too " + grade + " to be eligible for enrollment at this time.");
+			$("#EnrollResp").text("Sorry, your student is currently too " + grade + " to be eligible for enrollment. REALMS is for grades TK-6th at this time.");
+		} else if (grade == "young") {
+			$("#EnrollResp").addClass("w3-orange");
+			$("#EnrollResp").text("Sorry, your student may be too " + grade + " to be eligible for enrollment currently. Please verify with Jessica @ (760) 375-1010");
 		} else {
 			$("#EnrollResp").addClass("w3-green");
 			$("#EnrollResp").text("Wonderful news! Your student is eligible to enroll for grade " + grade + " today!");
