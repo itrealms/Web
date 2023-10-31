@@ -50,39 +50,41 @@ $(document).ready(function() {
 		// The code for "Too young" will need to be updated manually below
 		const schoolYear = 2023;
 		const cutoffStartMonth = 8; // Zero indexed month. 8 = September
-		const cutoffStartDay = 2;
 		const cutoffEndMonth = 3;// Zero indexed month. 3 = April
-		const cutoffEndDay = 2;
+		const cutOffDay = 2;
 
-		const gradeTKStart = new Date(schoolYear - 5, cutoffStartMonth, cutoffStartDay);
-		const gradeTKEnd = new Date(schoolYear - 4, cutoffEndMonth, cutoffEndDay);
+		const gradePreKStart = new Date(schoolYear - 4, cutoffEndMonth, cutOffDay);
+		const gradePreKEnd = new Date(schoolYear - 3, cutoffEndMonth + 2, cutOffDay);
 
-		const gradeKStart = new Date(schoolYear - 6, cutoffStartMonth, cutoffStartDay);
-		const gradeKEnd = new Date(schoolYear - 5, cutoffStartMonth, cutoffStartDay - 1);
+		const gradeTKStart = new Date(schoolYear - 5, cutoffStartMonth, cutOffDay);
+		const gradeTKEnd = new Date(schoolYear - 4, cutoffEndMonth, cutOffDay);
 
-		const grade1Start = new Date(schoolYear - 7, cutoffStartMonth, cutoffStartDay);
-		const grade1End = new Date(schoolYear - 6, cutoffStartMonth, cutoffStartDay - 1);
+		const gradeKStart = new Date(schoolYear - 6, cutoffStartMonth, cutOffDay);
+		const gradeKEnd = new Date(schoolYear - 5, cutoffStartMonth, cutOffDay - 1);
 
-		const grade2Start = new Date(schoolYear - 8, cutoffStartMonth, cutoffStartDay);
-		const grade2End = new Date(schoolYear - 7, cutoffStartMonth, cutoffStartDay - 1);
+		const grade1Start = new Date(schoolYear - 7, cutoffStartMonth, cutOffDay);
+		const grade1End = new Date(schoolYear - 6, cutoffStartMonth, cutOffDay - 1);
 
-		const grade3Start = new Date(schoolYear - 9, cutoffStartMonth, cutoffStartDay);
-		const grade3End = new Date(schoolYear - 8, cutoffStartMonth, cutoffStartDay - 1);
+		const grade2Start = new Date(schoolYear - 8, cutoffStartMonth, cutOffDay);
+		const grade2End = new Date(schoolYear - 7, cutoffStartMonth, cutOffDay - 1);
 
-		const grade4Start = new Date(schoolYear - 10, cutoffStartMonth, cutoffStartDay);
-		const grade4End = new Date(schoolYear - 9, cutoffStartMonth, cutoffStartDay - 1);
+		const grade3Start = new Date(schoolYear - 9, cutoffStartMonth, cutOffDay);
+		const grade3End = new Date(schoolYear - 8, cutoffStartMonth, cutOffDay - 1);
 
-		const grade5Start = new Date(schoolYear - 11, cutoffStartMonth, cutoffStartDay);
-		const grade5End = new Date(schoolYear - 10, cutoffStartMonth, cutoffStartDay - 1);
+		const grade4Start = new Date(schoolYear - 10, cutoffStartMonth, cutOffDay);
+		const grade4End = new Date(schoolYear - 9, cutoffStartMonth, cutOffDay - 1);
 
-		const grade6Start = new Date(schoolYear - 12, cutoffStartMonth, cutoffStartDay + 1);
-		const grade6End = new Date(schoolYear - 11, cutoffStartMonth, cutoffStartDay - 1);
+		const grade5Start = new Date(schoolYear - 11, cutoffStartMonth, cutOffDay);
+		const grade5End = new Date(schoolYear - 10, cutoffStartMonth, cutOffDay - 1);
+
+		const grade6Start = new Date(schoolYear - 12, cutoffStartMonth, cutOffDay + 1);
+		const grade6End = new Date(schoolYear - 11, cutoffStartMonth, cutOffDay - 1);
 
 		let grade = "No";
 		let startdate = "No";
 		let canstarttoday = "No";
 
-		if (birthday > new Date(2019, 3, 2)) {
+		if (birthday > new Date(schoolYear - 4, cutoffEndMonth, cutOffDay)) {
 			grade = "young";
 		} else if (birthday >= gradeTKStart && birthday <= gradeTKEnd) {
 			grade = "TK";
@@ -111,7 +113,11 @@ $(document).ready(function() {
 			$("#EnrollResp").text("Sorry, your student is currently too " + grade + " to be eligible for enrollment. REALMS is for grades TK-6th at this time.");
 		} else if (grade == "young") {
 			$("#EnrollResp").addClass("w3-orange");
-			$("#EnrollResp").text("Sorry, your student may be too " + grade + " to be eligible for enrollment currently. Please verify with Jessica @ (760) 375-1010");
+			if (birthday >= gradePreKStart && birthday <= gradePreKEnd) {
+				$("#EnrollResp").text("Sorry, your student is too " + grade + " to start school this year. Your student appears eligible for TK next school year. Please verify with Jessica @ (760) 375-1010");
+			} else {
+				$("#EnrollResp").text("Sorry, your student may be too " + grade + " to be eligible for enrollment currently. Please verify with Jessica @ (760) 375-1010");
+			}
 		} else {
 			$("#EnrollResp").addClass("w3-green");
 			$("#EnrollResp").text("Wonderful news! Your student is eligible to enroll for grade " + grade + " today!");
