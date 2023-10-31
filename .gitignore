@@ -132,3 +132,4 @@ dmypy.json
 /.idea/
 /Django/
 /PassGen/passwords.txt
+/.idea/
