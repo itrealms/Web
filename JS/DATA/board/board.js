@@ -1,5 +1,4 @@
 $(function() {
-  alert("testing");
   try {w3.displayObject("jan2023", jan2023);}catch(err){}
   try {w3.displayObject("feb2023", feb2023);}catch(err){}
   try {w3.displayObject("mar2023", mar2023);}catch(err){}
