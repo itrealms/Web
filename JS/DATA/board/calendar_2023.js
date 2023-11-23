@@ -164,7 +164,7 @@ const nov2023 = {"nov" : [
   {
     "agenda" : "https://drive.google.com/file/d/1NtVWg59QV_SQslBYartX8YSlFaf_UhSV/view",
     "agenda_date" : "2023-11-28 - Agenda",
-    "minutes" : "#",
+    "minutes" : "",
     "minutes_date" : "2023-11-28 - Minutes"
   }
 ]};
