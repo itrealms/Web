@@ -1,4 +1,4 @@
-const jan2023 = {"jan" : [
+var jan2023 = {"jan" : [
   {
     "agenda" : "https://drive.google.com/file/d/1XhEEAyDbaKCvEd_16F7qCXk7j-ZfbUvJ/view",
     "agenda_date" : "2023-01-12 - Special Agenda",
