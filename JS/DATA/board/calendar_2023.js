@@ -171,9 +171,9 @@ const nov2023 = {"nov" : [
 
 const dec2023 = {"dec" : [
   {
-    "agenda" : "#",
-    "agenda_date" : "2023-12-19 - Upcoming",
+    "agenda" : "https://drive.google.com/file/d/1h6JY0057qNiWAUmwFRvCe2eK0x8ikkhq/view",
+    "agenda_date" : "2023-12-12 - Agenda",
     "minutes" : "#",
-    "minutes_date" : ""
+    "minutes_date" : "2023-12-12-Minutes"
   }
 ]};
