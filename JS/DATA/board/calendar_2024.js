@@ -1,7 +1,7 @@
 const jan2024 = {"jan" : [
 	{
     "agenda" : "#",
-    "agenda_date" : "",
+    "agenda_date" : "2024-01-23 - Upcoming",
     "minutes" : "#",
     "minutes_date" : ""
   }
@@ -10,7 +10,7 @@ const jan2024 = {"jan" : [
 const feb2024 = {"feb" : [
   {
     "agenda" : "#",
-    "agenda_date" : "",
+    "agenda_date" : "2024-02-27 - Upcoming",
     "minutes" : "#",
     "minutes_date" : ""
   }
