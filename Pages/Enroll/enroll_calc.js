@@ -81,8 +81,8 @@ $(document).ready(function() {
 		const grade6End = new Date(schoolYear - 11, cutoffStartMonth, cutOffDay - 1);
 
 		let grade = "No";
-		let startdate = "No";
-		let canstarttoday = "No";
+		//let startdate = "No";
+		//let canstarttoday = "No";
 
 		if (birthday > new Date(schoolYear - 4, cutoffEndMonth, cutOffDay)) {
 			grade = "young";
