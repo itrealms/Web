@@ -10,7 +10,7 @@ $(function() {
   try {w3.displayObject("sep2024", sep2024);}catch(err){}
   try {w3.displayObject("oct2024", oct2024);}catch(err){}
   try {w3.displayObject("nov2024", nov2024);}catch(err){}
-  try {w3.displayObject("dec2024", dec2023);}catch(err){}
+  try {w3.displayObject("dec2024", dec2024);}catch(err){}
 
   try {w3.displayObject("jan2023", jan2023);}catch(err){}
   try {w3.displayObject("feb2023", feb2023);}catch(err){}
