@@ -146,7 +146,7 @@ const sep2023 = {"sep" : [
   {
     "agenda" : "https://drive.google.com/file/d/1gcK6zgVgrWc7oDe0HqEz-FGpgmfgGU52/view",
     "agenda_date" : "2023-09-26 - Agenda",
-    "minutes" : "#",
+    "minutes" : "https://drive.google.com/file/d/1R0r7VLYrmj4e9mxZ2I5or5RKLjAgBnMn/view",
     "minutes_date" : "2023-09-26 - Minutes"
   }
 ]};
@@ -155,7 +155,7 @@ const oct2023 = {"oct" : [
   {
     "agenda" : "https://drive.google.com/file/d/1H5KeLYd56zhsNkaP0bL6ox-liz0Pz5CG/view",
     "agenda_date" : "2023-10-24 - Agenda",
-    "minutes" : "#",
+    "minutes" : "https://drive.google.com/file/d/16eS2z7FDmPnR1oFjIg7A1AWkYL5kgzu3/view",
     "minutes_date" : "2023-10-24 - Minutes"
   }
 ]};
