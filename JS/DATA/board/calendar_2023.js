@@ -131,7 +131,7 @@ const aug2023 = {"aug" : [
   {
     "agenda" : "https://drive.google.com/file/d/1a8s-dbfB77mjGG7zo1zkQBlXoDjkbryj/view",
     "agenda_date" : "2023-08-22 - Agenda",
-    "minutes" : "#",
+    "minutes" : "https://drive.google.com/file/d/1_R89fhcySwD2oSqEpJhtFnqAXPjQ0y2L/view",
     "minutes_date" : "2023-08-22 - Minutes"
   }
 ]};
@@ -140,7 +140,7 @@ const sep2023 = {"sep" : [
   {
     "agenda" : "https://drive.google.com/file/d/1MR-cdPYQuR8LxR91dn_cUBqSBdV61g3J/view",
     "agenda_date" : "2023-09-12 - Special Agenda",
-    "minutes" : "#",
+    "minutes" : "https://drive.google.com/file/d/1Xv3AYU_h15J9SRFiXV98bDuitMi0mdk2/view",
     "minutes_date" : "2023-09-12 - Special Minutes"
   },
   {
