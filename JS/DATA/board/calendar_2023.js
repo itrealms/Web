@@ -174,7 +174,7 @@ const dec2023 = {"dec" : [
     "agenda" : "https://drive.google.com/file/d/1h6JY0057qNiWAUmwFRvCe2eK0x8ikkhq/view",
     "agenda_date" : "2023-12-12 - Agenda",
     "minutes" : "https://drive.google.com/file/d/185VWtie1UGFVRRTtnMARYt_ZHotxPuvK/view",
-    "minutes_date" : "2023-12-12-Minutes",
+    "minutes_date" : "2023-12-12 - Minutes",
   },
   {
     "agenda" : "https://drive.google.com/file/d/1Xu1u3KeDe9V6zV4RUNrFGuiQDl_855OZ/view",
