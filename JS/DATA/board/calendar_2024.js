@@ -15,6 +15,12 @@ const feb2024 = {"feb" : [
     "minutes_date" : "2024-02-02 - Special Minutes"
   },
   {
+    "agenda" : "https://drive.google.com/file/d/17dvOSRB47MKJojM8cuweW3Q4ytohnYPT/view",
+    "agenda_date" : "2024-02-08 - Special Agenda",
+    "minutes" : "#",
+    "minutes_date" : "2024-02-08 - Special Minutes"
+  },
+  {
     "agenda" : "#",
     "agenda_date" : "2024-02-27 - Upcoming",
     "minutes" : "#",
