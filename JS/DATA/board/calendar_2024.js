@@ -22,9 +22,9 @@ const feb2024 = {"feb" : [
   },
   {
     "agenda" : "https://drive.google.com/file/d/1KSO9I-trMSi_RtJh8wNuf1klqePgSyDa/view",
-    "agenda_date" : "2024-02-12 - Regular Agenda",
+    "agenda_date" : "2024-02-12 - Agenda",
     "minutes" : "#",
-    "minutes_date" : "2024-02-12 - Regular Minutes"
+    "minutes_date" : "2024-02-12 - Minutes"
   },
   {
     "agenda" : "#",
