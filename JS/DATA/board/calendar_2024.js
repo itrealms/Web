@@ -2,7 +2,7 @@ const jan2024 = {"jan" : [
 	{
     "agenda" : "https://drive.google.com/file/d/1VnsRG4D8xnpO1E5Ilf2P8NxEJs-vnlc8/view",
     "agenda_date" : "2024-01-23 - Agenda",
-    "minutes" : "#",
+    "minutes" : "https://drive.google.com/file/d/1XzGXiBeXzx6Eo7JYqYzAhhMxa6FJUmbi/view",
     "minutes_date" : "2024-01-23 - Minutes"
   }
 ]};
