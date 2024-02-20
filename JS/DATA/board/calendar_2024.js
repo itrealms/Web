@@ -27,10 +27,10 @@ const feb2024 = {"feb" : [
     "minutes_date" : "2024-02-12 - Minutes"
   },
   {
-    "agenda" : "https://drive.google.com/file/d/1kAg9GGN5FIKsYwYHK7ejat5k0eKZnXR-/view",
-    "agenda_date" : "2024-02-23 - Agenda",
+    "agenda" : "https://drive.google.com/file/d/1tRRMwV5MVOBEeBWKqYH8hFGpOGAXMxOX/view",
+    "agenda_date" : "2024-02-23 - Site Council Agenda",
     "minutes" : "#",
-    "minutes_date" : "2024-02-23 - Minutes"
+    "minutes_date" : "2024-02-23 - Site Council Minutes"
   },
   {
     "agenda" : "#",
