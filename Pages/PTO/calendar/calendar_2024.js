@@ -28,7 +28,7 @@ const mar2024 = {"mar" : [
 const apr2024 = {"apr" : [
   {
     "agenda" : "#",
-    "agenda_date" : "2024-04-05 - Upcoming",
+    "agenda_date" : "",
     "minutes" : "#",
     "minutes_date" : ""
   }
@@ -37,7 +37,7 @@ const apr2024 = {"apr" : [
 const may2024 = {"may" : [
   {
     "agenda" : "#",
-    "agenda_date" : "2024-05-03 - Upcoming",
+    "agenda_date" : "",
     "minutes" : "#",
     "minutes_date" : ""
   }
