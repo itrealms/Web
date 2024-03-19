@@ -17,13 +17,13 @@ const feb2024 = {"feb" : [
   {
     "agenda" : "https://drive.google.com/file/d/17dvOSRB47MKJojM8cuweW3Q4ytohnYPT/view",
     "agenda_date" : "2024-02-08 - Special Agenda",
-    "minutes" : "#",
+    "minutes" : "https://drive.google.com/file/d/1DVwVp0_9bNk2szC-9QbLVv5eVfAEbue8/view",
     "minutes_date" : "2024-02-08 - Special Minutes"
   },
   {
     "agenda" : "https://drive.google.com/file/d/1KSO9I-trMSi_RtJh8wNuf1klqePgSyDa/view",
     "agenda_date" : "2024-02-12 - Agenda",
-    "minutes" : "#",
+    "minutes" : "https://drive.google.com/file/d/1r4MptbAmjEwzL_jR9yZ_w8T6lMYhuy3S/view",
     "minutes_date" : "2024-02-12 - Minutes"
   },
   {

@@ -50,7 +50,7 @@ $(document).ready(function() {
 		// The code for "Too young" will need to be updated manually below
 		const schoolYear = 2023;
 		const cutoffStartMonth = 8; // Zero indexed month. 8 = September
-		const cutoffEndMonth = 3;// Zero indexed month. 3 = April
+		const cutoffEndMonth = 3; // Zero indexed month. 3 = April
 		const cutOffDay = 2;
 
 		const gradePreKStart = new Date(schoolYear - 4, cutoffEndMonth, cutOffDay);
