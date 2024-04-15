@@ -45,6 +45,12 @@ const mar2024 = {"mar" : [
 
 const apr2024 = {"apr" : [
   {
+    "agenda" : "https://drive.google.com/file/d/1q7SXYb8f4hJB8uRZgLQRMQ4AZw2GN41d/view",
+    "agenda_date" : "2024-04-16 - Personnel Committee Agenda",
+    "minutes" : "#",
+    "minutes_date" : ""
+  },
+  {
     "agenda" : "#",
     "agenda_date" : "2024-04-23 - Upcoming",
     "minutes" : "#",
