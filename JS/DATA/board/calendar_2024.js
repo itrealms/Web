@@ -51,6 +51,18 @@ const apr2024 = {"apr" : [
     "minutes_date" : ""
   },
   {
+    "agenda" : "https://drive.google.com/file/d/1GzOvGGKZ6-OBBQinSq1IBUc04nH7AzuP/view",
+    "agenda_date" : "2024-04-19 - Personnel Committee Agenda",
+    "minutes" : "#",
+    "minutes_date" : ""
+  },
+  {
+    "agenda" : "https://drive.google.com/file/d/18C5HLDobIb_pqL7FwouOBO8qP8FtBt8o/view",
+    "agenda_date" : "2024-04-20 - Personnel Committee Agenda",
+    "minutes" : "#",
+    "minutes_date" : ""
+  },
+  {
     "agenda" : "#",
     "agenda_date" : "2024-04-23 - Upcoming",
     "minutes" : "#",
