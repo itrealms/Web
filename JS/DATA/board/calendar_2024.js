@@ -63,7 +63,7 @@ const apr2024 = {"apr" : [
     "minutes_date" : "2024-04-20 - Personnel Committee Minutes"
   },
   {
-    "agenda" : "https://drive.google.com/file/d/1xCjZZPBBUDaQZ-FUa-xM0VyIv6Z7ZPFJ/view",
+    "agenda" : "https://drive.google.com/file/d/1OmX8wdO9OKIsu6ozT0VZIbDbpAi86F0E/view",
     "agenda_date" : "2024-04-23 - Agenda",
     "minutes" : "#",
     "minutes_date" : "2024-04-23 - Minutes"
