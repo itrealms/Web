@@ -35,4 +35,11 @@
     try {w3.displayObject("session_4_class_4", session_4_class_4);}catch(err){}
     try {w3.displayObject("session_4_class_5", session_4_class_5);}catch(err){}
     try {w3.displayObject("session_4_class_6", session_4_class_6);}catch(err){}
+
+    try {w3.displayObject("session_5_class_1", session_5_class_1);}catch(err){}
+    try {w3.displayObject("session_5_class_2", session_5_class_2);}catch(err){}
+    try {w3.displayObject("session_5_class_3", session_5_class_3);}catch(err){}
+    try {w3.displayObject("session_5_class_4", session_5_class_4);}catch(err){}
+    try {w3.displayObject("session_5_class_5", session_5_class_5);}catch(err){}
+    try {w3.displayObject("session_5_class_6", session_5_class_6);}catch(err){}
  });

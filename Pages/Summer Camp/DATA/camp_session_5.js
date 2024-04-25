@@ -1,6 +1,6 @@
-// Session 4 Data //
+// Session 5 Data //
 ////////////////////////////////////////////////////////////////////////////////
-var session_4_class_1 = {
+var session_5_class_1 = {
 	camp_name: "Art",
 	age_group: "4-8 yrs",
 	days: "M, T, W, Th",
@@ -8,7 +8,7 @@ var session_4_class_1 = {
 	camp_size: "CLOSED"
 };
 
-var session_4_class_2 = {
+var session_5_class_2 = {
 	camp_name: "Intro To Shop",
 	age_group: "5-8 yrs",
 	days: "M",
@@ -16,7 +16,7 @@ var session_4_class_2 = {
 	camp_size: "CLOSED"
 };
 
-var session_4_class_3 = {
+var session_5_class_3 = {
 	camp_name: "Spanish Club",
 	age_group: "9-13 yrs",
 	days: "M, T, W, Th",
@@ -24,7 +24,7 @@ var session_4_class_3 = {
 	camp_size: "CLOSED"
 };
 
-var session_4_class_4 = {
+var session_5_class_4 = {
 	camp_name: "Beginning Orchestra",
 	age_group: "8-17 yrs",
 	days: "T, Th*",
@@ -32,7 +32,7 @@ var session_4_class_4 = {
 	camp_size: "CLOSED*"
 };
 
-var session_4_class_5 = {
+var session_5_class_5 = {
 	camp_name: "Jamily",
 	age_group: "8-17 yrs",
 	days: "W*",
