@@ -44,7 +44,7 @@ const science = {
 const language = {
 	courses: [
 		{
-			CourseName: "Spanish Club canary",
+			CourseName: "Spanish Club",
 			Description:
 				"Hola! Tu quieres hablar en espanol? Then join us for some fun and engaging Spanish lessons and activities. Each 90 minute class will be a combination of Spanish language lessons for about 30 minutes and opportunities to read, listen, and speak in Spanish for about 60 minutes. We will have a chance to explore Spanish food, music, videos and geography as a way for students to engage with the Spanish they study all year long at REALMS. Students will have an opportunity to learn more about Spanish speaking culture while growing in their language skills"
 		}
