@@ -29,7 +29,7 @@ const core = {
 
 // Science //
 ////////////////////////////////////////////////////////////////////////////////
-const science = {
+const sciences = {
 	courses: [
 		{
 			CourseName: "Robotics",
