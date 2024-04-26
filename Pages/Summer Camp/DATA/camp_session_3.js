@@ -1,7 +1,7 @@
 // Session 3 Data //
 ////////////////////////////////////////////////////////////////////////////////
 var session_3_class_1 = {
-	camp_name: "Robotics (M-W Group)",
+	camp_name: "Robotics M-W",
 	age_group: "9-13 yrs",
 	days: "M, W",
 	time: "12:00 pm - 1:30 pm",
@@ -9,7 +9,7 @@ var session_3_class_1 = {
 };
 
 var session_3_class_2 = {
-	camp_name: "Robotics (T-Th Group)",
+	camp_name: "Robotics T-Th",
 	age_group: "9-13 yrs",
 	days: "T, Th",
 	time: "12:00 pm - 1:30 pm",
