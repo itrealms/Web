@@ -1,17 +1,17 @@
 // Session 3 Data //
 ////////////////////////////////////////////////////////////////////////////////
 var session_3_class_1 = {
-	camp_name: "Art",
+	camp_name: "Robotics (M-W Group)",
 	age_group: "9-13 yrs",
-	days: "M, T, W, Th",
+	days: "M, W",
 	time: "12:00 pm - 1:30 pm",
 	camp_size: "CLOSED"
 };
 
 var session_3_class_2 = {
-	camp_name: "Intro To Woodworking",
+	camp_name: "Robotics (T-Th Group)",
 	age_group: "9-13 yrs",
-	days: "M",
+	days: "T, Th",
 	time: "12:00 pm - 1:30 pm",
 	camp_size: "CLOSED"
 };
