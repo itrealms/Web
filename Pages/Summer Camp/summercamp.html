@@ -109,6 +109,21 @@
     </table>
 
     <br>
+    <div class="subhead">Science</div>
+    <table id="science" class="w3-table w3-hoverable">
+      <thead>
+        <tr class="subhead w3-blue">
+          <td style="width: 20%;">Course Name</td>
+          <td>Description</td>
+        </tr>
+      </thead>
+      <tr w3-repeat="courses">
+        <td>{{CourseName}}</td>
+        <td>{{Description}}</td>
+      </tr>
+    </table>
+
+    <br>
     <div class="subhead">Arts & Crafts</div>
     <table id="arts" class="w3-table w3-hoverable">
       <thead>
@@ -234,6 +249,12 @@
           <td style="background: #bbff34; border-bottom: 2px solid black;" colspan="4">{{camp_name}} ({{age_group}})</td>
         </tr>
 
+        <!-- Break -->
+        <tr class="w3-white">
+          <td style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="1">09:30 - 09:45</td>
+          <td style="border-bottom: 2px solid black;" colspan="5">Break</td>
+        </tr>
+
         <!-- Session 2 -->
         <tr class="w3-white" id="session_2_class_1">
           <td id="signup2" style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="3"></td>
@@ -275,6 +296,12 @@
           <td style="background: #7733ff; border-bottom: 2px solid black;" colspan="4">{{camp_name}} ({{age_group}})</td>
         </tr>
 
+        <!-- Break -->
+        <tr class="w3-white">
+          <td style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="1">01:30 - 01:45</td>
+          <td style="border-bottom: 2px solid black;" colspan="5">Break</td>
+        </tr>
+
         <!-- Session 4 -->
         <tr class="w3-white" id="session_4_class_1">
           <td id="signup4" style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="4"></td>
@@ -296,6 +323,12 @@
           <td style="border-bottom: 2px solid black;" colspan="2">&nbsp;</td>
           <td style="background: #3377ff; border-bottom: 2px solid black;" colspan="1">{{camp_name}} ({{age_group}})</td>
           <td style="border-bottom: 2px solid black;" colspan="3">&nbsp;</td>
+        </tr>
+
+        <!-- Break -->
+        <tr class="w3-white">
+          <td style="vertical-align: middle; border-bottom: 2px solid black;" rowspan="1">03:15 - 03:30</td>
+          <td style="border-bottom: 2px solid black;" colspan="5">Break</td>
         </tr>
 
         <!-- Session 5 -->

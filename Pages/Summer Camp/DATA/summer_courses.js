@@ -27,6 +27,18 @@ const core = {
 	]
 };
 
+// Science //
+////////////////////////////////////////////////////////////////////////////////
+const science = {
+	courses: [
+		{
+			CourseName: "Robotics",
+			Description:
+				"Master spatial reasoning, engineering principles, mathematical modeling, and programming proficiency. Design and construct robotic prototypes, integrating sensors and optimizing designs. Dive into mathematical modeling techniques and programming in VEX, tackling real-world challenges through project-based learning"
+		}
+	]
+};
+
 // Language Data //
 ////////////////////////////////////////////////////////////////////////////////
 const language = {
