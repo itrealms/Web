@@ -38,7 +38,7 @@ const mar2024 = {"mar" : [
   {
     "agenda" : "https://drive.google.com/file/d/1y--fzPqnmT13LMRAXKguGO5UYOLkMeGb/view",
     "agenda_date" : "2024-03-26 - Agenda",
-    "minutes" : "#",
+    "minutes" : "https://drive.google.com/file/d/1fNZedp29hnqkfZDPWQhnJ0uCuz1jPQpf/view",
     "minutes_date" : "2024-03-26 - Minutes"
   }
 ]};
@@ -65,7 +65,7 @@ const apr2024 = {"apr" : [
   {
     "agenda" : "https://drive.google.com/file/d/1OmX8wdO9OKIsu6ozT0VZIbDbpAi86F0E/view",
     "agenda_date" : "2024-04-23 - Agenda",
-    "minutes" : "#",
+    "minutes" : "https://drive.google.com/file/d/1PXl1vV-3AExEJMkmQmck07NKrACnChlJ/view",
     "minutes_date" : "2024-04-23 - Minutes"
   },
   {
