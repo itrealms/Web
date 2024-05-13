@@ -104,7 +104,7 @@ const group3 = {
 		{
 			CourseName: "Robotics",
 			Description:
-				""
+				"Our Robotics Summer Program is a dynamic and hands-on experience where students delve into the fundamentals of robotics using Vex parts. Through a series of engaging activities and projects, participants will learn the principles of robot construction and problem-solving while fostering teamwork and collaboration"
 		},
 		{
 			CourseName: "Social-Emotional Development",
