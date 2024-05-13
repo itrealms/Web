@@ -3,32 +3,32 @@
 const group1 = {
 	courses: [
 		{
-			CourseName: "Music & Art",
-			Description:
-				"Musical Art"
-		},
-		{
-			CourseName: "Math & Science",
-			Description:
-				""
-		},
-		{
-			CourseName: "ELA (English Language Assistance?)",
-			Description:
-				""
-		},
-		{
 			CourseName: "Art",
 			Description:
 				""
 		},
 		{
-			CourseName: "Spanish",
+			CourseName: "English Workshop",
+			Description:
+				""
+		},
+		{
+			CourseName: "Math and Science",
+			Description:
+				""
+		},
+		{
+			CourseName: "Music and Art",
 			Description:
 				""
 		},
 		{
 			CourseName: "Social-Emotional Development",
+			Description:
+				""
+		},
+		{
+			CourseName: "Spanish",
 			Description:
 				""
 		}
@@ -40,22 +40,17 @@ const group1 = {
 const group2 = {
 	courses: [
 		{
-			CourseName: "Math: iReady & NextGen",
-			Description:
-				""
-		},
-		{
-			CourseName: "ELA: iReady Reading & Writing",
-			Description:
-				""
-		},
-		{
 			CourseName: "Art",
 			Description:
 				""
 		},
 		{
-			CourseName: "Spanish",
+			CourseName: "English Workshop",
+			Description:
+				""
+		},
+		{
+			CourseName: "Math Workshop",
 			Description:
 				""
 		},
@@ -65,12 +60,17 @@ const group2 = {
 				""
 		},
 		{
-			CourseName: "Model Rocketry",
+			CourseName: "Science Club",
 			Description:
 				""
 		},
 		{
 			CourseName: "Social-Emotional Development",
+			Description:
+				""
+		},
+		{
+			CourseName: "Spanish",
 			Description:
 				""
 		}
@@ -82,32 +82,32 @@ const group2 = {
 const group3 = {
 	courses: [
 		{
-			CourseName: "ELA: iReady Reading & Writing",
-			Description:
-				""
-		},
-		{
-			CourseName: "Math: iReady & NextGen",
-			Description:
-				""
-		},
-		{
 			CourseName: "Art",
 			Description:
 				""
 		},
 		{
-			CourseName: "Spanish",
+			CourseName: "English Workshop",
 			Description:
 				""
 		},
 		{
-			CourseName: "Robotics",
+			CourseName: "Math Workshop",
+			Description:
+				""
+		},
+		{
+			CourseName: "Robotics Club",
 			Description:
 				"Our Robotics Summer Program is a dynamic and hands-on experience where students delve into the fundamentals of robotics using Vex parts. Through a series of engaging activities and projects, participants will learn the principles of robot construction and problem-solving while fostering teamwork and collaboration"
 		},
 		{
 			CourseName: "Social-Emotional Development",
+			Description:
+				""
+		},
+		{
+			CourseName: "Spanish",
 			Description:
 				""
 		}
