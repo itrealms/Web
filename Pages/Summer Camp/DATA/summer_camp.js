@@ -1,25 +1,13 @@
 $(function () {
 	// Course Catalog
 	try {
-		w3.displayObject("arts", arts);
+		w3.displayObject("group1", group1);
 	} catch (err) {}
 	try {
-		w3.displayObject("core", core);
+		w3.displayObject("group2", group2);
 	} catch (err) {}
 	try {
-		w3.displayObject("language", language);
-	} catch (err) {}
-	try {
-		w3.displayObject("music", music);
-	} catch (err) {}
-	try {
-		w3.displayObject("science", science);
-	} catch (err) {}
-	try {
-		w3.displayObject("video", video);
-	} catch (err) {}
-	try {
-		w3.displayObject("wellness", wellness);
+		w3.displayObject("group3", group3);
 	} catch (err) {}
 
 	// Course Calendar
