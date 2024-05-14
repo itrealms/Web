@@ -25,7 +25,7 @@ const group1 = {
 		{
 			CourseName: "Social-Emotional Development",
 			Description:
-				"Embark on a journey of self-discovery in our Social-Emotional Development course, guiding students through career exploration and workplace dynamics. Gain insight into various professions, refine interpersonal skills, and navigate diverse social situations with confidence. Through interactive activities and reflective exercises, foster personal growth and prepare for success in both professional and social spheres"
+				"Social-Emotional Development course will be guiding students through career exploration and workplace dynamics. Gain insight into various professions, refine interpersonal skills, and navigate diverse social situations with confidence. Through interactive activities and reflective exercises, foster personal growth and prepare for success in both professional and social spheres"
 		},
 		{
 			CourseName: "Spanish",
@@ -97,7 +97,7 @@ const group2 = {
 		{
 			CourseName: "Social-Emotional Development",
 			Description:
-				"Embark on a journey of self-discovery in our Social-Emotional Development course, guiding students through career exploration and workplace dynamics. Gain insight into various professions, refine interpersonal skills, and navigate diverse social situations with confidence. Through interactive activities and reflective exercises, foster personal growth and prepare for success in both professional and social spheres"
+				"Social-Emotional Development course will be guiding students through career exploration and workplace dynamics. Gain insight into various professions, refine interpersonal skills, and navigate diverse social situations with confidence. Through interactive activities and reflective exercises, foster personal growth and prepare for success in both professional and social spheres"
 		},
 		{
 			CourseName: "Spanish",
@@ -169,7 +169,7 @@ const group3 = {
 		{
 			CourseName: "Social-Emotional Development",
 			Description:
-				"Embark on a journey of self-discovery in our Social-Emotional Development course, guiding students through career exploration and workplace dynamics. Gain insight into various professions, refine interpersonal skills, and navigate diverse social situations with confidence. Through interactive activities and reflective exercises, foster personal growth and prepare for success in both professional and social spheres"
+				"Social-Emotional Development course will be guiding students through career exploration and workplace dynamics. Gain insight into various professions, refine interpersonal skills, and navigate diverse social situations with confidence. Through interactive activities and reflective exercises, foster personal growth and prepare for success in both professional and social spheres"
 		},
 		{
 			CourseName: "Spanish",
