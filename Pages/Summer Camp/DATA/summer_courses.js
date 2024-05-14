@@ -5,17 +5,17 @@ const group1 = {
 		{
 			CourseName: "Art",
 			Description:
-				""
+				"Unleash your creativity in an Art class, where diverse hands-on projects and mediums enhance both creativity and motor skills"
 		},
 		{
 			CourseName: "English Workshop",
 			Description:
-				""
+				"Do you love reading? How about writing? If you want to grow in your ability to do both, please join us for the Reading & Writing Workshop. We will be spending about 30 minutes each day reading in a variety of formats: individually, partner, small group, and whole class. We will also have about an hour each day to dive into some fun and engaging writing activities, such as writing about the books we are reading, autobiographies, interviewing family members and writing biographies, poetry, short stories, and plays which can be acted out. This class will be an opportunity to use many of the ELA skills students acquire during the school year in a fun and engaging way"
 		},
 		{
 			CourseName: "Math and Science",
 			Description:
-				""
+				"If you love math and science activities, this is the class for you! We will be spending time each day engaged in a variety of activities using mathematical skills and concepts such as measurement of distance, angles, and volume, as well as learning how to effectively estimate a measureable quantity. Additionally, students will be able to engage in scientific exploration of the world around them to better understand how the world operates and how that operation can be studied using scientific principles and with simple engaging experiments"
 		},
 		{
 			CourseName: "Music and Art",
@@ -25,12 +25,12 @@ const group1 = {
 		{
 			CourseName: "Social-Emotional Development",
 			Description:
-				""
+				"Embark on a journey of self-discovery in our Social-Emotional Development course, guiding students through career exploration and workplace dynamics. Gain insight into various professions, refine interpersonal skills, and navigate diverse social situations with confidence. Through interactive activities and reflective exercises, foster personal growth and prepare for success in both professional and social spheres"
 		},
 		{
 			CourseName: "Spanish",
 			Description:
-				""
+				"Hola! Tu quieres hablar en espanol? Then join us for some fun and engaging Spanish lessons and activities. Each 90 minute class will be a combination of Spanish language lessons for about 30 minutes and opportunities to read, listen, and speak in Spanish for about 60 minutes. We will have a chance to explore Spanish food, music, videos and geography as a way for students to engage with the Spanish they study all year long at REALMS. Students will have an opportunity to learn more about Spanish speaking culture while growing in their language skills"
 		}
 	]
 };
@@ -42,7 +42,7 @@ const group2 = {
 		{
 			CourseName: "Art",
 			Description:
-				""
+				"Unleash your creativity in an Art class, where diverse hands-on projects and mediums enhance both creativity and motor skills"
 		},
 		{
 			CourseName: "Beginning Guitar",
@@ -62,7 +62,7 @@ const group2 = {
 		{
 			CourseName: "English Workshop",
 			Description:
-				""
+				"Do you love reading? How about writing? If you want to grow in your ability to do both, please join us for the Reading & Writing Workshop. We will be spending about 30 minutes each day reading in a variety of formats: individually, partner, small group, and whole class. We will also have about an hour each day to dive into some fun and engaging writing activities, such as writing about the books we are reading, autobiographies, interviewing family members and writing biographies, poetry, short stories, and plays which can be acted out. This class will be an opportunity to use many of the ELA skills students acquire during the school year in a fun and engaging way"
 		},
 		{
 			CourseName: "Jamily",
@@ -72,7 +72,7 @@ const group2 = {
 		{
 			CourseName: "Math Workshop",
 			Description:
-				""
+				"Hola! Tu quieres hablar en espanol? Then join us for some fun and engaging Spanish lessons and activities. Each 90 minute class will be a combination of Spanish language lessons for about 30 minutes and opportunities to read, listen, and speak in Spanish for about 60 minutes. We will have a chance to explore Spanish food, music, videos and geography as a way for students to engage with the Spanish they study all year long at REALMS. Students will have an opportunity to learn more about Spanish speaking culture while growing in their language skills"
 		},
 		{
 			CourseName: "Model Rocketry",
@@ -102,12 +102,12 @@ const group2 = {
 		{
 			CourseName: "Social-Emotional Development",
 			Description:
-				""
+				"Embark on a journey of self-discovery in our Social-Emotional Development course, guiding students through career exploration and workplace dynamics. Gain insight into various professions, refine interpersonal skills, and navigate diverse social situations with confidence. Through interactive activities and reflective exercises, foster personal growth and prepare for success in both professional and social spheres"
 		},
 		{
 			CourseName: "Spanish",
 			Description:
-				""
+				"Hola! Tu quieres hablar en espanol? Then join us for some fun and engaging Spanish lessons and activities. Each 90 minute class will be a combination of Spanish language lessons for about 30 minutes and opportunities to read, listen, and speak in Spanish for about 60 minutes. We will have a chance to explore Spanish food, music, videos and geography as a way for students to engage with the Spanish they study all year long at REALMS. Students will have an opportunity to learn more about Spanish speaking culture while growing in their language skills"
 		}
 	]
 };
@@ -119,7 +119,7 @@ const group3 = {
 		{
 			CourseName: "Art",
 			Description:
-				""
+				"Unleash your creativity in an Art class, where diverse hands-on projects and mediums enhance both creativity and motor skills"
 		},
 		{
 			CourseName: "Beginning Guitar",
@@ -139,7 +139,7 @@ const group3 = {
 		{
 			CourseName: "English Workshop",
 			Description:
-				""
+				"Do you love reading? How about writing? If you want to grow in your ability to do both, please join us for the Reading & Writing Workshop. We will be spending about 30 minutes each day reading in a variety of formats: individually, partner, small group, and whole class. We will also have about an hour each day to dive into some fun and engaging writing activities, such as writing about the books we are reading, autobiographies, interviewing family members and writing biographies, poetry, short stories, and plays which can be acted out. This class will be an opportunity to use many of the ELA skills students acquire during the school year in a fun and engaging way"
 		},
 		{
 			CourseName: "Jamily",
@@ -174,12 +174,12 @@ const group3 = {
 		{
 			CourseName: "Social-Emotional Development",
 			Description:
-				""
+				"Embark on a journey of self-discovery in our Social-Emotional Development course, guiding students through career exploration and workplace dynamics. Gain insight into various professions, refine interpersonal skills, and navigate diverse social situations with confidence. Through interactive activities and reflective exercises, foster personal growth and prepare for success in both professional and social spheres"
 		},
 		{
 			CourseName: "Spanish",
 			Description:
-				""
+				"Hola! Tu quieres hablar en espanol? Then join us for some fun and engaging Spanish lessons and activities. Each 90 minute class will be a combination of Spanish language lessons for about 30 minutes and opportunities to read, listen, and speak in Spanish for about 60 minutes. We will have a chance to explore Spanish food, music, videos and geography as a way for students to engage with the Spanish they study all year long at REALMS. Students will have an opportunity to learn more about Spanish speaking culture while growing in their language skills"
 		}
 	]
 };
