@@ -18,9 +18,9 @@ const group1 = {
 				"If you love math and science activities, this is the class for you! We will be spending time each day engaged in a variety of activities using mathematical skills and concepts such as measurement of distance, angles, and volume, as well as learning how to effectively estimate a measureable quantity. Additionally, students will be able to engage in scientific exploration of the world around them to better understand how the world operates and how that operation can be studied using scientific principles and with simple engaging experiments"
 		},
 		{
-			CourseName: "Music and Art",
+			CourseName: "Music",
 			Description:
-				"Immerse yourself in tranquility with our Relaxing Art and Music class, where soothing melodies complement peaceful artistic expression. Explore the profound impact of music on mood and well-being, cultivating a deeper appreciation for its therapeutic qualities. Unwind and rejuvenate as you harmonize creativity with serenity in a nurturing environment"
+				"Introducing our Singing and Dancing Music Class, designed to channel youthful energy into joyful expression and calming rhythms. Through fun-filled singing and dancing activities, young participants will learn to manage nerves while embracing the power of music for relaxation and self-expression. Join us for a dynamic journey where music becomes a delightful tool for cultivating both confidence and tranquility in our little performers"
 		},
 		{
 			CourseName: "Social-Emotional Development",
@@ -78,6 +78,11 @@ const group2 = {
 			CourseName: "Model Rocketry",
 			Description:
 				"Discover the fundamentals of flight in Model Rocketry, emphasizing thrust, lift, and aerodynamics. Develop fine motor skills through rocket assembly and launch preparation. Foster creativity by designing and decorating rockets for high-flying adventures."
+		},
+		{
+			CourseName: "Music and Art",
+			Description:
+				"Immerse yourself in tranquility with our Relaxing Art and Music class, where soothing melodies complement peaceful artistic expression. Explore the profound impact of music on mood and well-being, cultivating a deeper appreciation for its therapeutic qualities. Unwind and rejuvenate as you harmonize creativity with serenity in a nurturing environment"
 		},
 		{
 			CourseName: "Music Theory Games",
@@ -145,6 +150,11 @@ const group3 = {
 			CourseName: "Math Workshop",
 			Description:
 				"Join our Math Workshop for an engaging exploration of problem-solving and mathematical skills through puzzles and games. Develop critical thinking and mathematical reasoning while enjoying interactive challenges and activities. Enhance your mathematical proficiency in a fun and supportive learning environment"
+		},
+		{
+			CourseName: "Music and Art",
+			Description:
+				"Immerse yourself in tranquility with our Relaxing Art and Music class, where soothing melodies complement peaceful artistic expression. Explore the profound impact of music on mood and well-being, cultivating a deeper appreciation for its therapeutic qualities. Unwind and rejuvenate as you harmonize creativity with serenity in a nurturing environment"
 		},
 		{
 			CourseName: "Music Theory Games",
