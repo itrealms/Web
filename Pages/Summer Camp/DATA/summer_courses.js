@@ -75,6 +75,11 @@ const group2 = {
 				""
 		},
 		{
+			CourseName: "Model Rocketry",
+			Description:
+				"Discover the fundamentals of flight in Model Rocketry, emphasizing thrust, lift, and aerodynamics. Develop fine motor skills through rocket assembly and launch preparation. Foster creativity by designing and decorating rockets for high-flying adventures."
+		},
+		{
 			CourseName: "Music Theory Games",
 			Description:
 				"Fun games designed for elementary aged students. This class is a fun way to learn about the musical alphabet, dynamics, rhythms, note reading and more. This class is packed full of music education and packed full of fun!"
