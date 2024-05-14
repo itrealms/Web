@@ -20,7 +20,7 @@ const group1 = {
 		{
 			CourseName: "Music and Art",
 			Description:
-				""
+				"Music and Art. What else is there to say."
 		},
 		{
 			CourseName: "Social-Emotional Development",
@@ -72,7 +72,7 @@ const group2 = {
 		{
 			CourseName: "Math Workshop",
 			Description:
-				"Hola! Tu quieres hablar en espanol? Then join us for some fun and engaging Spanish lessons and activities. Each 90 minute class will be a combination of Spanish language lessons for about 30 minutes and opportunities to read, listen, and speak in Spanish for about 60 minutes. We will have a chance to explore Spanish food, music, videos and geography as a way for students to engage with the Spanish they study all year long at REALMS. Students will have an opportunity to learn more about Spanish speaking culture while growing in their language skills"
+				"Join our Math Workshop for an engaging exploration of problem-solving and mathematical skills through puzzles and games. Develop critical thinking and mathematical reasoning while enjoying interactive challenges and activities. Enhance your mathematical proficiency in a fun and supportive learning environment"
 		},
 		{
 			CourseName: "Model Rocketry",
@@ -88,11 +88,6 @@ const group2 = {
 			CourseName: "Orchestra",
 			Description:
 				"Orchestra will be for students with little to no experience. Learning to play instruments and read sheet music."
-		},
-		{
-			CourseName: "Science Club",
-			Description:
-				""
 		},
 		{
 			CourseName: "Singing and Signing",
@@ -149,7 +144,7 @@ const group3 = {
 		{
 			CourseName: "Math Workshop",
 			Description:
-				""
+				"Join our Math Workshop for an engaging exploration of problem-solving and mathematical skills through puzzles and games. Develop critical thinking and mathematical reasoning while enjoying interactive challenges and activities. Enhance your mathematical proficiency in a fun and supportive learning environment"
 		},
 		{
 			CourseName: "Music Theory Games",
