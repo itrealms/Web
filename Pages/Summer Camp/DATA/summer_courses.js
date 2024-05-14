@@ -20,7 +20,7 @@ const group1 = {
 		{
 			CourseName: "Music and Art",
 			Description:
-				"Music and Art. What else is there to say."
+				"Immerse yourself in tranquility with our Relaxing Art and Music class, where soothing melodies complement peaceful artistic expression. Explore the profound impact of music on mood and well-being, cultivating a deeper appreciation for its therapeutic qualities. Unwind and rejuvenate as you harmonize creativity with serenity in a nurturing environment"
 		},
 		{
 			CourseName: "Social-Emotional Development",
