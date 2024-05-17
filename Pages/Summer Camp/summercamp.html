@@ -80,18 +80,30 @@
 
     <p class="head">Hello students, parents & guardians!</p>
     <p class="justify">We are excited to share our Summer Camp 2024 schedule with you. This year we are adding two new exciting classes; ROBOTICS and MODEL ROCKETRY. This will give opportunities to apply many of the skills that students have been learning at REALMS as well as a chance to explore creative approches to other fields thru engaging exercises, puzzles and projects! Please take some time to read each of the class descriptions below to learn about some of the fun and captivating ways that students can maintain what they have worked hard to learn this school year and develop new skills and interests as well.</p>
-    <p>Free breakfast, lunch, and a snack will be provided at the times below:</p>
-    <p>
-      Breakfast: M, T, W, Th, F - 7:30am to 7:50am<br>
-      Lunch: M, T, W, Th, F - 11:15am to 11:50am<br>
-      Snack: M, T, W, Th, F - 3:15pm to 3:30pm
-    </p>
+    <p>Free breakfast, lunch, and a snack will be provided.</p>
+    <p>Camp will be help 5 days a week Mon-Fri and meals offered every day. Please see schedule below:</p>
+
+    <table id="schedule" class="w3-table w3-hoverable">
+      <thead>
+        <tr class="subhead w3-blue">
+          <td style="width: 20%;"></td>
+          <td>Start Time</td>
+          <td>End Time</td>
+        </tr>
+      </thead>
+      <tr w3-repeat="dailyschedule">
+        <td>{{period}}</td>
+        <td>{{start_time}}</td>
+        <td>{{end_time}}</td>
+      </tr>
+    </table>
+
     <p>Please plan to drop students off no earlier than 7:30am since no supervision will be provided prior to 7:30am. The camp will end at 4:30pm, so please plan to pick students up promptly at 4:30pm.</p>
     <p>
       Summer Camp will run from June 5 to July 19. With breaks on June 19, July 4 and July 5. No camps these days.
     </p>
     <p>You will need to sign up each child for the classes they are interested in. The form linked below will guide you thru the times and classes available. We hope that students will enjoy this Summer Camp as much as we will!</p>
-    <p>**Sign up here**</p>
+    <p id="signstatus1" class="head w3-center"><a style="text-decoration: none" href="https://forms.gle/ULKVcUxuiQtM9nFUA">**Sign up here**</a></p>
 
     <hr>
 
@@ -140,7 +152,7 @@
       </tr>
     </table>
 
-    <p>**Sign up here**</p>
+    <p id="signstatus2" class="head w3-center"><a style="text-decoration: none" href="https://forms.gle/ULKVcUxuiQtM9nFUA">**Sign up here**</a></p>
 
     <hr>
 

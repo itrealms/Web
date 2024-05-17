@@ -1,4 +1,8 @@
 $(function () {
+	// Daily Schedule
+	try {
+		w3.displayObject("schedule", schedule);
+	} catch (err) {}
 	// Course Catalog
 	try {
 		w3.displayObject("group1", group1);
