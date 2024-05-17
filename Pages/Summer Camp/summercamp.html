@@ -14,6 +14,7 @@
 <!-- Custom CSS and JS -->
 <link rel="stylesheet" href="https://itrealms.github.io/Web/CSS/realms.css">
 <!-- ====================== Avoid editing above here ====================== -->
+<script src="https://itrealms.github.io/Web/Pages/Summer Camp/DATA/daily_schedule.js"></script>
 <script src="https://itrealms.github.io/Web/Pages/Summer Camp/DATA/summer_courses.js"></script>
 <script src="https://itrealms.github.io/Web/Pages/Summer Camp/DATA/camp_session_1.js"></script>
 <script src="https://itrealms.github.io/Web/Pages/Summer Camp/DATA/camp_session_2.js"></script>
@@ -23,46 +24,13 @@
 <script src="https://itrealms.github.io/Web/Pages/Summer Camp/DATA/summer_camp.js"></script>
 <script>
   $(function() {
-	  const session1 = "open";
-	  const session2 = "open";
-	  const session3 = "open";
-	  const session4 = "open";
-      const session5 = "open";
-
-	  if (session1 == "open") {
-      $("#signup1").html('<a href="">08:00 - 09:30</a>');
+    const signup_status = "open";
+    if (signup_status === "open") {
+      $("#sign_up_message_1").html('<a style="text-decoration: none" href="https://forms.gle/ULKVcUxuiQtM9nFUA">**Sign up here**</a>');
+      $("#sign_up_message_2").html('<a style="text-decoration: none" href="https://forms.gle/ULKVcUxuiQtM9nFUA">**Sign up here**</a>');
     } else {
-      $("#signup1").html("08:00 - 09:30");
-    }
-
-    if (session2 == "open") {
-      $("#signup2").html('<a href="">09:45 - 11:15</a>');
-    } else {
-      $("#signup2").html("09:45 - 11:15");
-    }
-
-    if (session3 == "open") {
-      $("#signup3").html('<a href="">12:00 - 01:30</a>');
-    } else {
-      $("#signup3").html("12:00 - 01:30");
-    }
-
-    if (session4 == "open") {
-      $("#signup4").html('<a href="">01:45 - 03:15</a>');
-    } else {
-      $("#signup4").html("01:45 - 03:15");
-    }
-
-    if (session5 == "open") {
-      $("#signup5").html('<a href="">03:30 - 04:30</a>');
-    } else {
-      $("#signup5").html("03:30 - 04:30");
-    }
-
-    if ((session1 == "closed" && session2 == "closed" && session3 == "closed" && session4 == "closed" && session5 == "closed")) {
-      $("#signupStatus").text("All courses closed at this time. Please check back for updates. Thank you");
-    } else {
-      $("#signupStatus").text("Please click the time to sign-up for courses in that time slot. You will need to sign up each child in each time slot you wish them to participate in. Thank you");
+      $("#sign_up_message_1").text("Sign-ups closed at this time. Please check back for updates. Thank you");
+      $("#sign_up_message_2").text("Sign-ups closed at this time. Please check back for updates. Thank you");
     }
   });
 </script>
@@ -79,31 +47,42 @@
   <div class="w3-card-4 w3-padding">
 
     <p class="head">Hello students, parents & guardians!</p>
-    <p class="justify">We are excited to share our Summer Camp 2024 schedule with you. This year we are adding two new exciting classes; ROBOTICS and MODEL ROCKETRY. This will give opportunities to apply many of the skills that students have been learning at REALMS as well as a chance to explore creative approches to other fields thru engaging exercises, puzzles and projects! Please take some time to read each of the class descriptions below to learn about some of the fun and captivating ways that students can maintain what they have worked hard to learn this school year and develop new skills and interests as well.</p>
-    <p>Free breakfast, lunch, and a snack will be provided.</p>
-    <p>Camp will be help 5 days a week Mon-Fri and meals offered every day. Please see schedule below:</p>
 
-    <table id="schedule" class="w3-table w3-hoverable">
-      <thead>
-        <tr class="subhead w3-blue">
-          <td style="width: 20%;"></td>
-          <td>Start Time</td>
-          <td>End Time</td>
-        </tr>
-      </thead>
-      <tr w3-repeat="dailyschedule">
-        <td>{{period}}</td>
-        <td>{{start_time}}</td>
-        <td>{{end_time}}</td>
-      </tr>
-    </table>
+    <div class="flex">
+		<!--Left Card-->
+		<div class="">
+          <p class="justify">We are excited to share our Summer Camp 2024 schedule with you. This year we are adding two new exciting classes; ROBOTICS and MODEL ROCKETRY. This will give opportunities to apply many of the skills that students have been learning at REALMS as well as a chance to explore creative approaches to other fields thru engaging exercises, puzzles and projects! Please take some time to read each of the class descriptions below to learn about some of the fun and captivating ways that students can maintain what they have worked hard to learn this school year and develop new skills and interests as well.</p>
+          <p>Free breakfast, lunch, and a snack will be provided.</p>
+          <p>Camp will be help 5 days a week Mon-Fri and meals offered every day.</p>
+		</div>
+
+		<!--Right Card-->
+		<div class="">
+
+			<table id="schedule" class="w3-table w3-hoverable">
+              <thead>
+                <tr class="subhead w3-blue">
+                  <td></td>
+                  <td>Start Time</td>
+                  <td>End Time</td>
+                </tr>
+              </thead>
+              <tr w3-repeat="dailyschedule">
+                <td>{{period}}</td>
+                <td>{{start_time}}</td>
+                <td>{{end_time}}</td>
+              </tr>
+            </table>
+
+		</div>
+	</div>
 
     <p>Please plan to drop students off no earlier than 7:30am since no supervision will be provided prior to 7:30am. The camp will end at 4:30pm, so please plan to pick students up promptly at 4:30pm.</p>
     <p>
       Summer Camp will run from June 5 to July 19. With breaks on June 19, July 4 and July 5. No camps these days.
     </p>
     <p>You will need to sign up each child for the classes they are interested in. The form linked below will guide you thru the times and classes available. We hope that students will enjoy this Summer Camp as much as we will!</p>
-    <p id="signstatus1" class="head w3-center"><a style="text-decoration: none" href="https://forms.gle/ULKVcUxuiQtM9nFUA">**Sign up here**</a></p>
+    <p id="sign_up_message_1" class="head w3-center"><a style="text-decoration: none" href="https://forms.gle/ULKVcUxuiQtM9nFUA">**Sign up here**</a></p>
 
     <hr>
 
@@ -152,11 +131,13 @@
       </tr>
     </table>
 
-    <p id="signstatus2" class="head w3-center"><a style="text-decoration: none" href="https://forms.gle/ULKVcUxuiQtM9nFUA">**Sign up here**</a></p>
+    <p id="sign_up_message_2" class="head w3-center"><a style="text-decoration: none" href="https://forms.gle/ULKVcUxuiQtM9nFUA">**Sign up here**</a></p>
+
+
+
+    <div style="display: none">
 
     <hr>
-
-    <div style="visibility: hidden">
 
     <p class="head w3-center">Weekly Schedule</p>
     <div id="signupStatus"></div>
@@ -327,8 +308,9 @@
       </tbody>
     </table>
 
+     &nbsp;
+
     </div>
-    &nbsp;
 
   </div>
 </div>
