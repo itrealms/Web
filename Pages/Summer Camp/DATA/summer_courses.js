@@ -108,6 +108,11 @@ const group2 = {
 			CourseName: "Spanish",
 			Description:
 				"Hola! Tu quieres hablar en espanol? Then join us for some fun and engaging Spanish lessons and activities. Each 90 minute class will be a combination of Spanish language lessons for about 30 minutes and opportunities to read, listen, and speak in Spanish for about 60 minutes. We will have a chance to explore Spanish food, music, videos and geography as a way for students to engage with the Spanish they study all year long at REALMS. Students will have an opportunity to learn more about Spanish speaking culture while growing in their language skills"
+		},
+		{
+			CourseName: "Yoga",
+			Description:
+				"Are you in need of more flexibility and strength? Are you looking for a new type of exercise that you have never tried before? Then come and give yoga a try! Yoga is great for not only improved flexibility and muscle tone, but it also has a meditative aspect that allows practitioners to calm their minds for greater clarity of their surroundings and mind-body connectedness. Yoga is a wonderful addition to any other sport you may be engaged in throughout your week. Come and try yoga as something new!"
 		}
 	]
 };
@@ -185,6 +190,11 @@ const group3 = {
 			CourseName: "Spanish",
 			Description:
 				"Hola! Tu quieres hablar en espanol? Then join us for some fun and engaging Spanish lessons and activities. Each 90 minute class will be a combination of Spanish language lessons for about 30 minutes and opportunities to read, listen, and speak in Spanish for about 60 minutes. We will have a chance to explore Spanish food, music, videos and geography as a way for students to engage with the Spanish they study all year long at REALMS. Students will have an opportunity to learn more about Spanish speaking culture while growing in their language skills"
+		},
+		{
+			CourseName: "Yoga",
+			Description:
+				"Are you in need of more flexibility and strength? Are you looking for a new type of exercise that you have never tried before? Then come and give yoga a try! Yoga is great for not only improved flexibility and muscle tone, but it also has a meditative aspect that allows practitioners to calm their minds for greater clarity of their surroundings and mind-body connectedness. Yoga is a wonderful addition to any other sport you may be engaged in throughout your week. Come and try yoga as something new!"
 		}
 	]
 };
