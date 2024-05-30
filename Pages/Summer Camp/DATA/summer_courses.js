@@ -40,6 +40,11 @@ const group1 = {
 const group2 = {
 	courses: [
 		{
+			CourseName: "Anchored 4 Life",
+			Description:
+				"Open to all students. ***Please note This course starts July 1st until July 19th***, this program helps kids navigate and overcome changes, such as moving or shifts in family structure. Through support resources and problem solving activities, we foster resilience and adaptability, ensuring a smooth transition and promoting well-being"
+		},
+		{
 			CourseName: "Art",
 			Description:
 				"Unleash your creativity in an Art class, where diverse hands-on projects and mediums enhance both creativity and motor skills"
@@ -121,6 +126,11 @@ const group2 = {
 ////////////////////////////////////////////////////////////////////////////////
 const group3 = {
 	courses: [
+		{
+			CourseName: "Anchored 4 Life",
+			Description:
+				"Open to all students. ***Please note This course starts July 1st until July 19th***, this program helps kids navigate and overcome changes, such as moving or shifts in family structure. Through support resources and problem solving activities, we foster resilience and adaptability, ensuring a smooth transition and promoting well-being"
+		},
 		{
 			CourseName: "Art",
 			Description:
