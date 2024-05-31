@@ -71,7 +71,7 @@ const apr2024 = {"apr" : [
   {
     "agenda" : "https://drive.google.com/file/d/18ptIsunSnU_Tl63_2VyWTttNfCAIqsSx/view",
     "agenda_date" : "2024-04-29 - Agenda",
-    "minutes" : "#",
+    "minutes" : "https://drive.google.com/file/d/1EAgze8nIYQAPhBBnKPT5xRdUOoo-1CeT/view",
     "minutes_date" : "2024-04-29 - Minutes"
   }
 ]};
