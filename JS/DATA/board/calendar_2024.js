@@ -97,7 +97,7 @@ const jun2024 = {"jun" : [
 const jul2024 = {"jul" : [
   {
     "agenda" : "#",
-    "agenda_date" : "",
+    "agenda_date" : "2024-07-23 - Upcoming",
     "minutes" : "#",
     "minutes_date" : ""
   }
