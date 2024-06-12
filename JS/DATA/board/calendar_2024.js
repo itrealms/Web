@@ -87,6 +87,12 @@ const may2024 = {"may" : [
 
 const jun2024 = {"jun" : [
   {
+    "agenda" : "https://drive.google.com/file/d/1ByMn8GHBDGNRShHKc_y39Lxh2zyBngTb/view",
+    "agenda_date" : "2024-06-13 - Special Agenda",
+    "minutes" : "#",
+    "minutes_date" : "2024-06-13 - Special Minutes"
+  },
+  {
     "agenda" : "#",
     "agenda_date" : "2024-06-25 - Upcoming",
     "minutes" : "#",
