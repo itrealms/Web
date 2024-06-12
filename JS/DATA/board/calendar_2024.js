@@ -94,6 +94,12 @@ const jun2024 = {"jun" : [
   },
   {
     "agenda" : "#",
+    "agenda_date" : "2024-06-24 - Upcoming",
+    "minutes" : "#",
+    "minutes_date" : ""
+  },
+  {
+    "agenda" : "#",
     "agenda_date" : "2024-06-25 - Upcoming",
     "minutes" : "#",
     "minutes_date" : ""
