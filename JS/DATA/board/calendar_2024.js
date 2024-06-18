@@ -80,7 +80,7 @@ const may2024 = {"may" : [
   {
     "agenda" : "https://drive.google.com/file/d/1jb-0of5eE2UKjCbWEM7OSAcge9QbakFg/view",
     "agenda_date" : "2024-05-28 - Agenda",
-    "minutes" : "#",
+    "minutes" : "https://drive.google.com/file/d/1w5UvjpzIGTE7Jw1p1lwo4bYgKvDM5qSE/view",
     "minutes_date" : "2024-05-28 - Minutes"
   }
 ]};
