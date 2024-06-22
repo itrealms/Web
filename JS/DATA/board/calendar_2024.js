@@ -93,8 +93,8 @@ const jun2024 = {"jun" : [
     "minutes_date" : "2024-06-13 - Special Minutes"
   },
   {
-    "agenda" : "#",
-    "agenda_date" : "2024-06-24 - Upcoming",
+    "agenda" : "https://drive.google.com/file/d/1OibNMY0ltaZcn8dxefCDHysdZv3vaOvH/view",
+    "agenda_date" : "2024-06-24 - Agenda",
     "minutes" : "#",
     "minutes_date" : ""
   },
