@@ -96,6 +96,12 @@ const jun2024 = {"jun" : [
     "agenda" : "https://drive.google.com/file/d/1OibNMY0ltaZcn8dxefCDHysdZv3vaOvH/view",
     "agenda_date" : "2024-06-25 - Agenda",
     "minutes" : "#",
+    "minutes_date" : "2024-06-25 - Minutes"
+  },
+  {
+    "agenda" : "#",
+    "agenda_date" : "2024-06-27 - Upcoming",
+    "minutes" : "#",
     "minutes_date" : ""
   }
 ]};
