@@ -36,10 +36,10 @@ const apr2024 = {"apr" : [
 
 const may2024 = {"may" : [
   {
-    "agenda" : "#",
-    "agenda_date" : "2024-05-03 - Upcoming",
+    "agenda" : "https://drive.google.com/file/d/180sEm36msO-U_UqMMFSVD4LiRafwS3lt/view",
+    "agenda_date" : "2024-05-03 - Agenda",
     "minutes" : "#",
-    "minutes_date" : ""
+    "minutes_date" : "2024-05-03 - Minutes"
   }
 ]};
 
