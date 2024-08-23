@@ -99,19 +99,19 @@ const jun2024 = {"jun" : [
     "minutes_date" : "2024-06-25 - Minutes"
   },
   {
-    "agenda" : "#",
-    "agenda_date" : "2024-06-27 - Upcoming",
+    "agenda" : "https://drive.google.com/file/d/1Dvp5cyBdoWcCvVIGXQWR5rEUehrXH8fQ/view?usp=drive_link",
+    "agenda_date" : "2024-06-27 - Special Agenda",
     "minutes" : "#",
-    "minutes_date" : ""
+    "minutes_date" : "2024-06-27 - Special Minutes"
   }
 ]};
 
 const jul2024 = {"jul" : [
   {
-    "agenda" : "#",
-    "agenda_date" : "2024-07-23 - Upcoming",
+    "agenda" : "https://drive.google.com/file/d/1M4NBMMKKqMW7AqN57Qu3bnStz64LlDHD/view?usp=drive_link",
+    "agenda_date" : "2024-07-23 - Agenta",
     "minutes" : "#",
-    "minutes_date" : ""
+    "minutes_date" : "2024-06-27 - Special"
   }
 ]};
 
