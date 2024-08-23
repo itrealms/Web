@@ -109,10 +109,16 @@ const jun2024 = {"jun" : [
 const jul2024 = {"jul" : [
   {
     "agenda" : "https://drive.google.com/file/d/1M4NBMMKKqMW7AqN57Qu3bnStz64LlDHD/view",
-    "agenda_date" : "2024-07-23 - Agenta",
+    "agenda_date" : "2024-07-23 - Agenda",
     "minutes" : "#",
-    "minutes_date" : "2024-06-27 - Special"
-  }
+    "minutes_date" : ""
+  },
+  {
+    "agenda" : "https://drive.google.com/file/d/1JWrvt7jWje54Ref219Owzmg5ouRgfJZ6/view",
+    "agenda_date" : "2024-08-27 - Agenda",
+    "minutes" : "#",
+    "minutes_date" : ""
+  }	
 ]};
 
 const aug2024 = {"aug" : [
