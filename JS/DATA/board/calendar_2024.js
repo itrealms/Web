@@ -114,8 +114,8 @@ const jul2024 = {"jul" : [
     "minutes_date" : ""
   },
   {
-    "agenda" : "https://drive.google.com/file/d/1JWrvt7jWje54Ref219Owzmg5ouRgfJZ6/view",
-    "agenda_date" : "2024-08-27 - Agenda",
+    "agenda" : "#",
+    "agenda_date" : "",
     "minutes" : "#",
     "minutes_date" : ""
   }	
@@ -123,8 +123,8 @@ const jul2024 = {"jul" : [
 
 const aug2024 = {"aug" : [
   {
-    "agenda" : "#",
-    "agenda_date" : "",
+    "agenda" : "https://drive.google.com/file/d/1JWrvt7jWje54Ref219Owzmg5ouRgfJZ6/view",
+    "agenda_date" : "2024-08-27 - Agenda",
     "minutes" : "#",
     "minutes_date" : ""
   }
