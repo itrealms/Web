@@ -90,8 +90,8 @@ const oct2024 = {"oct" : [
 
 const nov2024 = {"nov" : [
   {
-    "agenda" : "#",
-    "agenda_date" : "",
+    "agenda" : "https://drive.google.com/file/d/1sbkEGOkGxPFfePhHdPOKD0aUFmBm1q-t/view",
+    "agenda_date" : "2024-11-18 - Agenda",
     "minutes" : "#",
     "minutes_date" : ""
   }
