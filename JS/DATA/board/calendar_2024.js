@@ -141,8 +141,8 @@ const sep2024 = {"sep" : [
 
 const oct2024 = {"oct" : [
   {
-    "agenda" : "#",
-    "agenda_date" : "",
+    "agenda" : "https://drive.google.com/drive/folders/1ItvU914CKfvUjI_iospLoNmCoiGkLWR6",
+    "agenda_date" : "2024-10-24 - Agenda",
     "minutes" : "#",
     "minutes_date" : ""
   }
@@ -150,8 +150,8 @@ const oct2024 = {"oct" : [
 
 const nov2024 = {"nov" : [
   {
-    "agenda" : "#",
-    "agenda_date" : "",
+    "agenda" : "https://drive.google.com/drive/folders/1ItvU914CKfvUjI_iospLoNmCoiGkLWR6",
+    "agenda_date" : "2024-11-24 - Agenda,
     "minutes" : "#",
     "minutes_date" : ""
   }
