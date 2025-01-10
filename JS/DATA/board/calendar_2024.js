@@ -159,8 +159,8 @@ const nov2024 = {"nov" : [
 
 const dec2024 = {"dec" : [
   {
-    "agenda" : "#",
-    "agenda_date" : "",
+    "agenda" : "https://drive.google.com/file/d/10ixgbPQrdRW9lMke58LRHhIzmm7Z7GMG/view",
+    "agenda_date" : "2024-12-10 - Agenda",
     "minutes" : "#",
     "minutes_date" : ""
   }
