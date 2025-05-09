@@ -7,7 +7,7 @@ const schedule = {
 		},
 		{
 			period: "Session 1",
-			start_time: "8:00am",
+			start_time: "8:01am",
 			end_time: "9:30am"
 		},
 		{
